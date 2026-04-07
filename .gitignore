@@ -1,0 +1,31 @@
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+
+# MCP config (contains API keys)
+.mcp.json
+.vscode/mcp.json
+
+# Environment
+.env
+.env.*
+
+# Scraper output (re-generate with: python tools/scraper/fuji_parser.py)
+tools/scraper/fuji_recipes_xtrans4.json
+
+# Scratchpad (ephemeral working notes)
+scratchpad/
+
+# Node modules in hooks
+.claude/hooks/node_modules/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
