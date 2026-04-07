@@ -1,3 +1,9 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vite/
 
 # Beads / Dolt files (added by bd init)
 .dolt/
@@ -11,9 +17,7 @@
 # Environment
 .env
 .env.*
-
-# Scraper output (re-generate with: python tools/scraper/fuji_parser.py)
-tools/scraper/fuji_recipes_xtrans4.json
+!.env.example
 
 # Scratchpad (ephemeral working notes)
 scratchpad/
@@ -25,6 +29,7 @@ scratchpad/
 .vscode/
 *.swp
 *.swo
+*.local
 
 # OS
 .DS_Store
