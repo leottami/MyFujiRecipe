@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+	/* Background */
+	--color-background: #faf9f5;
+
+	/* Primary (Camera Body) */
+	--color-primary: #5f5e5f;
+	--color-primary-container: #e5e2e3;
+	--color-primary-dim: #535253;
+	--color-on-primary: #faf7f8;
+	--color-on-primary-container: #525152;
+
+	/* Secondary (Muted Charcoal) */
+	--color-secondary: #5f5f5b;
+	--color-secondary-container: #e4e2dd;
+	--color-secondary-dim: #535350;
+	--color-on-secondary: #fbf9f4;
+	--color-on-secondary-container: #52524e;
+
+	/* Tertiary (Signal Red - Use Sparingly) */
+	--color-tertiary: #b91e25;
+	--color-tertiary-container: #fc504d;
+	--color-tertiary-dim: #a80c1a;
+	--color-on-tertiary: #fff7f6;
+
+	/* Surface Layers (Tonal Layering) */
+	--color-surface: #faf9f5;
+	--color-surface-bright: #faf9f5;
+	--color-surface-container: #edeee8;
+	--color-surface-container-high: #e7e9e2;
+	--color-surface-container-highest: #e0e4db;
+	--color-surface-container-low: #f4f4ef;
+	--color-surface-container-lowest: #ffffff;
+	--color-surface-dim: #d7dcd2;
+	--color-surface-variant: #e0e4db;
+
+	/* Text */
+	--color-on-background: #2f342e;
+	--color-on-surface: #2f342e;
+	--color-on-surface-variant: #5c605a;
+
+	/* Inverse */
+	--color-inverse-surface: #0d0f0d;
+	--color-inverse-on-surface: #9d9d9a;
+	--color-inverse-primary: #ffffff;
+
+	/* Outlines */
+	--color-outline: #787c75;
+	--color-outline-variant: #afb3ac;
+
+	/* Error */
+	--color-error: #9f403d;
+	--color-error-container: #fe8983;
+	--color-on-error: #fff7f6;
+
+	/* Typography */
+	--font-headline: "Manrope", sans-serif;
+	--font-body: "Inter", sans-serif;
+	--font-label: "Inter", sans-serif;
+
+	/* Border Radius - Mechanical, not bubbly */
+	--radius-none: 0;
+	--radius-sm: 0.125rem;
+	--radius-md: 0.25rem;
+	--radius-lg: 0.5rem;
+
+	/* Shadows - Ambient, tinted with on-surface */
+	--shadow-ambient: 0 24px 48px rgba(47, 52, 46, 0.06);
+	--shadow-card: 0 8px 24px rgba(47, 52, 46, 0.04);
+	--shadow-elevated: 0 16px 32px rgba(47, 52, 46, 0.08);
+}
+
+body {
+	font-family: var(--font-body);
+	background-color: var(--color-background);
+	color: var(--color-on-background);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-headline);
+}
