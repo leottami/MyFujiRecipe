@@ -276,9 +276,38 @@ def parse_settings_block(lines: list[str]) -> dict:
     return result
 
 
+def _is_sample_photo(img, url: str) -> tuple[bool, str]:
+    """Check if an img tag is a sample photo (not a banner/icon/promo).
+    Returns (is_sample, resolved_url)."""
+    src = img.get("data-lazy-src") or img.get("src", "")
+    if not src:
+        return False, ""
+
+    # Resolve relative URLs
+    if not src.startswith("http"):
+        src = urljoin(url, src)
+
+    w = int(img.get("width", 0) or 0)
+    h = int(img.get("height", 0) or 0)
+
+    # Filter: must be on wp.com or flickr (fujixweekly image hosts)
+    if not any(host in src for host in ("wp.com", "staticflickr.com", "fujixweekly.com")):
+        return False, src
+
+    # Filter: banners are wide + short (e.g. 728x90 affiliate ads)
+    if w > 600 and h > 0 and h < 150:
+        return False, src
+
+    # Filter: tiny images (icons, emojis, tracking pixels)
+    if 0 < w < 100 and 0 < h < 100:
+        return False, src
+
+    return True, src
+
+
 def extract_metadata(soup: BeautifulSoup, url: str) -> dict:
     """Extract metadata (date, thumbnail) from the recipe page."""
-    meta = {"published_date": None, "thumbnail_url": None}
+    meta = {"published_date": None, "thumbnail_url": None, "sample_photos": []}
 
     # Published date - try datetime attribute first, then parse text
     time_tag = soup.find("time", class_="entry-date") or soup.find("time")
@@ -296,14 +325,35 @@ def extract_metadata(soup: BeautifulSoup, url: str) -> dict:
             except (ValueError, ImportError):
                 meta["published_date"] = text
 
-    # Thumbnail: first image in content
+    # Extract ALL sample photos from content
     content = soup.find("div", class_="entry-content") or soup.find("article") or soup
-    img = content.find("img")
-    if img:
-        meta["thumbnail_url"] = img.get("data-lazy-src") or img.get("src", "")
-        # Resolve relative URLs
-        if meta["thumbnail_url"] and not meta["thumbnail_url"].startswith("http"):
-            meta["thumbnail_url"] = urljoin(url, meta["thumbnail_url"])
+    seen_urls = set()
+
+    for img in content.find_all("img"):
+        is_sample, photo_url = _is_sample_photo(img, url)
+        if not is_sample or not photo_url:
+            continue
+        # Dedupe by base URL (ignore query params for dedup)
+        base_url = photo_url.split("?")[0]
+        if base_url in seen_urls:
+            continue
+        seen_urls.add(base_url)
+
+        alt = img.get("alt", "")
+        meta["sample_photos"].append({
+            "url": photo_url,
+            "alt": alt if alt else None,
+        })
+
+    # Thumbnail: first sample photo, or first image as fallback
+    if meta["sample_photos"]:
+        meta["thumbnail_url"] = meta["sample_photos"][0]["url"]
+    else:
+        img = content.find("img")
+        if img:
+            meta["thumbnail_url"] = img.get("data-lazy-src") or img.get("src", "")
+            if meta["thumbnail_url"] and not meta["thumbnail_url"].startswith("http"):
+                meta["thumbnail_url"] = urljoin(url, meta["thumbnail_url"])
 
     return meta
 

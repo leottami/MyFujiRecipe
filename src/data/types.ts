@@ -1,3 +1,10 @@
+export interface RecipePhoto {
+	id: string;
+	url: string;
+	alt?: string;
+	role: "hero" | "sample";
+}
+
 export interface Recipe {
 	id: string;
 	name: string;
@@ -5,6 +12,7 @@ export interface Recipe {
 	sensor: string;
 	publishedDate: string;
 	thumbnailUrl: string;
+	photos: RecipePhoto[];
 	filmSimulation: string;
 	dynamicRange: string;
 	highlight: string;
@@ -20,7 +28,17 @@ export interface Recipe {
 	iso: string;
 	exposureCompensation: string;
 	extraSettings: Record<string, string>;
+	createdAt?: string;
+	updatedAt?: string;
 }
+
+export type RecipeCreateInput = Omit<Recipe, "id" | "createdAt" | "updatedAt">;
+
+export type RecipeUpdateInput = Partial<Omit<Recipe, "id">> & { id: string };
+
+export type Result<T> =
+	| { data: T; error: null }
+	| { data: null; error: { code: string; message: string } };
 
 export interface RecipeFilters {
 	filmSimulation: string | null;

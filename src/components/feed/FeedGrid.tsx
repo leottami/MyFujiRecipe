@@ -41,13 +41,22 @@ export function FeedGrid({ recipes, batchSize = 20 }: FeedGridProps) {
 
 	return (
 		<>
-			<div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
+			{/* Mobile: masonry columns */}
+			<div className="columns-1 md:columns-2 gap-4 lg:hidden">
+				{visible.map((recipe) => (
+					<RecipeCard key={recipe.id} recipe={recipe} />
+				))}
+			</div>
+
+			{/* Desktop: editorial grid with asymmetric offset */}
+			<div className="hidden lg:grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-x-10 gap-y-6">
 				{visible.map((recipe, i) => (
-					<div key={recipe.id} className={i % 2 === 1 ? "mt-8 lg:mt-12" : ""}>
+					<div key={recipe.id} className={i % 2 === 1 ? "mt-16" : ""}>
 						<RecipeCard recipe={recipe} />
 					</div>
 				))}
 			</div>
+
 			{visibleCount < recipes.length && (
 				<div ref={sentinelRef} className="h-10" />
 			)}

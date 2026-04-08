@@ -1,51 +1,61 @@
 import { Link, useLocation } from "react-router-dom";
+import { SearchInput } from "../ui/SearchInput";
 
-export function NavBar() {
+interface NavBarProps {
+	searchValue: string;
+	onSearch: (value: string) => void;
+}
+
+export function NavBar({ searchValue, onSearch }: NavBarProps) {
 	const location = useLocation();
 	const isHome = location.pathname === "/";
 
-	return (
-		<>
-			{/* Desktop top nav */}
-			<nav className="hidden lg:flex fixed top-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] items-center justify-between px-10 py-4">
-				<Link to="/" className="font-headline font-bold text-lg text-primary">
-					Fuji Recipe Hub
-				</Link>
-				<div className="flex items-center gap-6">
-					<Link
-						to="/"
-						className={`font-label text-sm uppercase tracking-widest transition-colors ${isHome ? "text-primary" : "text-on-surface-variant hover:text-primary"}`}
-					>
-						Gallery
-					</Link>
-				</div>
-			</nav>
+	const tabs = [
+		{ label: "Browse", to: "/", active: isHome },
+		{ label: "Gallery", to: "/", active: false },
+		{ label: "Technical Journal", to: "/", active: false },
+	];
 
-			{/* Mobile bottom nav */}
-			<nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] flex items-center justify-around px-6 py-3 safe-area-inset-bottom">
-				<Link
-					to="/"
-					className={`flex flex-col items-center gap-1 ${isHome ? "text-primary" : "text-on-surface-variant"}`}
-				>
-					<svg
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="2"
-						aria-hidden="true"
+	return (
+		<nav className="hidden lg:flex fixed top-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] items-center justify-between px-6 h-16">
+			<Link
+				to="/"
+				className="font-headline font-bold text-sm uppercase tracking-[0.2em] text-on-surface shrink-0"
+			>
+				Tactile Archive
+			</Link>
+
+			<div className="flex items-center gap-1 mx-8">
+				{tabs.map((tab) => (
+					<Link
+						key={tab.label}
+						to={tab.to}
+						className={`font-label text-[11px] uppercase tracking-[0.15em] px-4 py-2 transition-colors ${
+							tab.active
+								? "text-tertiary font-semibold"
+								: "text-on-surface-variant hover:text-on-surface"
+						}`}
 					>
-						<rect x="3" y="3" width="7" height="7" />
-						<rect x="14" y="3" width="7" height="7" />
-						<rect x="3" y="14" width="7" height="7" />
-						<rect x="14" y="14" width="7" height="7" />
-					</svg>
-					<span className="font-label text-[10px] uppercase tracking-widest">
-						Gallery
-					</span>
+						{tab.label}
+					</Link>
+				))}
+			</div>
+
+			<div className="flex items-center gap-4 shrink-0">
+				<div className="w-48">
+					<SearchInput
+						placeholder="Search archive"
+						value={searchValue}
+						onSearch={onSearch}
+					/>
+				</div>
+				<Link
+					to="/recipe/new"
+					className="bg-inverse-surface text-inverse-on-surface font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm hover:opacity-90 transition-opacity"
+				>
+					New Recipe
 				</Link>
-			</nav>
-		</>
+			</div>
+		</nav>
 	);
 }
