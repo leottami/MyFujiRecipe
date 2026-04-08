@@ -3,6 +3,7 @@ import { FeedGrid } from "../components/feed/FeedGrid";
 import { FilterBar } from "../components/feed/FilterBar";
 import { HeroSection } from "../components/feed/HeroSection";
 import { Sidebar } from "../components/layout/Sidebar";
+import { SkeletonFeedGrid } from "../components/ui/Skeleton";
 import { useFavorites } from "../hooks/useFavorites";
 import { useFilters } from "../hooks/useFilters";
 import { useRecipes } from "../hooks/useRecipes";
@@ -99,10 +100,8 @@ export function FeedPage() {
 
 	if (loading) {
 		return (
-			<div className="flex items-center justify-center min-h-[60vh]">
-				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant animate-pulse">
-					Calibrating sensor profiles...
-				</p>
+			<div className="px-4 pt-2 lg:px-10 lg:pt-6 lg:ml-60">
+				<SkeletonFeedGrid />
 			</div>
 		);
 	}

@@ -4,17 +4,21 @@ import { HeroImage } from "../components/recipe/HeroImage";
 import { PhotoGallery } from "../components/recipe/PhotoGallery";
 import { RecipeMetadata } from "../components/recipe/RecipeMetadata";
 import { TagEditor } from "../components/recipe/TagEditor";
+import { SkeletonDetail } from "../components/ui/Skeleton";
+import { ToastContainer } from "../components/ui/Toast";
 import type { RecipePhoto } from "../data/types";
 import { extractAuthor, extractAuthorId, getHeroPhoto } from "../data/utils";
 import { useFavorites } from "../hooks/useFavorites";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
 import { useRecipe } from "../hooks/useRecipes";
+import { useToast } from "../hooks/useToast";
 
 export function RecipeDetailPage() {
 	const { id } = useParams<{ id: string }>();
 	const { recipe, loading, error } = useRecipe(id);
 	const { updateRecipe } = useRecipeMutations();
 	const { isFavorite, toggleFavorite } = useFavorites();
+	const { toasts, showToast, dismissToast } = useToast();
 	const [photos, setPhotos] = useState<RecipePhoto[]>([]);
 	const [tags, setTags] = useState<string[]>([]);
 
@@ -25,21 +29,34 @@ export function RecipeDetailPage() {
 		}
 	}, [recipe]);
 
+	const handleFavoriteToggle = useCallback(() => {
+		if (!recipe) return;
+		const wasFav = isFavorite(recipe.id);
+		toggleFavorite(recipe.id);
+		showToast(wasFav ? "Removed from favorites" : "Added to favorites");
+	}, [recipe, isFavorite, toggleFavorite, showToast]);
+
 	const handleTagsChange = useCallback(
 		async (newTags: string[]) => {
 			setTags(newTags);
-			if (recipe) await updateRecipe({ id: recipe.id, tags: newTags });
+			if (recipe) {
+				await updateRecipe({ id: recipe.id, tags: newTags });
+				showToast("Tags updated");
+			}
 		},
-		[recipe, updateRecipe],
+		[recipe, updateRecipe, showToast],
 	);
 
 	const handleDeletePhoto = useCallback(
 		async (photoId: string) => {
 			const updated = photos.filter((p) => p.id !== photoId);
 			setPhotos(updated);
-			if (recipe) await updateRecipe({ id: recipe.id, photos: updated });
+			if (recipe) {
+				await updateRecipe({ id: recipe.id, photos: updated });
+				showToast("Photo removed");
+			}
 		},
-		[photos, recipe, updateRecipe],
+		[photos, recipe, updateRecipe, showToast],
 	);
 
 	const handleSetHero = useCallback(
@@ -49,19 +66,16 @@ export function RecipeDetailPage() {
 				role: (p.id === photoId ? "hero" : "sample") as "hero" | "sample",
 			}));
 			setPhotos(updated);
-			if (recipe) await updateRecipe({ id: recipe.id, photos: updated });
+			if (recipe) {
+				await updateRecipe({ id: recipe.id, photos: updated });
+				showToast("Header photo updated");
+			}
 		},
-		[photos, recipe, updateRecipe],
+		[photos, recipe, updateRecipe, showToast],
 	);
 
 	if (loading) {
-		return (
-			<div className="flex items-center justify-center min-h-[60vh]">
-				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant animate-pulse">
-					Loading profile...
-				</p>
-			</div>
-		);
+		return <SkeletonDetail />;
 	}
 
 	if (error || !recipe) {
@@ -144,7 +158,7 @@ export function RecipeDetailPage() {
 						</Link>
 						<button
 							type="button"
-							onClick={() => toggleFavorite(recipe.id)}
+							onClick={handleFavoriteToggle}
 							className={`font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm transition-colors ${
 								isFavorite(recipe.id)
 									? "bg-tertiary/10 text-tertiary"
@@ -177,6 +191,8 @@ export function RecipeDetailPage() {
 				onDelete={handleDeletePhoto}
 				onSetHero={handleSetHero}
 			/>
+
+			<ToastContainer toasts={toasts} onDismiss={dismissToast} />
 		</div>
 	);
 }
