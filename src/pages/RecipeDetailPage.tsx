@@ -8,6 +8,7 @@ import { SkeletonDetail } from "../components/ui/Skeleton";
 import { ToastContainer } from "../components/ui/Toast";
 import type { RecipePhoto } from "../data/types";
 import { extractAuthor, extractAuthorId, getHeroPhoto } from "../data/utils";
+import { useCameraSlots } from "../hooks/useCameraSlots";
 import { useFavorites } from "../hooks/useFavorites";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
 import { useRecipe } from "../hooks/useRecipes";
@@ -18,6 +19,7 @@ export function RecipeDetailPage() {
 	const { recipe, loading, error } = useRecipe(id);
 	const { updateRecipe } = useRecipeMutations();
 	const { isFavorite, toggleFavorite } = useFavorites();
+	const { isOnCamera, addToCamera, removeFromCamera, isCameraFull } = useCameraSlots();
 	const { toasts, showToast, dismissToast } = useToast();
 	const [photos, setPhotos] = useState<RecipePhoto[]>([]);
 	const [tags, setTags] = useState<string[]>([]);
@@ -166,6 +168,32 @@ export function RecipeDetailPage() {
 							}`}
 						>
 							{isFavorite(recipe.id) ? "\u2665 Favorited" : "\u2661 Favorite"}
+						</button>
+						<button
+							type="button"
+							onClick={() => {
+								if (isOnCamera(recipe.id)) {
+									removeFromCamera(recipe.id);
+									showToast("Removed from camera");
+								} else {
+									addToCamera(recipe.id);
+									showToast("Loaded to camera");
+								}
+							}}
+							disabled={!isOnCamera(recipe.id) && isCameraFull}
+							className={`font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm transition-colors ${
+								isOnCamera(recipe.id)
+									? "bg-inverse-surface text-inverse-on-surface"
+									: isCameraFull
+										? "bg-surface-container text-on-surface-variant/30 cursor-not-allowed"
+										: "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+							}`}
+						>
+							{isOnCamera(recipe.id)
+								? "On Camera \u2713"
+								: isCameraFull
+									? "Camera Full"
+									: "Load to Camera"}
 						</button>
 						<a
 							href={recipe.url}

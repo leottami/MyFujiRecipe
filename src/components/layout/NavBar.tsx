@@ -41,6 +41,16 @@ export function NavBar({ searchValue, onSearch }: NavBarProps) {
 					/>
 				</div>
 				<Link
+					to="/profile"
+					className={`font-label text-[10px] uppercase tracking-[0.15em] px-3 py-2 transition-colors ${
+						location.pathname === "/profile"
+							? "text-tertiary font-semibold"
+							: "text-on-surface-variant hover:text-on-surface"
+					}`}
+				>
+					Profile
+				</Link>
+				<Link
 					to="/recipe/new"
 					className="bg-inverse-surface text-inverse-on-surface font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm hover:opacity-90 transition-opacity"
 				>

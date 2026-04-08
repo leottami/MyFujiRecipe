@@ -65,9 +65,9 @@ export function BottomNav() {
 			),
 		},
 		{
-			to: "/",
+			to: "/profile",
 			label: "Profile",
-			active: false,
+			active: location.pathname === "/profile",
 			icon: (
 				<svg
 					width="20"
