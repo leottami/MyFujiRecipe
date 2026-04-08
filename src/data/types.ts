@@ -28,6 +28,7 @@ export interface Recipe {
 	iso: string;
 	exposureCompensation: string;
 	extraSettings: Record<string, string>;
+	tags: string[];
 	createdAt?: string;
 	updatedAt?: string;
 }
@@ -41,6 +42,10 @@ export type Result<T> =
 	| { data: null; error: { code: string; message: string } };
 
 export interface RecipeFilters {
+	tags: string[];
 	filmSimulation: string | null;
+	grain: string | null;
+	dynamicRange: string | null;
+	colorChrome: string | null;
 	search: string;
 }

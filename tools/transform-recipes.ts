@@ -56,6 +56,87 @@ const outputPath = resolve(import.meta.dirname, "../public/data/recipes.json");
 
 const raw: RawRecipe[] = JSON.parse(readFileSync(inputPath, "utf-8"));
 
+function parseNumeric(val: string | null | undefined): number | null {
+	if (!val) return null;
+	const match = val.match(/^[+-]?\d+(\.\d+)?/);
+	return match ? Number(match[0]) : null;
+}
+
+function extractIsoMax(iso: string | null | undefined): number | null {
+	if (!iso) return null;
+	const match = iso.match(/(\d{3,})/g);
+	if (!match) return null;
+	return Math.max(...match.map(Number));
+}
+
+function autoTag(r: RawRecipe): string[] {
+	const tags: Set<string> = new Set();
+	const name = (r.name ?? "").toLowerCase();
+	const sim = (r.film_simulation ?? "").toLowerCase();
+	const wb = (r.white_balance ?? "").toLowerCase();
+	const grain = (r.grain_effect ?? "").toLowerCase();
+	const color = parseNumeric(r.color);
+	const isoMax = extractIsoMax(r.iso);
+
+	// B&W
+	if (sim.includes("acros") || sim.includes("monochrome") || sim.includes("sepia")) {
+		tags.add("B&W");
+	}
+
+	// Cinematic
+	if (sim.includes("eterna")) {
+		tags.add("Cinematic");
+	}
+
+	// Vintage
+	if (/vintage|retro|kodachrome|expired|old\b|nostalgic|kodak|agfa/.test(name)) {
+		tags.add("Vintage");
+	}
+
+	// Film Look — only recipes with noticeable grain (not just "Weak, Small")
+	if (grain && (grain.includes("strong") || grain.includes("large"))) {
+		tags.add("Film Look");
+	}
+
+	// Vibrant
+	if (sim === "velvia" || (color !== null && color >= 3)) {
+		tags.add("Vibrant");
+	}
+
+	// Muted
+	if (sim.includes("pro neg") || (color !== null && color <= -1)) {
+		tags.add("Muted");
+	}
+
+	// Outdoor
+	if (wb.includes("daylight") || wb.includes("shade")) {
+		tags.add("Outdoor");
+	}
+
+	// Indoor
+	if (wb.includes("fluorescent") || wb.includes("incandescent") || wb.includes("tungsten")) {
+		tags.add("Indoor");
+	}
+
+	// Golden Hour
+	if (wb.includes("shade") && color !== null && color >= 1) {
+		tags.add("Golden Hour");
+	}
+
+	// Night — only explicit night recipes, not "Auto up to ISO 6400"
+	const isoIsFixed = r.iso && !r.iso.toLowerCase().includes("auto");
+	if (/night|800t|cinestill|neon|tungsten/.test(name) || (isoIsFixed && isoMax !== null && isoMax >= 3200)) {
+		tags.add("Night");
+	}
+
+	// Street
+	if (/street|urban/.test(name) || sim === "classic chrome" || sim === "classic neg." || sim === "classic negative") {
+		tags.add("Street");
+	}
+
+	return [...tags].sort();
+}
+
 function buildPhotos(id: string, raw: RawRecipe) {
 	const photos: { id: string; url: string; alt?: string; role: "hero" | "sample" }[] = [];
 	if (raw.sample_photos && raw.sample_photos.length > 0) {
@@ -99,6 +180,7 @@ const transformed = raw.map((r) => {
 		iso: r.iso,
 		exposureCompensation: r.exposure_compensation,
 		extraSettings: r.extra_settings,
+		tags: autoTag(r),
 	};
 });
 

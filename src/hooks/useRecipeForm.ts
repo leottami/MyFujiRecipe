@@ -26,6 +26,7 @@ const EMPTY_FORM: FormFields = {
 	iso: "",
 	exposureCompensation: "",
 	extraSettings: {},
+	tags: [],
 };
 
 function recipeToForm(recipe: Recipe): FormFields {

@@ -21,7 +21,7 @@ function slugify(name: string): string {
 		.replace(/^-|-$/g, "");
 }
 
-function normalizeRecipe(raw: Omit<Recipe, "photos"> & { photos?: Recipe["photos"] }): Recipe {
+function normalizeRecipe(raw: Omit<Recipe, "photos" | "tags"> & { photos?: Recipe["photos"]; tags?: Recipe["tags"] }): Recipe {
 	return {
 		...raw,
 		photos: raw.photos?.length
@@ -29,6 +29,7 @@ function normalizeRecipe(raw: Omit<Recipe, "photos"> & { photos?: Recipe["photos
 			: raw.thumbnailUrl
 				? [{ id: `${raw.id}-hero`, url: raw.thumbnailUrl, role: "hero" as const }]
 				: [],
+		tags: raw.tags ?? [],
 	};
 }
 

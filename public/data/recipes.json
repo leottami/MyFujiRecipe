@@ -207,7 +207,12 @@
     "whiteBalance": "Daylight, +2 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodachrome-25",
@@ -357,7 +362,12 @@
     "whiteBalance": "Daylight, +2 Red & -4 Blue",
     "iso": "Auto, up to ISO 1600",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodachrome-1",
@@ -452,7 +462,13 @@
     "whiteBalance": "Auto, +2 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to -1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodachrome-ii-kodachrome-ii-v2",
@@ -603,7 +619,10 @@
     "whiteBalance": "Auto White Priority, +3 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Vintage"
+    ]
   },
   {
     "id": "mccurry-kodachrome",
@@ -858,7 +877,11 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 1600",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-vision3-250d",
@@ -968,7 +991,13 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-160",
@@ -1223,7 +1252,11 @@
     "whiteBalance": "4900K, +4 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-400",
@@ -1355,7 +1388,13 @@
     "whiteBalance": "Daylight, +3 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-400-v2",
@@ -1481,7 +1520,12 @@
     "whiteBalance": "5200K, +1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-400-warm",
@@ -1591,7 +1635,12 @@
     "whiteBalance": "5500K, 0 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "reggie-s-portra",
@@ -1711,7 +1760,10 @@
     "whiteBalance": "Auto, +2 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street"
+    ]
   },
   {
     "id": "portra-style",
@@ -1816,7 +1868,11 @@
     "whiteBalance": "5000K, +2 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street"
+    ]
   },
   {
     "id": "kodak-portra-800",
@@ -1962,7 +2018,13 @@
     "whiteBalance": "5200K, +1 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-800-v2",
@@ -2102,7 +2164,14 @@
     "whiteBalance": "Daylight, +3 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-800-v3",
@@ -2372,7 +2441,13 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-gold-v2",
@@ -2482,7 +2557,13 @@
     "whiteBalance": "5800K, +2 Red & +4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-ultramax-400",
@@ -2632,7 +2713,13 @@
     "whiteBalance": "Auto, +1 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-max-800",
@@ -2792,7 +2879,13 @@
     "whiteBalance": "7300K, -5 Red & -2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-royal-gold-400",
@@ -3012,7 +3105,15 @@
     "whiteBalance": "Shade, +3 Red & +5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Golden Hour",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-ektar-100",
@@ -3174,7 +3275,12 @@
     "whiteBalance": "6050K, +3 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "elite-chrome-200",
@@ -3294,7 +3400,13 @@
     "whiteBalance": "Daylight, -1 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "kodak-high-definition-plus-200",
@@ -3414,7 +3526,11 @@
     "whiteBalance": "4800K, -2 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "old-kodak",
@@ -3529,7 +3645,13 @@
     "whiteBalance": "Auto White Priority, +1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "old-ektachrome",
@@ -3634,7 +3756,14 @@
     "whiteBalance": "Daylight, +3 Red & +2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodaneg-vc-nc",
@@ -4004,7 +4133,10 @@
     "whiteBalance": "Auto, +6 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted"
+    ]
   },
   {
     "id": "kodak-brilliance",
@@ -4099,7 +4231,13 @@
     "whiteBalance": "Daylight, +2 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1 to 0 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "classic-color",
@@ -4319,7 +4457,12 @@
     "whiteBalance": "5300K, 0 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "urban-dreams",
@@ -4494,7 +4637,11 @@
     "whiteBalance": "Auto, 0 Red & +2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street"
+    ]
   },
   {
     "id": "pure-negative",
@@ -4604,7 +4751,10 @@
     "whiteBalance": "Auto, +1 Red & -2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted"
+    ]
   },
   {
     "id": "chrome-slide",
@@ -4744,7 +4894,12 @@
     "whiteBalance": "Daylight, -3 Red & +1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "positive-film",
@@ -4896,7 +5051,12 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "Sharpeness": "-2"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "september-summer",
@@ -5006,7 +5166,10 @@
     "whiteBalance": "5500K, +3 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street"
+    ]
   },
   {
     "id": "pacific-blues",
@@ -5136,7 +5299,12 @@
     "whiteBalance": "5800K, +1 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "nostalgia-color",
@@ -5246,7 +5414,12 @@
     "whiteBalance": "6700K, -4 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "nostalgic-print",
@@ -5386,7 +5559,12 @@
     "whiteBalance": "4700K, -3 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Vintage"
+    ]
   },
   {
     "id": "nostalgic-negative",
@@ -5547,7 +5725,13 @@
     "whiteBalance": "Auto, +3 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-negative",
@@ -5649,7 +5833,13 @@
     "exposureCompensation": "+1/3 to +2/3 (typically)",
     "extraSettings": {
       "Sharpeness": "-4"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-color",
@@ -5769,7 +5959,12 @@
     "whiteBalance": "7350K, -1 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-color-v2",
@@ -5879,7 +6074,13 @@
     "whiteBalance": "7350K, -1 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-analog",
@@ -5994,7 +6195,13 @@
     "whiteBalance": "9100K, -4 Red & +4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-print",
@@ -6114,7 +6321,13 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "vintage-vibes",
@@ -6224,7 +6437,12 @@
     "whiteBalance": "5200K, +1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "timeless-negative",
@@ -6394,7 +6612,11 @@
     "whiteBalance": "Auto, +4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Vibrant"
+    ]
   },
   {
     "id": "eterna-summer",
@@ -6559,7 +6781,13 @@
     "whiteBalance": "Daylight, +3 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Outdoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "eterna-v2",
@@ -6659,7 +6887,12 @@
     "whiteBalance": "Auto White Priority",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "vintage-eterna",
@@ -6834,7 +7067,12 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to 0 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vintage"
+    ]
   },
   {
     "id": "arizona-analog",
@@ -6949,7 +7187,13 @@
     "whiteBalance": "Daylight, +6 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted",
+      "Outdoor"
+    ]
   },
   {
     "id": "1960-chrome",
@@ -7114,7 +7358,11 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look"
+    ]
   },
   {
     "id": "1981-kodak",
@@ -7269,7 +7517,14 @@
     "whiteBalance": "Daylight, +7 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted",
+      "Outdoor",
+      "Vintage"
+    ]
   },
   {
     "id": "fujicolor-reala-100",
@@ -7521,7 +7776,11 @@
     "whiteBalance": "Daylight, 0 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-superia-100",
@@ -7743,7 +8002,11 @@
     "whiteBalance": "Daylight, 0 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "superia-xtra-400",
@@ -7844,7 +8107,12 @@
     "whiteBalance": "Auto, +3 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "superia-premium-400",
@@ -7965,7 +8233,12 @@
     "whiteBalance": "4700K, +4 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-superia-800",
@@ -8169,7 +8442,13 @@
     "whiteBalance": "Daylight, -1 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-superia-1600",
@@ -8391,7 +8670,14 @@
     "whiteBalance": "Daylight, +3 Red & +1 Blue",
     "iso": "1600 to 6400",
     "exposureCompensation": null,
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Night",
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-natura-1600",
@@ -8521,7 +8807,12 @@
     "whiteBalance": "5500K, -1 Red & -2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "scanned-superia",
@@ -8621,7 +8912,12 @@
     "whiteBalance": "Daylight, -2 Red & +3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "superia-summer",
@@ -8796,7 +9092,10 @@
     "whiteBalance": "5300K, +3 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street"
+    ]
   },
   {
     "id": "pulled-fujicolor-superia",
@@ -8911,7 +9210,12 @@
     "whiteBalance": "Daylight, -4 Red & -2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-nps-160-pulled",
@@ -9063,7 +9367,11 @@
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
     "extraSettings": {
       "Sharpeness": "+1"
-    }
+    },
+    "tags": [
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-100-gold",
@@ -9203,7 +9511,14 @@
     "whiteBalance": "Daylight, +4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "magenta-negative",
@@ -9333,7 +9648,11 @@
     "whiteBalance": "5100K, +4 Red & +2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-c200",
@@ -9455,7 +9774,12 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "Sharpeness": "-3"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-c200-v2",
@@ -9600,7 +9924,13 @@
     "whiteBalance": "Shade, -2 Red & +1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Golden Hour",
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-pro-400h",
@@ -9895,7 +10225,12 @@
     "whiteBalance": "4900K, 0 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1 to +1 2/3 (typically), but try between +1/3 to +2 2/3",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-nph",
@@ -9995,7 +10330,10 @@
     "whiteBalance": "5250K, -3 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look"
+    ]
   },
   {
     "id": "fujicolor-negative",
@@ -10095,7 +10433,12 @@
     "whiteBalance": "Auto, -1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-analog",
@@ -10210,7 +10553,11 @@
     "whiteBalance": "6900K, -5 Red & +5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-super-hg",
@@ -10320,7 +10667,12 @@
     "whiteBalance": "Fluorescent 2, -3 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Indoor",
+      "Street"
+    ]
   },
   {
     "id": "fujicolor-super-hg-v2",
@@ -10420,7 +10772,11 @@
     "whiteBalance": "Auto White Priority, -3 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street"
+    ]
   },
   {
     "id": "super-hg-astia",
@@ -10520,7 +10876,10 @@
     "whiteBalance": "Fluorescent 2, -3 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor"
+    ]
   },
   {
     "id": "standard-provia",
@@ -10620,7 +10979,10 @@
     "whiteBalance": "Daylight, -3 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor"
+    ]
   },
   {
     "id": "fujichrome-provia-100f",
@@ -10740,7 +11102,12 @@
     "whiteBalance": "Daylight, -2 Red & +5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "color-negative-400",
@@ -10851,7 +11218,12 @@
     "whiteBalance": "Auto, -2 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "pro-negative-160c",
@@ -10996,7 +11368,11 @@
     "whiteBalance": "Auto, +1 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Vibrant"
+    ]
   },
   {
     "id": "agfachrome-rs-100",
@@ -11161,7 +11537,13 @@
     "whiteBalance": "Daylight, -3 Red & +5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "agfa-ultra-100",
@@ -11271,7 +11653,13 @@
     "whiteBalance": "Daylight, -2 Red & +3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "agfa-vista-100",
@@ -11401,7 +11789,12 @@
     "whiteBalance": "5600K, -4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "classic-negative",
@@ -11510,7 +11903,12 @@
     "whiteBalance": "Auto, +4 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "amanda-s-classic-negative",
@@ -11610,7 +12008,11 @@
     "whiteBalance": "Auto, 0 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "retro-gold",
@@ -11735,7 +12137,13 @@
     "whiteBalance": "Fluorescent 3 (“Cool White Fluorescent”), +4 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to -2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "retro-gold-low-contrast",
@@ -11830,7 +12238,13 @@
     "whiteBalance": "Fluorescent 3 (“Cool White Fluorescent”), +4 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to -2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "santacolor",
@@ -11955,7 +12369,11 @@
     "whiteBalance": "5100K, +5 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Vibrant"
+    ]
   },
   {
     "id": "creamy-color",
@@ -12080,7 +12498,13 @@
     "whiteBalance": "8700K, +4 Red & +6 Blue",
     "iso": "up to ISO 5000",
     "exposureCompensation": "+1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Night",
+      "Street"
+    ]
   },
   {
     "id": "nature-neon",
@@ -12190,7 +12614,13 @@
     "whiteBalance": "Fluorescent 1, +2 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor",
+      "Night",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "grizzly-ride",
@@ -12320,7 +12750,12 @@
     "whiteBalance": "6990K, +3 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted"
+    ]
   },
   {
     "id": "analog-gold",
@@ -12430,7 +12865,14 @@
     "whiteBalance": "Daylight, +4 Red & -9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Outdoor",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "indoor-angouleme",
@@ -12795,7 +13237,11 @@
     "whiteBalance": "Auto Ambience Priority, -1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Vibrant"
+    ]
   },
   {
     "id": "gaf-500",
@@ -12980,7 +13426,12 @@
     "whiteBalance": "2900K, +9 Red & -9 Blue",
     "iso": "12800",
     "exposureCompensation": "-2/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Night"
+    ]
   },
   {
     "id": "low-key",
@@ -13095,7 +13546,12 @@
     "whiteBalance": "Daylight, -2 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to -1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "the-rockwell",
@@ -13401,7 +13857,10 @@
     "whiteBalance": "Auto, +1 Red & -1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Vibrant"
+    ]
   },
   {
     "id": "vibrant-velvia",
@@ -13501,7 +13960,11 @@
     "whiteBalance": "Daylight, -1 Red & +1 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "bleach-bypass",
@@ -13647,7 +14110,13 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "": "Strong"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "eterna-bleach-bypass",
@@ -13767,7 +14236,12 @@
     "whiteBalance": "Daylight, 0 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to -1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Muted",
+      "Outdoor"
+    ]
   },
   {
     "id": "muted-color",
@@ -13907,7 +14381,11 @@
     "whiteBalance": "Auto, +3 Red & -8 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Muted"
+    ]
   },
   {
     "id": "ferrania-solaris-fg-400",
@@ -14037,7 +14515,11 @@
     "whiteBalance": "5200K, +1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look"
+    ]
   },
   {
     "id": "lomochrome-metropolis",
@@ -14148,7 +14630,12 @@
     "whiteBalance": "Auto White Priority, +1 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted"
+    ]
   },
   {
     "id": "silver-summer",
@@ -14248,7 +14735,12 @@
     "whiteBalance": "5300K, -3 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "kodachrome-blue",
@@ -14448,7 +14940,12 @@
     "whiteBalance": "6500K, -6 Red & +9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to 0 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "ektachrome-320t",
@@ -14558,7 +15055,12 @@
     "whiteBalance": "Auto Ambience Priority, -6 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "expired-ecn-2-100t",
@@ -14743,7 +15245,12 @@
     "whiteBalance": null,
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vintage"
+    ]
   },
   {
     "id": "faded-negative",
@@ -14869,7 +15376,12 @@
     "whiteBalance": "Auto, +4 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 for the 1st exposure, 0 to +1/3 for the 2nd exposure (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "cinestill-50d",
@@ -14974,7 +15486,11 @@
     "whiteBalance": "6800K, -5 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Night"
+    ]
   },
   {
     "id": "kodak-portra-do-sol",
@@ -15129,7 +15645,12 @@
     "whiteBalance": "Auto, +2 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "bright-kodak",
@@ -15254,7 +15775,14 @@
     "whiteBalance": "Daylight, +3 Red & -7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1 to +1 2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "bright-summer",
@@ -15394,7 +15922,11 @@
     "whiteBalance": "7100K, -4 Red & -2 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1 to +2 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "expired-velvia",
@@ -15529,7 +16061,12 @@
     "whiteBalance": "6400K, -1 Red & +8 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1 to -1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "expired-slide",
@@ -15679,7 +16216,12 @@
     "whiteBalance": "5000K, +8 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Vintage"
+    ]
   },
   {
     "id": "redscale",
@@ -15854,7 +16396,12 @@
     "whiteBalance": "10000K, +9 Red & -9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "xpro-62",
@@ -16004,7 +16551,12 @@
     "whiteBalance": "Auto, -3 Red & -9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "bewaremyvelvia",
@@ -16234,7 +16786,10 @@
     "whiteBalance": "6590K, -9 Red & 0 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Vibrant"
+    ]
   },
   {
     "id": "cine-teal",
@@ -16426,7 +16981,12 @@
     "whiteBalance": "4550K, +1 Red & -9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted"
+    ]
   },
   {
     "id": "cinestill-800t",
@@ -16582,7 +17142,14 @@
     "whiteBalance": "Fluorescent 3 (Cool White Fluorescent), -6 Red & -4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Indoor",
+      "Night",
+      "Vibrant"
+    ]
   },
   {
     "id": "pushed-cinestill-800t",
@@ -16702,7 +17269,13 @@
     "whiteBalance": "7700K, -9 Red & +5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Night",
+      "Vibrant"
+    ]
   },
   {
     "id": "pushed-cinestill-800t-x100v-x-pro3",
@@ -16797,7 +17370,13 @@
     "whiteBalance": "7700K, -9 Red & +7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted",
+      "Night"
+    ]
   },
   {
     "id": "serr-s-500t",
@@ -16892,7 +17471,12 @@
     "whiteBalance": "3200K, -1 Red & +4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "kodak-plus-x-125",
@@ -17009,7 +17593,13 @@
     "exposureCompensation": "-1/3 to -2/3 (typically)",
     "extraSettings": {
       "": "WC 0 & MG 0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Outdoor",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-tri-x-400",
@@ -17237,7 +17827,14 @@
     "whiteBalance": "Daylight,+9 Red & -9 Blue",
     "iso": "ISO 1600 – 12800",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Night",
+      "Outdoor",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-t-max-p3200",
@@ -17509,7 +18106,13 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "": "WC -1 & MG -1"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Night",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-t-max-400",
@@ -17626,7 +18229,13 @@
     "exposureCompensation": "+1/3 to +1 (typically)",
     "extraSettings": {
       "Toning": "WC +2, MG 0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Outdoor",
+      "Vintage"
+    ]
   },
   {
     "id": "b-w-superia",
@@ -17703,7 +18312,11 @@
     "exposureCompensation": "+1/3 to +2/3 (typically)",
     "extraSettings": {
       "Toning": "WC +2 MG 0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "classic-monochrome",
@@ -17815,7 +18428,10 @@
     "exposureCompensation": "-1/3 to +1/3 (typically)",
     "extraSettings": {
       "Toning": "WC +1, MG 0"
-    }
+    },
+    "tags": [
+      "B&W"
+    ]
   },
   {
     "id": "monochrome-negative",
@@ -17915,7 +18531,12 @@
     "whiteBalance": "Daylight, 0 Red & 0 Blue",
     "iso": "Auto, up to ISO 12800",
     "exposureCompensation": "0 to -2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Outdoor"
+    ]
   },
   {
     "id": "kentmere-pan-400",
@@ -18052,7 +18673,12 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "": "Off"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Night"
+    ]
   },
   {
     "id": "ilford-hp5-plus-400",
@@ -18177,7 +18803,12 @@
     "whiteBalance": "Daylight, +1 Red & -8 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Outdoor"
+    ]
   },
   {
     "id": "ilford-pan-f-plus-50",
@@ -18287,7 +18918,12 @@
     "whiteBalance": "Daylight, +1 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400 (for best results, try to limit the ISO to 1600 and lower when able)",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Outdoor"
+    ]
   },
   {
     "id": "ilford-ortho-plus-80",
@@ -18395,7 +19031,10 @@
     "exposureCompensation": "+1/3 to +1 (typically)",
     "extraSettings": {
       "Toning": "WC +1, MG 0"
-    }
+    },
+    "tags": [
+      "B&W"
+    ]
   },
   {
     "id": "moody-monochrome",
@@ -18505,7 +19144,13 @@
     "whiteBalance": "Fluorescent 3, -4 Red & -9 Blue",
     "iso": "3200",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Indoor",
+      "Night"
+    ]
   },
   {
     "id": "black-white-infrared",
@@ -18675,7 +19320,11 @@
     "exposureCompensation": null,
     "extraSettings": {
       "B&W Toning": "0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "sepia",
@@ -18774,7 +19423,11 @@
     "extraSettings": {
       "Highlight & Shadow": "+3",
       "Color Chrome Effect & Color Chrome Effect Blue": "Off"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "kodachrome-64",
@@ -18995,7 +19648,12 @@
     "whiteBalance": "Daylight, +2 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-gold-200",
@@ -19259,7 +19917,14 @@
     "whiteBalance": "Daylight, +4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-400",
@@ -19379,7 +20044,13 @@
     "whiteBalance": "Daylight, +4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-portra-400-v2-1",
@@ -19484,7 +20155,13 @@
     "whiteBalance": "Daylight, +2 Red & -6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-porta-160",
@@ -19646,7 +20323,12 @@
     "whiteBalance": "Daylight, +4 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "kodak-vision3-250d-1",
@@ -19814,7 +20496,15 @@
     "whiteBalance": "Fluorescent 1 (Daylight Fluorescent), -3 Red & -1 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Indoor",
+      "Outdoor",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "eterna",
@@ -20018,7 +20708,12 @@
     "whiteBalance": "Auto, +5 Red & -6 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": null,
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "expired-eterna",
@@ -20300,7 +20995,12 @@
     "whiteBalance": "Auto, +5 Red & +5 Blue",
     "iso": null,
     "exposureCompensation": "-2/3 to 0",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vintage"
+    ]
   },
   {
     "id": "eterna-low-contrast",
@@ -20462,7 +21162,12 @@
     "whiteBalance": "5900K, -3 Red & +3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "eterna-v3",
@@ -20567,7 +21272,12 @@
     "whiteBalance": "Auto, -1 Red & -1 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Vibrant"
+    ]
   },
   {
     "id": "cinematic-negative",
@@ -20767,7 +21477,12 @@
     "whiteBalance": "Incandescent, +8 Red & -9 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "0 to +2/3",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Indoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "polaroid",
@@ -21007,7 +21722,12 @@
     "whiteBalance": "Auto, +5 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-2/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted"
+    ]
   },
   {
     "id": "polaroid-ii",
@@ -21133,7 +21853,13 @@
     "whiteBalance": "Shade, +4 Red & +6 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to -1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Film Look",
+      "Muted",
+      "Outdoor"
+    ]
   },
   {
     "id": "analog-color",
@@ -21271,7 +21997,12 @@
     "whiteBalance": "Daylight, -3 Red & +1 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Outdoor"
+    ]
   },
   {
     "id": "jeff-davenport-night",
@@ -21487,7 +22218,11 @@
     "whiteBalance": "2650K, -1 Red & +4 Blue",
     "iso": null,
     "exposureCompensation": null,
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Night"
+    ]
   },
   {
     "id": "faded-color",
@@ -21697,7 +22432,12 @@
     "whiteBalance": "Auto (use a shift on the second exposure)",
     "iso": "Auto up to ISO 12800",
     "exposureCompensation": "+1/3 to +1 (main exposure), 0 to -2 (second exposure)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "vintage-color-fade",
@@ -21801,7 +22541,11 @@
     "exposureCompensation": "-1 to -3 (typically)",
     "extraSettings": {
       "Tone": "+6 (warm)"
-    }
+    },
+    "tags": [
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "elite-chrome-color-fade",
@@ -21935,7 +22679,12 @@
     "exposureCompensation": "0 to -2/3 (typically)",
     "extraSettings": {
       "Image Quality": "Normal"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "negative-print",
@@ -22040,7 +22789,12 @@
     "whiteBalance": "Fluorescent 3, -2 Red & -7 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Cinematic",
+      "Indoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "color-negative-1",
@@ -22130,7 +22884,12 @@
     "whiteBalance": "Daylight Fluorescent (1), -2 Red & +4 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor",
+      "Muted",
+      "Outdoor"
+    ]
   },
   {
     "id": "pro-neg",
@@ -22265,7 +23024,10 @@
     "whiteBalance": "9100K, -7 Red & +7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted"
+    ]
   },
   {
     "id": "fujichrome-sensia-100",
@@ -22367,7 +23129,10 @@
     "whiteBalance": "Warm-White Fluorescent (2), -1 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "0 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Indoor"
+    ]
   },
   {
     "id": "fujicolor-pro-160ns",
@@ -22602,7 +23367,11 @@
     "whiteBalance": "Daylight, 0 Red & 0 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-pro-400h-1",
@@ -22832,7 +23601,11 @@
     "whiteBalance": "Daylight, +1 Red & -3 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "-1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "fujicolor-pro-400h-overexposed",
@@ -22976,7 +23749,8 @@
     "whiteBalance": "Auto, +2 Red & +2 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1 2/3 to +2 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": []
   },
   {
     "id": "warm-contrast",
@@ -23102,7 +23876,12 @@
     "whiteBalance": "Auto, -2 Red & -4 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Vibrant"
+    ]
   },
   {
     "id": "bleach-bypass-1",
@@ -23206,7 +23985,10 @@
     "exposureCompensation": "+1/3 to +2/3 (typically)",
     "extraSettings": {
       "Tone": "+2 (warm)"
-    }
+    },
+    "tags": [
+      "Film Look"
+    ]
   },
   {
     "id": "kodacolor",
@@ -23596,7 +24378,12 @@
     "whiteBalance": "6300K, -1 Red & -4 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+2/3 to + 1-1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Street"
+    ]
   },
   {
     "id": "kodacolor-ii-126",
@@ -23749,7 +24536,13 @@
     "extraSettings": {
       "Image Quality": "Normal",
       "": "1:1"
-    }
+    },
+    "tags": [
+      "Film Look",
+      "Muted",
+      "Night",
+      "Street"
+    ]
   },
   {
     "id": "classic-kodak",
@@ -23869,7 +24662,15 @@
     "whiteBalance": "Shade, -1 Red & +2 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +1",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Golden Hour",
+      "Outdoor",
+      "Street",
+      "Vibrant",
+      "Vintage"
+    ]
   },
   {
     "id": "classic-slide",
@@ -23971,7 +24772,11 @@
     "whiteBalance": "Daylight, -2 Red & +3 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Outdoor",
+      "Street"
+    ]
   },
   {
     "id": "urban-vintage-chrome",
@@ -24086,7 +24891,12 @@
     "whiteBalance": "4300K, -1 Red & -3 Blue",
     "iso": "Auto, up to ISO 3200",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Street",
+      "Vintage"
+    ]
   },
   {
     "id": "fujicolor-100-industrial",
@@ -24236,7 +25046,10 @@
     "whiteBalance": "3200K, +8 Red & -8 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted"
+    ]
   },
   {
     "id": "lomography-color-100",
@@ -24350,7 +25163,12 @@
     "whiteBalance": "Cloudy/Shade, -3 Red & +7 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Muted",
+      "Outdoor",
+      "Vibrant"
+    ]
   },
   {
     "id": "velvia",
@@ -24452,7 +25270,10 @@
     "whiteBalance": "Auto, +1 Red & -1 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Vibrant"
+    ]
   },
   {
     "id": "velvia-v2",
@@ -24558,7 +25379,10 @@
     "whiteBalance": "Auto, 0 Red & 0 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1/3 to +1 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Vibrant"
+    ]
   },
   {
     "id": "redscale-1",
@@ -24816,7 +25640,11 @@
     "whiteBalance": "10000K, +9 Red & 0 Blue",
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "-1/3 to +1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Muted"
+    ]
   },
   {
     "id": "cross-process",
@@ -24918,7 +25746,11 @@
     "whiteBalance": "7700K, -8 Red & -3 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "-1/3 to -2/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "xpro-1",
@@ -25048,7 +25880,11 @@
     "whiteBalance": "3400K, -6 Red & -9 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": "+2/3 to +1 1/3 (typically)",
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Street",
+      "Vibrant"
+    ]
   },
   {
     "id": "agfa-apx-400",
@@ -25182,7 +26018,11 @@
     "exposureCompensation": "+2/3 to +1-1/3 (typically)",
     "extraSettings": {
       "Toning": "+1 (warm)"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Vintage"
+    ]
   },
   {
     "id": "monochrome-kodachrome",
@@ -25322,7 +26162,12 @@
     "exposureCompensation": "-1/3 to +2/3 (typically)",
     "extraSettings": {
       "Toning": "0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Vintage"
+    ]
   },
   {
     "id": "ilford-hp5-push-process",
@@ -25498,7 +26343,12 @@
     "exposureCompensation": "+1/3 (typically)",
     "extraSettings": {
       "Toning": "0 (off)"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look",
+      "Night"
+    ]
   },
   {
     "id": "ilford-delta-push-process",
@@ -25662,7 +26512,11 @@
     "exposureCompensation": "+1/3 to +2/3 (typically)",
     "extraSettings": {
       "Toning": "0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "dramatic-monochrome",
@@ -25778,7 +26632,11 @@
     "exposureCompensation": "0 to +2/3 (typically)",
     "extraSettings": {
       "Toning": "0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "noir",
@@ -25890,7 +26748,11 @@
     "exposureCompensation": "-2/3 to +2/3 (typically)",
     "extraSettings": {
       "Toning": "0"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "faded-monochrome",
@@ -26210,7 +27072,11 @@
     "exposureCompensation": null,
     "extraSettings": {
       "Toning": "0 (Neutral)"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "split-toned-b-w",
@@ -26296,7 +27162,8 @@
     "exposureCompensation": "-1 to -3 (typically)",
     "extraSettings": {
       "Tone": "+6 (warm)"
-    }
+    },
+    "tags": []
   },
   {
     "id": "cyanotype",
@@ -26418,7 +27285,11 @@
     "exposureCompensation": "+1/3 to +1 (typically)",
     "extraSettings": {
       "Toning": "-9"
-    }
+    },
+    "tags": [
+      "B&W",
+      "Film Look"
+    ]
   },
   {
     "id": "verano-tostado",
@@ -26528,6 +27399,11 @@
     "whiteBalance": "Auto, -2 Red & -5 Blue",
     "iso": "Auto, up to ISO 6400",
     "exposureCompensation": null,
-    "extraSettings": {}
+    "extraSettings": {},
+    "tags": [
+      "Film Look",
+      "Street",
+      "Vibrant"
+    ]
   }
 ]
