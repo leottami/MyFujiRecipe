@@ -1,7 +1,9 @@
 import { useMemo } from "react";
-import { FeedGrid } from "../components/feed/FeedGrid";
+import { Link } from "react-router-dom";
 import { CameraSlotCard } from "../components/profile/CameraSlotCard";
+import { HeroImage } from "../components/recipe/HeroImage";
 import { setAuthenticated } from "../data/auth";
+import { extractAuthor, getHeroPhoto } from "../data/utils";
 import { useCameraSlots } from "../hooks/useCameraSlots";
 import { useFavorites } from "../hooks/useFavorites";
 import { useRecipes } from "../hooks/useRecipes";
@@ -9,7 +11,8 @@ import { useRecipes } from "../hooks/useRecipes";
 export function ProfilePage() {
 	const { recipes } = useRecipes();
 	const { favorites } = useFavorites();
-	const { slots, removeFromCamera } = useCameraSlots();
+	const { slots, addToCamera, removeFromCamera, isOnCamera, isCameraFull } =
+		useCameraSlots();
 
 	const favoriteRecipes = useMemo(
 		() => recipes.filter((r) => favorites.includes(r.id)),
@@ -57,12 +60,20 @@ export function ProfilePage() {
 									? () => removeFromCamera(slots[i]!)
 									: undefined
 							}
+							onDrop={
+								!slotRecipes[i]
+									? (recipeId: string) => addToCamera(recipeId)
+									: undefined
+							}
 						/>
 					))}
 				</div>
+				<p className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/30 mt-2">
+					Drag recipes from your collection below into empty slots
+				</p>
 			</div>
 
-			{/* Collection */}
+			{/* Collection — draggable cards */}
 			{favoriteRecipes.length > 0 && (
 				<div className="mb-12">
 					<h2 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-4">
@@ -71,7 +82,53 @@ export function ProfilePage() {
 							{favoriteRecipes.length}
 						</span>
 					</h2>
-					<FeedGrid recipes={favoriteRecipes} />
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
+						{favoriteRecipes.map((recipe) => (
+							<div
+								key={recipe.id}
+								draggable={!isOnCamera(recipe.id) && !isCameraFull}
+								onDragStart={(e) => {
+									e.dataTransfer.setData(
+										"text/recipe-id",
+										recipe.id,
+									);
+									e.dataTransfer.effectAllowed = "copy";
+								}}
+								className={`animate-fade-in-up ${
+									!isOnCamera(recipe.id) && !isCameraFull
+										? "cursor-grab active:cursor-grabbing"
+										: ""
+								}`}
+							>
+								<Link
+									to={`/recipe/${recipe.id}`}
+									className="group block"
+								>
+									<div className="relative overflow-hidden rounded-sm">
+										<HeroImage
+											src={getHeroPhoto(recipe)}
+											alt={recipe.name}
+											className="w-full group-hover:scale-[1.03] transition-transform duration-500"
+											aspectRatio="3/2"
+										/>
+										{isOnCamera(recipe.id) && (
+											<span className="absolute top-1.5 left-1.5 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-1.5 py-0.5 rounded-sm">
+												On Camera
+											</span>
+										)}
+									</div>
+									<div className="pt-2">
+										<p className="font-headline font-semibold text-xs text-on-surface leading-tight truncate">
+											{recipe.name}
+										</p>
+										<p className="font-label text-[9px] uppercase tracking-widest text-on-surface-variant/50">
+											{extractAuthor(recipe.url)}
+										</p>
+									</div>
+								</Link>
+							</div>
+						))}
+					</div>
 				</div>
 			)}
 

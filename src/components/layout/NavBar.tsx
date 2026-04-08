@@ -1,14 +1,27 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { SearchInput } from "../ui/SearchInput";
 
-interface NavBarProps {
-	searchValue: string;
-	onSearch: (value: string) => void;
-}
-
-export function NavBar({ searchValue, onSearch }: NavBarProps) {
+export function NavBar() {
 	const location = useLocation();
+	const navigate = useNavigate();
+	const [searchParams] = useSearchParams();
 	const isHome = location.pathname === "/";
+	const searchValue = searchParams.get("q") ?? "";
+
+	function handleSearch(value: string) {
+		// Navigate to feed with search param
+		if (location.pathname !== "/") {
+			navigate(`/?q=${encodeURIComponent(value)}`);
+		} else {
+			const next = new URLSearchParams(searchParams);
+			if (value) {
+				next.set("q", value);
+			} else {
+				next.delete("q");
+			}
+			navigate(`/?${next.toString()}`, { replace: true });
+		}
+	}
 
 	return (
 		<nav className="hidden lg:flex fixed top-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] items-center justify-between px-6 h-16">
@@ -37,7 +50,7 @@ export function NavBar({ searchValue, onSearch }: NavBarProps) {
 					<SearchInput
 						placeholder="Search archive"
 						value={searchValue}
-						onSearch={onSearch}
+						onSearch={handleSearch}
 					/>
 				</div>
 				<Link

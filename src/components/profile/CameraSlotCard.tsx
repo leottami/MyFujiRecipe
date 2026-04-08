@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import type { Recipe } from "../../data/types";
 import { getHeroPhoto } from "../../data/utils";
@@ -46,15 +47,45 @@ function FilledSlot({ recipe, slotNumber, onRemove }: FilledSlotProps) {
 
 interface EmptySlotProps {
 	slotNumber: number;
+	onDrop?: (recipeId: string) => void;
 }
 
-function EmptySlot({ slotNumber }: EmptySlotProps) {
+function EmptySlot({ slotNumber, onDrop }: EmptySlotProps) {
+	const [dragOver, setDragOver] = useState(false);
+
 	return (
-		<div className="flex flex-col items-center justify-center aspect-[3/2] border-2 border-dashed border-surface-variant/40 rounded-sm">
+		<div
+			className={`flex flex-col items-center justify-center aspect-[3/2] border-2 border-dashed rounded-sm transition-colors ${
+				dragOver
+					? "border-tertiary/60 bg-tertiary/5"
+					: "border-surface-variant/40"
+			}`}
+			onDragOver={(e) => {
+				if (!onDrop) return;
+				e.preventDefault();
+				setDragOver(true);
+			}}
+			onDragLeave={() => setDragOver(false)}
+			onDrop={(e) => {
+				e.preventDefault();
+				setDragOver(false);
+				const recipeId = e.dataTransfer.getData("text/recipe-id");
+				if (recipeId && onDrop) onDrop(recipeId);
+			}}
+		>
 			<span className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/30 mb-1">
 				C{slotNumber}
 			</span>
-			<span className="text-on-surface-variant/20 text-lg">+</span>
+			<span
+				className={`text-lg transition-colors ${dragOver ? "text-tertiary/40" : "text-on-surface-variant/20"}`}
+			>
+				{dragOver ? "\u2193" : "+"}
+			</span>
+			{dragOver && (
+				<span className="font-label text-[8px] uppercase tracking-[0.1em] text-tertiary/50 mt-1">
+					Drop here
+				</span>
+			)}
 		</div>
 	);
 }
@@ -63,12 +94,14 @@ interface CameraSlotCardProps {
 	recipe?: Recipe;
 	slotNumber: number;
 	onRemove?: () => void;
+	onDrop?: (recipeId: string) => void;
 }
 
 export function CameraSlotCard({
 	recipe,
 	slotNumber,
 	onRemove,
+	onDrop,
 }: CameraSlotCardProps) {
 	if (recipe && onRemove) {
 		return (
@@ -79,5 +112,5 @@ export function CameraSlotCard({
 			/>
 		);
 	}
-	return <EmptySlot slotNumber={slotNumber} />;
+	return <EmptySlot slotNumber={slotNumber} onDrop={onDrop} />;
 }

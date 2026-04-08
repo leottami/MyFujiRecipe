@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Recipe } from "../../data/types";
 import { extractAuthor, extractAuthorId, getHeroPhoto } from "../../data/utils";
+import { useCameraSlots } from "../../hooks/useCameraSlots";
 import { useFavorites } from "../../hooks/useFavorites";
 import { HeroImage } from "./HeroImage";
 
@@ -11,7 +12,9 @@ interface RecipeCardProps {
 export function RecipeCard({ recipe }: RecipeCardProps) {
 	const author = extractAuthor(recipe.url);
 	const { isFavorite, toggleFavorite } = useFavorites();
+	const { isOnCamera, addToCamera, isCameraFull } = useCameraSlots();
 	const favorited = isFavorite(recipe.id);
+	const onCamera = isOnCamera(recipe.id);
 
 	return (
 		<Link
@@ -56,6 +59,38 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
 					</svg>
 				</button>
+
+				{/* Camera add button */}
+				{!onCamera && !isCameraFull && (
+					<button
+						type="button"
+						onClick={(e) => {
+							e.preventDefault();
+							e.stopPropagation();
+							addToCamera(recipe.id);
+						}}
+						className="absolute bottom-3 left-10 opacity-0 group-hover:opacity-100 transition-all duration-300"
+					>
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="#ffffff"
+							strokeWidth="2"
+							className="drop-shadow-sm"
+							aria-hidden="true"
+						>
+							<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+							<circle cx="12" cy="13" r="4" />
+						</svg>
+					</button>
+				)}
+				{onCamera && (
+					<span className="absolute bottom-3 left-10 text-[8px] font-label uppercase tracking-[0.15em] text-inverse-on-surface bg-inverse-surface/60 backdrop-blur-sm px-1.5 py-0.5 rounded-sm">
+						On Camera
+					</span>
+				)}
 
 				{/* Film simulation badge */}
 				<span className="absolute bottom-3 right-3 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
