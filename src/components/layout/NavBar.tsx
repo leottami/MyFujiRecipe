@@ -10,12 +10,6 @@ export function NavBar({ searchValue, onSearch }: NavBarProps) {
 	const location = useLocation();
 	const isHome = location.pathname === "/";
 
-	const tabs = [
-		{ label: "Browse", to: "/", active: isHome },
-		{ label: "Gallery", to: "/", active: false },
-		{ label: "Technical Journal", to: "/", active: false },
-	];
-
 	return (
 		<nav className="hidden lg:flex fixed top-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] items-center justify-between px-6 h-16">
 			<Link
@@ -26,19 +20,16 @@ export function NavBar({ searchValue, onSearch }: NavBarProps) {
 			</Link>
 
 			<div className="flex items-center gap-1 mx-8">
-				{tabs.map((tab) => (
-					<Link
-						key={tab.label}
-						to={tab.to}
-						className={`font-label text-[11px] uppercase tracking-[0.15em] px-4 py-2 transition-colors ${
-							tab.active
-								? "text-tertiary font-semibold"
-								: "text-on-surface-variant hover:text-on-surface"
-						}`}
-					>
-						{tab.label}
-					</Link>
-				))}
+				<Link
+					to="/"
+					className={`font-label text-[11px] uppercase tracking-[0.15em] px-4 py-2 transition-colors ${
+						isHome
+							? "text-tertiary font-semibold"
+							: "text-on-surface-variant hover:text-on-surface"
+					}`}
+				>
+					Browse
+				</Link>
 			</div>
 
 			<div className="flex items-center gap-4 shrink-0">
