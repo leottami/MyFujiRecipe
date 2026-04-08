@@ -5,7 +5,8 @@ import { PhotoGallery } from "../components/recipe/PhotoGallery";
 import { RecipeMetadata } from "../components/recipe/RecipeMetadata";
 import { TagEditor } from "../components/recipe/TagEditor";
 import type { RecipePhoto } from "../data/types";
-import { extractAuthor, getHeroPhoto } from "../data/utils";
+import { extractAuthor, extractAuthorId, getHeroPhoto } from "../data/utils";
+import { useFavorites } from "../hooks/useFavorites";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
 import { useRecipe } from "../hooks/useRecipes";
 
@@ -13,6 +14,7 @@ export function RecipeDetailPage() {
 	const { id } = useParams<{ id: string }>();
 	const { recipe, loading, error } = useRecipe(id);
 	const { updateRecipe } = useRecipeMutations();
+	const { isFavorite, toggleFavorite } = useFavorites();
 	const [photos, setPhotos] = useState<RecipePhoto[]>([]);
 	const [tags, setTags] = useState<string[]>([]);
 
@@ -109,7 +111,13 @@ export function RecipeDetailPage() {
 					</h1>
 
 					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-4">
-						Created by {author}
+						Created by{" "}
+						<Link
+							to={`/photographer/${extractAuthorId(recipe.url)}`}
+							className="hover:text-primary transition-colors"
+						>
+							{author}
+						</Link>
 					</p>
 
 					<div className="mb-6">
@@ -136,9 +144,14 @@ export function RecipeDetailPage() {
 						</Link>
 						<button
 							type="button"
-							className="bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm hover:bg-surface-container-high transition-colors"
+							onClick={() => toggleFavorite(recipe.id)}
+							className={`font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm transition-colors ${
+								isFavorite(recipe.id)
+									? "bg-tertiary/10 text-tertiary"
+									: "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+							}`}
 						>
-							Share
+							{isFavorite(recipe.id) ? "\u2665 Favorited" : "\u2661 Favorite"}
 						</button>
 						<a
 							href={recipe.url}

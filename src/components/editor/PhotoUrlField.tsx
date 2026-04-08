@@ -10,9 +10,17 @@ interface PhotoUrlFieldProps {
 export function PhotoUrlField({ photos, onChange }: PhotoUrlFieldProps) {
 	const [url, setUrl] = useState("");
 
+	function isValidImageUrl(input: string): boolean {
+		try {
+			return ["http:", "https:"].includes(new URL(input).protocol);
+		} catch {
+			return false;
+		}
+	}
+
 	function addPhoto() {
 		const trimmed = url.trim();
-		if (!trimmed) return;
+		if (!trimmed || !isValidImageUrl(trimmed)) return;
 
 		const id = `photo-${Date.now()}`;
 		const role = photos.length === 0 ? "hero" : "sample";

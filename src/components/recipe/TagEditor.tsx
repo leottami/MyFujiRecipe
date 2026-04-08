@@ -26,9 +26,9 @@ export function TagEditor({ tags, onChange }: TagEditorProps) {
 
 	function addCustom() {
 		const trimmed = custom.trim();
-		if (trimmed && !tags.includes(trimmed)) {
-			onChange([...tags, trimmed]);
-		}
+		if (!trimmed || trimmed.length > 30 || tags.includes(trimmed)) return;
+		if (!/^[a-z0-9\s\-&]+$/i.test(trimmed)) return;
+		onChange([...tags, trimmed]);
 		setCustom("");
 		setShowAdd(false);
 	}

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { FeedGrid } from "../components/feed/FeedGrid";
 import { FilterBar } from "../components/feed/FilterBar";
 import { HeroSection } from "../components/feed/HeroSection";
 import { Sidebar } from "../components/layout/Sidebar";
+import { useFavorites } from "../hooks/useFavorites";
 import { useFilters } from "../hooks/useFilters";
 import { useRecipes } from "../hooks/useRecipes";
 
@@ -88,6 +90,12 @@ export function FeedPage() {
 		filmSimulations,
 		counts,
 	} = useFilters(recipes);
+	const { favorites, count: favCount } = useFavorites();
+	const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+
+	const displayRecipes = showFavoritesOnly
+		? filtered.filter((r) => favorites.includes(r.id))
+		: filtered;
 
 	if (loading) {
 		return (
@@ -133,6 +141,21 @@ export function FeedPage() {
 
 				<HeroSection />
 
+				{/* Favorites toggle + active filter chips */}
+				<div className="flex flex-wrap items-center gap-2 mb-4">
+					<button
+						type="button"
+						onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+						className={`shrink-0 px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors rounded-sm ${
+							showFavoritesOnly
+								? "bg-tertiary/10 text-tertiary"
+								: "text-on-surface-variant hover:text-on-surface"
+						}`}
+					>
+						{"\u2665"} Favorites{favCount > 0 ? ` (${favCount})` : ""}
+					</button>
+				</div>
+
 				<ActiveFilterChips
 					filters={filters}
 					onSetFilter={setFilter}
@@ -140,21 +163,28 @@ export function FeedPage() {
 					onClearAll={clearAll}
 				/>
 
-				{filtered.length === 0 ? (
+				{displayRecipes.length === 0 ? (
 					<div className="flex flex-col items-center justify-center min-h-[40vh] gap-3">
 						<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant">
-							No recipes match current filters
+							{showFavoritesOnly
+								? "No favorites yet — tap the heart on any recipe"
+								: "No recipes match current filters"}
 						</p>
-						<button
-							type="button"
-							onClick={clearAll}
-							className="font-label text-[10px] uppercase tracking-[0.15em] text-tertiary hover:text-on-surface transition-colors"
-						>
-							Clear All Filters
-						</button>
+						{(activeFilterCount > 0 || showFavoritesOnly) && (
+							<button
+								type="button"
+								onClick={() => {
+									clearAll();
+									setShowFavoritesOnly(false);
+								}}
+								className="font-label text-[10px] uppercase tracking-[0.15em] text-tertiary hover:text-on-surface transition-colors"
+							>
+								Clear All Filters
+							</button>
+						)}
 					</div>
 				) : (
-					<FeedGrid recipes={filtered} />
+					<FeedGrid recipes={displayRecipes} />
 				)}
 			</div>
 		</div>

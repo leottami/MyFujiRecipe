@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Recipe } from "../../data/types";
-import { extractAuthor, getHeroPhoto } from "../../data/utils";
+import { extractAuthor, extractAuthorId, getHeroPhoto } from "../../data/utils";
+import { useFavorites } from "../../hooks/useFavorites";
 import { HeroImage } from "./HeroImage";
 
 interface RecipeCardProps {
@@ -18,6 +19,8 @@ function generateCode(name: string): string {
 export function RecipeCard({ recipe }: RecipeCardProps) {
 	const code = generateCode(recipe.name);
 	const author = extractAuthor(recipe.url);
+	const { isFavorite, toggleFavorite } = useFavorites();
+	const favorited = isFavorite(recipe.id);
 
 	return (
 		<Link
@@ -31,6 +34,29 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 					className="w-full group-hover:scale-[1.02] transition-transform duration-500"
 					aspectRatio="3/2"
 				/>
+				{/* Favorite heart */}
+				<button
+					type="button"
+					onClick={(e) => {
+						e.preventDefault();
+						e.stopPropagation();
+						toggleFavorite(recipe.id);
+					}}
+					className="absolute top-2.5 left-2.5 w-7 h-7 flex items-center justify-center rounded-sm bg-inverse-surface/50 backdrop-blur-sm hover:bg-inverse-surface/70 transition-colors"
+				>
+					<svg
+						width="14"
+						height="14"
+						viewBox="0 0 24 24"
+						fill={favorited ? "#b91e25" : "none"}
+						stroke={favorited ? "#b91e25" : "#ffffff"}
+						strokeWidth="2"
+						aria-hidden="true"
+					>
+						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+					</svg>
+				</button>
+
 				<span className="absolute bottom-3 right-3 bg-inverse-surface/70 backdrop-blur-sm text-inverse-on-surface font-label text-[9px] uppercase tracking-[0.15em] px-2.5 py-1 rounded-sm">
 					{code}
 				</span>
@@ -41,7 +67,14 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 					{recipe.name}
 				</h3>
 				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-2.5">
-					By {author}
+					By{" "}
+					<Link
+						to={`/photographer/${extractAuthorId(recipe.url)}`}
+						onClick={(e) => e.stopPropagation()}
+						className="hover:text-primary transition-colors"
+					>
+						{author}
+					</Link>
 				</p>
 				<div className="flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.1em] text-on-surface-variant">
 					<span>{(recipe.iso ?? "").replace("Auto, up to ", "") || "Auto"}</span>

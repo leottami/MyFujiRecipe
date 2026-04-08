@@ -33,13 +33,26 @@ function normalizeRecipe(raw: Omit<Recipe, "photos" | "tags"> & { photos?: Recip
 	};
 }
 
+const EMPTY_OVERLAY: LocalOverlay = { created: [], updated: {}, deleted: [] };
+
+function isValidOverlay(obj: unknown): obj is LocalOverlay {
+	return (
+		obj !== null &&
+		typeof obj === "object" &&
+		"created" in obj && Array.isArray((obj as LocalOverlay).created) &&
+		"updated" in obj && typeof (obj as LocalOverlay).updated === "object" &&
+		"deleted" in obj && Array.isArray((obj as LocalOverlay).deleted)
+	);
+}
+
 function readOverlay(): LocalOverlay {
 	try {
 		const stored = localStorage.getItem(STORAGE_KEY);
-		if (!stored) return { created: [], updated: {}, deleted: [] };
-		return JSON.parse(stored) as LocalOverlay;
+		if (!stored) return EMPTY_OVERLAY;
+		const parsed: unknown = JSON.parse(stored);
+		return isValidOverlay(parsed) ? parsed : EMPTY_OVERLAY;
 	} catch {
-		return { created: [], updated: {}, deleted: [] };
+		return EMPTY_OVERLAY;
 	}
 }
 
