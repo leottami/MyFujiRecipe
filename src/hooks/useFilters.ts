@@ -88,10 +88,10 @@ export function useFilters(recipes: Recipe[]) {
 	const filtered = useMemo(() => {
 		let result = recipes;
 
-		// Tags (OR within group)
+		// Tags (AND — recipe must have ALL selected tags)
 		if (filters.tags.length > 0) {
 			result = result.filter((r) =>
-				filters.tags.some((tag) => r.tags?.includes(tag)),
+				filters.tags.every((tag) => r.tags?.includes(tag)),
 			);
 		}
 
@@ -139,7 +139,7 @@ export function useFilters(recipes: Recipe[]) {
 		return result;
 	}, [recipes, filters]);
 
-	const counts = useMemo(() => getFilterCounts(filtered), [filtered]);
+	const counts = useMemo(() => getFilterCounts(recipes), [recipes]);
 
 	return {
 		filters,

@@ -3,11 +3,12 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { FormField, FormSelect } from "../components/editor/FormField";
 import { FormSection } from "../components/editor/FormSection";
 import { PhotoUrlField } from "../components/editor/PhotoUrlField";
+import { HeroImage } from "../components/recipe/HeroImage";
+import { TagEditor } from "../components/recipe/TagEditor";
 import { getHeroPhoto } from "../data/utils";
 import { useRecipeForm } from "../hooks/useRecipeForm";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
 import { useRecipe } from "../hooks/useRecipes";
-import { HeroImage } from "../components/recipe/HeroImage";
 
 const FILM_SIMULATIONS = [
 	"Provia",
@@ -130,6 +131,14 @@ function RecipeEditorForm({ existingRecipe }: { existingRecipe?: NonNullable<Ret
 					value={fields.sensor}
 					onChange={(v) => setField("sensor", v)}
 					options={SENSORS}
+				/>
+			</FormSection>
+
+			{/* Tags */}
+			<FormSection title="Tags">
+				<TagEditor
+					tags={fields.tags}
+					onChange={(newTags) => setField("tags", newTags)}
 				/>
 			</FormSection>
 

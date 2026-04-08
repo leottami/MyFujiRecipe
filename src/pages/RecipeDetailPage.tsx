@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { HeroImage } from "../components/recipe/HeroImage";
 import { PhotoGallery } from "../components/recipe/PhotoGallery";
 import { RecipeMetadata } from "../components/recipe/RecipeMetadata";
+import { TagEditor } from "../components/recipe/TagEditor";
 import type { RecipePhoto } from "../data/types";
 import { extractAuthor, getHeroPhoto } from "../data/utils";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
@@ -13,10 +14,22 @@ export function RecipeDetailPage() {
 	const { recipe, loading, error } = useRecipe(id);
 	const { updateRecipe } = useRecipeMutations();
 	const [photos, setPhotos] = useState<RecipePhoto[]>([]);
+	const [tags, setTags] = useState<string[]>([]);
 
 	useEffect(() => {
-		if (recipe) setPhotos(recipe.photos);
+		if (recipe) {
+			setPhotos(recipe.photos);
+			setTags(recipe.tags ?? []);
+		}
 	}, [recipe]);
+
+	const handleTagsChange = useCallback(
+		async (newTags: string[]) => {
+			setTags(newTags);
+			if (recipe) await updateRecipe({ id: recipe.id, tags: newTags });
+		},
+		[recipe, updateRecipe],
+	);
 
 	const handleDeletePhoto = useCallback(
 		async (photoId: string) => {
@@ -95,9 +108,13 @@ export function RecipeDetailPage() {
 						{recipe.name}
 					</h1>
 
-					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-6">
+					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-4">
 						Created by {author}
 					</p>
+
+					<div className="mb-6">
+						<TagEditor tags={tags} onChange={handleTagsChange} />
+					</div>
 
 					<p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8 max-w-lg">
 						A bespoke {recipe.filmSimulation} profile calibrated for the{" "}
