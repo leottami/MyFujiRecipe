@@ -28,6 +28,7 @@ interface RawRecipe {
 	iso: string;
 	exposure_compensation: string;
 	extra_settings: Record<string, string>;
+	article_text?: string;
 }
 
 function slugify(name: string): string {
@@ -137,6 +138,44 @@ function autoTag(r: RawRecipe): string[] {
 	return [...tags].sort();
 }
 
+function extractDescription(r: RawRecipe): string | undefined {
+	const text = r.article_text;
+	if (!text || text.length < 50) return undefined;
+
+	// Split into sentences
+	const sentences = text
+		.replace(/\s+/g, " ")
+		.split(/(?<=[.!?])\s+/)
+		.filter((s) => s.length > 30 && s.length < 300);
+
+	// Score sentences by descriptive quality
+	const descriptiveWords = /color|tone|look|feel|mood|warm|cool|vintage|film|grain|contrast|soft|sharp|vivid|muted|nostalgic|cinematic|classic|natural|organic|rich|fade|saturat|portrait|street|landscape|analog|retro|bright|dark|dramatic/i;
+	const skipPatterns = /^(the fujifilm|i use|you can|click here|this is my|here are|download|available|check out|follow me|subscribe|share on)/i;
+
+	const scored = sentences
+		.filter((s) => !skipPatterns.test(s.trim()))
+		.map((s) => {
+			let score = 0;
+			const matches = s.match(descriptiveWords);
+			score += matches ? matches.length * 2 : 0;
+			// Prefer sentences mentioning the recipe name
+			if (r.name && s.toLowerCase().includes(r.name.toLowerCase().split(" ")[0] ?? "")) score += 3;
+			// Prefer medium-length sentences
+			if (s.length > 80 && s.length < 200) score += 1;
+			return { text: s.trim(), score };
+		})
+		.sort((a, b) => b.score - a.score);
+
+	// Take the best 1-2 sentences
+	const best = scored.slice(0, 2).map((s) => s.text);
+	if (best.length === 0) {
+		// Fallback: first non-photo-caption sentence
+		const first = sentences.find((s) => s.length > 60);
+		return first?.trim();
+	}
+	return best.join(" ");
+}
+
 function buildPhotos(id: string, raw: RawRecipe) {
 	const photos: { id: string; url: string; alt?: string; role: "hero" | "sample" }[] = [];
 	if (raw.sample_photos && raw.sample_photos.length > 0) {
@@ -181,6 +220,7 @@ const transformed = raw.map((r) => {
 		exposureCompensation: r.exposure_compensation,
 		extraSettings: r.extra_settings,
 		tags: autoTag(r),
+		description: extractDescription(r),
 	};
 });
 

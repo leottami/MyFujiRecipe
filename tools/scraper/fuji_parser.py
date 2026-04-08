@@ -307,7 +307,7 @@ def _is_sample_photo(img, url: str) -> tuple[bool, str]:
 
 def extract_metadata(soup: BeautifulSoup, url: str) -> dict:
     """Extract metadata (date, thumbnail) from the recipe page."""
-    meta = {"published_date": None, "thumbnail_url": None, "sample_photos": []}
+    meta = {"published_date": None, "thumbnail_url": None, "sample_photos": [], "article_text": None}
 
     # Published date - try datetime attribute first, then parse text
     time_tag = soup.find("time", class_="entry-date") or soup.find("time")
@@ -354,6 +354,24 @@ def extract_metadata(soup: BeautifulSoup, url: str) -> dict:
             meta["thumbnail_url"] = img.get("data-lazy-src") or img.get("src", "")
             if meta["thumbnail_url"] and not meta["thumbnail_url"].startswith("http"):
                 meta["thumbnail_url"] = urljoin(url, meta["thumbnail_url"])
+
+    # Extract article text (paragraphs, skip settings blocks and short lines)
+    paragraphs = []
+    for p_tag in content.find_all("p"):
+        text = p_tag.get_text(" ", strip=True)
+        if len(text) < 40:
+            continue
+        # Skip settings blocks (lines that look like "Key: Value" pairs)
+        lines = text.split("\n")
+        colon_count = sum(1 for line in lines if ":" in line[:25])
+        if colon_count >= 2:
+            continue
+        paragraphs.append(text)
+
+    if paragraphs:
+        # Join and cap at ~2000 chars
+        article = " ".join(paragraphs)
+        meta["article_text"] = article[:2000]
 
     return meta
 

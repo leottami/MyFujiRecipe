@@ -29,6 +29,7 @@ export interface Recipe {
 	exposureCompensation: string;
 	extraSettings: Record<string, string>;
 	tags: string[];
+	description?: string;
 	createdAt?: string;
 	updatedAt?: string;
 }

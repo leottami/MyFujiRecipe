@@ -212,7 +212,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Of course, what Kodachrome 64 looks like depends on how you’re viewing it, whether projector, light table, scan, print, and how so. Red Lights & Rain – Farmington, UT – Fujifilm X100V “Kodachrome 64” While I feel that this is an improved Kodachrome 64 recipe, it’s still not perfect."
   },
   {
     "id": "kodachrome-25",
@@ -367,7 +368,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "The first Kodachrome product was a two-glass-plate color negative that was introduced in 1915. In 1935, Kodak released its next Kodachrome product: a positive color transparency film."
   },
   {
     "id": "kodachrome-1",
@@ -468,7 +470,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Kodachrome They give us those nice bright colors They give us the greens of summer Makes you think all the world’s a sunny day Kodachrome is probably the most iconic photographic film ever made. Kodak produced Kodachrome film from 1935 through 2009, when it was suddenly discontinued."
   },
   {
     "id": "kodachrome-ii-kodachrome-ii-v2",
@@ -622,7 +625,8 @@
     "extraSettings": {},
     "tags": [
       "Vintage"
-    ]
+    ],
+    "description": "One of the more popular film simulation recipes that I’ve created is Kodachrome II , which was made for X-Trans III sensor cameras. Kodak introduced Kodachrome in 1935, and in 1961 they replaced the original film with a new and improved version called Kodachrome II and a higher-ISO sibling called Kodachrome-X."
   },
   {
     "id": "mccurry-kodachrome",
@@ -881,7 +885,8 @@
     "tags": [
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Our starting reference were the photos taken by Steve McCurry on the quite-famous last roll of Kodachrome project. “The goal was to create a recipe that both looked and behaved like Kodachrome 64,” Anders wrote."
   },
   {
     "id": "kodak-vision3-250d",
@@ -997,7 +1002,8 @@
       "Film Look",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "This is a long-overdue adaptation of the X-T3/X-T30 Kodak Vision3 250D Film Simulation Recipe for use on “newer” X-Trans IV cameras. Kodak Vision3 250D is one of my favorite Recipes, but it’s only compatible with the Fujifilm X-T3 and X-T30; however, I’ve been using it on my X100V and X-E4 occasionally for years."
   },
   {
     "id": "kodak-portra-160",
@@ -1256,7 +1262,8 @@
     "tags": [
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Kodak introduced the Portra line in 1998, with two ISO 160 versions, two ISO 400 versions, and an ISO 800 emulsion (plus a short-lived ISO 100 Tungsten film, for those keeping score). Originally, Kodak Portra 160 came in “NC” (neutral color) and “VC” (vivid color) versions; Portra 160 NC was more popular for portraits and Portra 160 VC was more popular for landscapes."
   },
   {
     "id": "kodak-portra-400",
@@ -1394,7 +1401,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Backlit Forest Leaves – Layton, UT – Fujifilm X100V – “Kodak Portra 400” This new Portra 400 film simulation recipe requires the use of Clarity , which slows down the camera considerably. Bridge Over Stream – Layton, UT – Fujifilm X100V – “Kodak Portra 400” This is a brand-new version of my X-T30 Kodak Portra 400 film simulation recipe , designed specifically for the Fujifilm X100V, X-Pro3 and X-T4."
   },
   {
     "id": "kodak-portra-400-v2",
@@ -1525,7 +1533,8 @@
       "Film Look",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This new Portra 400 film simulation recipe, called Kodak Portra 400 v2, is an alternative aesthetic, created by studying examples of actual Portra 400 film (thanks to Julien Jarry ). The “other” Fujifilm X100V Kodak Portra 400 recipe was also created by studying examples of actual film (thanks to Thomas Schwab )."
   },
   {
     "id": "kodak-portra-400-warm",
@@ -1640,7 +1649,8 @@
       "Film Look",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This Kodak Portra 400 Warm recipe came about after the Kyle McDougall Portra-Style comparison article . This Kodak Portra 400 Warm film simulation recipe is an alternative aesthetic."
   },
   {
     "id": "reggie-s-portra",
@@ -1763,7 +1773,8 @@
     "extraSettings": {},
     "tags": [
       "Street"
-    ]
+    ],
+    "description": "Reggie Ballesteros ( website , YouTube , Instagram , Instagram ), also known as Reggie B Photo, is an official Fujifilm X-Photographer based in San Fransisco, California. He shoots both film and digital, and on his Fujifilm cameras he likes to use both RAW and JPEG."
   },
   {
     "id": "portra-style",
@@ -1872,7 +1883,8 @@
     "tags": [
       "Film Look",
       "Street"
-    ]
+    ],
+    "description": "This “Portra-Style” recipe isn’t intended to faithfully mimic Portra film, but was inspired more by Kyle McDougall’s “Portra-Style” presets , which are, of course, modeled after Kodak Portra film. My “Portra-Style” recipe is compatible with the Fujifilm X-Pro3, X100V , X-T4, X-S10, X-E4 , and X-T30 II"
   },
   {
     "id": "kodak-portra-800",
@@ -2024,7 +2036,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "I know that many of will love this Kodak Portra 800 film simulation recipe! Kodak introduced Portra 800 in 1998."
   },
   {
     "id": "kodak-portra-800-v2",
@@ -2171,7 +2184,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This Kodak Portra 800 film simulation recipe is currently compatible with the Fujifilm X-Pro3, X100V , X-T4, X-S10, and X-E4 cameras. Thomas compared images side-by-side captured with actual Kodak Portra 800 film with images captured with his Fujifilm X-Pro3, making numerous adjustments in X RAW Studio, to achieve this nearly-identical picture aesthetic."
   },
   {
     "id": "kodak-portra-800-v3",
@@ -2447,7 +2461,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "My wife recently challenged me to create a Film Simulation Recipe that mimics the aesthetic of Kodak Portra 800 film that Peter McKinnon has been sharing on Instagram and YouTube . In the specific case of Peter McKinnon and his Kodak Portra 800, there is indeed significant divergences in the exact look of different pictures."
   },
   {
     "id": "kodak-gold-v2",
@@ -2563,7 +2578,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Anders began by looking at some old prints he has, which were captured on Kodak Gold 200 film. Anders is the one who created the Kodak Tri-X 400 recipe , Ilford Pan F Plus 50 recipe , seven Fujicolor Pro 160NS recipes , seven Fujicolor Pro 400H recipes , and made an important D-Range Priority discovery ."
   },
   {
     "id": "kodak-ultramax-400",
@@ -2719,7 +2735,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Empty Outdoor Seating – Farmington, UT – Fujifilm X100V – “Kodak Ultramax 400” Ultramax 400 is Kodak’s consumer grade ISO 400 color negative film. Kodak still sells Ultramax 400, although it’s not the same film as Kodacolor VR-G 400."
   },
   {
     "id": "kodak-max-800",
@@ -2885,7 +2902,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "I didn’t initially know what film had been used, but after locating the negatives I discovered it was something called Kodak GT 800-3, and I had no idea what that was. Kodak made Max 800 film for point-and-shoot and disposable cameras—specifically, they marketed it for point-and-shot cameras with a zoom lens, which exaggerated camera shake."
   },
   {
     "id": "kodak-royal-gold-400",
@@ -3113,7 +3131,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "After shooting with this recipe and reviewing the results, I was reminded of Kodak Royal Gold 400 film… sometimes . Royal Gold 400 was introduced by Kodak in 1994 as a replacement to the original Kodak Ektar 400 film."
   },
   {
     "id": "kodak-ektar-100",
@@ -3280,7 +3299,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "In the article that I published for that recipe, I wrote, “I’m actually a little hesitant to call this film simulation recipe Kodak Ektar 100 because it’s not quite right. Peach Sun – Farmington, UT – Fujifilm X100V – “Kodak Ektar 100” Fuji X Weekly reader Thomas Schwab helped me immensely with this recipe."
   },
   {
     "id": "elite-chrome-200",
@@ -3406,7 +3426,8 @@
       "Muted",
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Elite Chrome 200 was a “high-ISO” color transparency film made by Kodak during the 1990’s and into the mid-2000’s. Interestingly, Kodak claimed that Elite Chrome 200 was the lowest-contrast ISO 200 reversal film on the market."
   },
   {
     "id": "kodak-high-definition-plus-200",
@@ -3530,7 +3551,8 @@
     "tags": [
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This Kodak High Definition Plus 200 film simulation recipe was a fun one to make. I had no idea what film I used, but after locating the negatives, I discovered it was Kodak High Definition Plus 200."
   },
   {
     "id": "old-kodak",
@@ -3651,7 +3673,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "I was inspired to create this film simulation recipe after viewing some old pictures captured on various Kodak films. I thought if I tweaked those recipes I could get closer to mimicking the aesthetic of the old Kodak pictures that I was looking at (which is why I call this recipe Old Kodak )."
   },
   {
     "id": "old-ektachrome",
@@ -3763,7 +3786,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "After using these settings for several days, I decided that it really reminds me of old Ektachrome color reversal film, perhaps from the 1970’s. I don’t know how faithfully this recipe mimics old Ektachrome film, but it definitely has the right “memory color” for me."
   },
   {
     "id": "kodaneg-vc-nc",
@@ -4136,7 +4160,8 @@
     "extraSettings": {},
     "tags": [
       "Muted"
-    ]
+    ],
+    "description": "I’m asked pretty regularly if I can create a Film Simulation Recipe that mimics a certain look—usually a particular film stock, but occasionally the aesthetic of a certain photographer. These recipes began as an attempt to recreate the look of a certain photographer."
   },
   {
     "id": "kodak-brilliance",
@@ -4237,7 +4262,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Thomas Schwab sent me modification of the Kodachrome I Film Simulation Recipe —he calls this new version Kodak Brilliance . This new version of the recipe isn’t intended to more accurately replicate the film, but instead offer a nice-looking alternative that still retains a vintage Kodak essence."
   },
   {
     "id": "classic-color",
@@ -4462,7 +4488,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "The aesthetic of this Classic Color Film Simulation Recipe is bright and warm, with a Kodak-like color negative film rendering. This Classic Color Film Simulation Recipe is compatible with all fifth-generation X-Trans cameras, which (as of this writing) are the X-H2s, X-H2, X-T5, X-S20, and X100VI, as well as “newer” fourth-generation X-Trans models: X-T4, X-S10, X-E4, and X-T30 II."
   },
   {
     "id": "urban-dreams",
@@ -4641,7 +4668,8 @@
     "tags": [
       "Film Look",
       "Street"
-    ]
+    ],
+    "description": "Can you use Artificial Intelligence to create Film Simulation Recipes for Fujifilm cameras ? To my surprise, it not only knew what a Film Simulation Recipe is, but could even create one!"
   },
   {
     "id": "pure-negative",
@@ -4754,7 +4782,8 @@
     "extraSettings": {},
     "tags": [
       "Muted"
-    ]
+    ],
+    "description": "Thomas told me that this “Pure Negative” recipe is basically a modification of his X-Trans I Kodachrome II recipe for use on X-Trans IV cameras. Std film simulation to emulate a Kodachrome aesthetic as best as possible, and his recipe does a good job of that for the X-Pro1 and X-E1 cameras."
   },
   {
     "id": "chrome-slide",
@@ -4899,7 +4928,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "While I don’t believe that this recipe was modeled after any specific film stock, it does remind me a little of Ektachrome. I’m certain that it’s not an exact match to any, but to me it has a general Ektachrome “memory color” (as Fujifilm puts it)."
   },
   {
     "id": "positive-film",
@@ -5056,7 +5086,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Whether this recipe is close to Saul Leiter’s look, Ricoh Positive Film, or a Kodak transparency is debatable; what’s not debatable is that this recipe looks really, really good! I was attempting to create a film simulation recipe that mimicked the aesthetic of Saul Leiter."
   },
   {
     "id": "september-summer",
@@ -5169,7 +5200,8 @@
     "extraSettings": {},
     "tags": [
       "Street"
-    ]
+    ],
+    "description": "This “September Summer” Film Simulation Recipe is compatible with the Fujifilm X-Pro3 , X100V , X-T4, X-S10, X-E4, and X-T30 II cameras, but not the X-T3 and X-T30, unfortunately. This recipe, which I’m calling September Summer , is intended to replicate the aesthetic of some of Brian Chorski’s photographs."
   },
   {
     "id": "pacific-blues",
@@ -5304,7 +5336,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Sometimes—like “ Arizona Analog “— Film Simulation Recipes come together quickly, and sometimes—like this recipe—they don’t. I’ve made several attempts, and I finally feel satisfied that it is right—or at least as “right” as I’m going to get it."
   },
   {
     "id": "nostalgia-color",
@@ -5419,7 +5452,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "I know some of you will appreciate it, and “Nostalgia Color” will become an instant favorite. Because this “Nostalgia Color” Film Simulation Recipe uses the Classic Negative film simulation, Color Chrome FX Blue , and Clarity , this is only compatible with the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4, and X-T30 II cameras."
   },
   {
     "id": "nostalgic-print",
@@ -5564,7 +5598,8 @@
       "Film Look",
       "Muted",
       "Vintage"
-    ]
+    ],
+    "description": "It is the most nostalgic-analog-like results that I’ve ever achieved from the PRO Neg. This “Nostalgic Print” Film Simulation Recipe is compatible with the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4, and X-T30 II cameras."
   },
   {
     "id": "nostalgic-negative",
@@ -5731,7 +5766,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "The upcoming Fujifilm GFX100S has a brand new film simulation called Nostalgic Negative. That’s a tough challenge because there’s so little about Nostalgic Negative that’s known and very few sample pictures floating around the internet."
   },
   {
     "id": "vintage-negative",
@@ -5839,7 +5875,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "I call this recipe “Vintage Negative” because it is based on some old photographs that someone shared with me. The “Vintage Negative” film simulation recipe is compatible with all X-Trans IV cameras except the X-T3 and X-T30."
   },
   {
     "id": "vintage-color",
@@ -5964,7 +6001,8 @@
       "Cinematic",
       "Film Look",
       "Vintage"
-    ]
+    ],
+    "description": "I have no idea if Lisa shoots digital or film, and, if film, what film and process, but my suspicion is that it’s digital post-processed to have a vintage analog look. This “Vintage Color” recipe is compatible with the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4 and X-T30 II cameras."
   },
   {
     "id": "vintage-color-v2",
@@ -6080,7 +6118,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This “Vintage Color v2” recipe is a modification of the original Vintage Color Film Simulation Recipe . The results produced by this “Vintage Color v2” recipe can be absolutely fantastic!"
   },
   {
     "id": "vintage-analog",
@@ -6201,7 +6240,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This recipe is basically my Vintage Kodacolor recipe , but with a couple modifications: Classic Negative instead of Classic Chrome, plus Color Chrome FX Blue and Clarity . I recently “rediscovered” it in my C1-C7, and used it for several days, enjoying the warm vintage-like images that this recipe produces."
   },
   {
     "id": "vintage-print",
@@ -6327,7 +6367,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "They remind me of vintage color prints—not from any specific film or process, but just my “memory color” (as Fujifilm puts it) of some old prints that I’ve seen in the past. Whatever it may or may not look like, it definitely has a vintage-like aesthetic that some of you might really appreciate."
   },
   {
     "id": "vintage-vibes",
@@ -6442,7 +6483,8 @@
       "Film Look",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Not every picture makes me feel this way, but some— Autumn Aspen , Mill Creek , Blossoming Branch , etc.—seem to have this vintage vibe that I recognize from somewhere. But to me it feels more vintage than Superia."
   },
   {
     "id": "timeless-negative",
@@ -6616,7 +6658,8 @@
     "tags": [
       "Cinematic",
       "Vibrant"
-    ]
+    ],
+    "description": "This Film Simulation Recipe is a facsimile of Timeless Negative for X-Trans V cameras, using Eterna instead of the Nostalgic Neg., as only the latest cameras have the new film simulation. This version of Timeless Negative is intended for the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4, and X-T30 II cameras."
   },
   {
     "id": "eterna-summer",
@@ -6787,7 +6830,8 @@
       "Film Look",
       "Outdoor",
       "Vibrant"
-    ]
+    ],
+    "description": "This new Eterna Summer Film Simulation Recipe wasn’t modeled after any specific film; instead I looked at Classic Chrome for inspiration. Eterna has a unique tonality—perhaps you could describe it as cinematic—that Classic Chrome doesn’t."
   },
   {
     "id": "eterna-v2",
@@ -6892,7 +6936,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "I think the Eterna film simulation is a little underrated, as it’s a great base for crafting recipes, and I was eager to create a new look with it—so I did! Actually, there have been a number of different film stocks that Fujifilm has given the name Eterna to."
   },
   {
     "id": "vintage-eterna",
@@ -7072,7 +7117,8 @@
       "Cinematic",
       "Film Look",
       "Vintage"
-    ]
+    ],
+    "description": "The premise of this Film Simulation Recipe was simple: what would my Vintage Kodachrome Recipe look like if I used Eterna instead of Classic Chrome? The Vintage Eterna Film Simulation Recipe is actually three Recipes: one for the X-H1, X-T3, and X-T30, another for the other X-Trans IV models (X-Pro3 and newer), and one for X-Trans V cameras."
   },
   {
     "id": "arizona-analog",
@@ -7193,7 +7239,8 @@
       "Film Look",
       "Muted",
       "Outdoor"
-    ]
+    ],
+    "description": "My wife points out the latest issue of Arizona Highways , which I previously subscribed to, but (with my move from Utah) I let the renewal lapse. Sitting right on top was the Arizona Highways magazine."
   },
   {
     "id": "1960-chrome",
@@ -7362,7 +7409,8 @@
     "tags": [
       "Cinematic",
       "Film Look"
-    ]
+    ],
+    "description": "The inspiration for 1960 Chrome came from several photographs in various vintage issues of Arizona Highways magazine from the 1960’s. This 1960 Chrome Film Simulation Recipe is compatible with all fifth-generation X-Trans cameras, which (as of this writing) are the Fujifilm X-H2s, X-H2, X-T5, X-S20, X100VI, and X-T50, as well as “newer” X-Trans IV models—specifically, the X-T4, X-S10, X-E4, and X-T30 II."
   },
   {
     "id": "1981-kodak",
@@ -7524,7 +7572,8 @@
       "Muted",
       "Outdoor",
       "Vintage"
-    ]
+    ],
+    "description": "It took a couple of days—and a few compromises, as I was unable to match it exactly—but I was able to create a look that mimics the general feel of those old pictures made in 1981 and printed on Kodak paper, which is the reason why I call this Recipe 1981 Kodak . This 1981 Kodak Film Simulation Recipe is compatible with all Fujifilm X-Trans IV cameras except the X-T3 and X-T30, which is to say that you can use it on the X-Pro3, X100V, X-T4, X-S10, X-E4, and X-T30 II."
   },
   {
     "id": "fujicolor-reala-100",
@@ -7780,7 +7829,8 @@
     "tags": [
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Amusement Poles – Farmington, UT – Fujifilm X100V – “Fujicolor Reala 100” Fujicolor Reala 100 was Fujifilm’s first Superia film, even though initially it did not have Superia in the name. You’ll find that this recipe and my Fujicolor Superia 100 recipe replicate these differences quite nicely."
   },
   {
     "id": "fujicolor-superia-100",
@@ -8006,7 +8056,8 @@
     "tags": [
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Rose Garden – Farmington, UT – Fujifilm X100V – “Fujicolor Superia 100” The new Classic Negative film simulation that’s found on Fujifilm’s latest cameras is intended to mimic Fujicolor Superia. It replaced Fujicolor Super G Plus 100, which, honestly, didn’t look all that much different."
   },
   {
     "id": "superia-xtra-400",
@@ -8112,7 +8163,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Fujifilm introduced Superia Xtra 400, a consumer-grade color negative film, in 1998, replacing Super G Plus 400. Thomas Schwab , who has invented a few film simulation recipes, and who I’ve collaborated with on a number of others, created this Superia Xtra 400 recipe."
   },
   {
     "id": "superia-premium-400",
@@ -8238,7 +8290,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Superia Premium 400 is a variant of Superia Xtra 400, sold only in Japan, intended to better replicate Japanese skin tones. Premium 400 doesn’t have the “4th cyan color layer” that every other Superia film has, and that seems to be the biggest difference between it and Xtra 400."
   },
   {
     "id": "fujicolor-superia-800",
@@ -8448,7 +8501,8 @@
       "Muted",
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Classic Negative needed to be the starting point for a new Fujicolor Superia 800 recipe since this new film simulation is “modeled after” Fujicolor Superia with “Superia-like” colors. This Fujicolor Superia 800 recipe is (as of this writing) only compatible with the Fujifilm X100V, X-Pro3 and X-T4."
   },
   {
     "id": "fujicolor-superia-1600",
@@ -8677,7 +8731,8 @@
       "Night",
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Red Rose – Farmington, UT – Fujifilm X100V – “Fujicolor Superia 1600” For some of you, this new Fujicolor Superia 1600 film simulation recipe will be your favorite! If you love my Fujicolor Superia 100 and my Fujicolor Reala 100 recipes, you’re bound to love this one, too!"
   },
   {
     "id": "fujicolor-natura-1600",
@@ -8812,7 +8867,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "Fujifilm produced Fujicolor Natura 1600, a high-ISO color negative film, from 2003 through 2017. I have a Fujicolor Superia 1600 Film Simulation Recipe already, and it’s a recipe that I personally quite like."
   },
   {
     "id": "scanned-superia",
@@ -8917,7 +8973,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "This recipe was inspired by pictures I found that were captured with Fujicolor Superia 100 film scanned with a Frontier SP-3000. Even the same emulsion captured the same way and scanned on the same scanner can look a little different if the settings on the scanner are different (more on this in an upcoming article)."
   },
   {
     "id": "superia-summer",
@@ -9095,7 +9152,8 @@
     "extraSettings": {},
     "tags": [
       "Street"
-    ]
+    ],
+    "description": "It has a strong warm cast, but still retains that distinct Superia palette, so I’m calling it Superia Summer . This Superia Summer Film Simulation Recipe is compatible with the Fujifilm X-T4, X-S10, X-E4, and X-T30 II cameras."
   },
   {
     "id": "pulled-fujicolor-superia",
@@ -9215,7 +9273,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "I call this recipe “Pulled Fujicolor Superia” because it is similar to Fujicolor Superia Xtra 400 film that’s been pulled one stop. I didn’t set out to recreate the look of pulled Superia film, but, in fact, it does look surprisingly close to some examples I found."
   },
   {
     "id": "fujicolor-nps-160-pulled",
@@ -9371,7 +9430,8 @@
     "tags": [
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "Fujifilm replaced it in 2004 with Fujicolor Pro 160S (later renamed Fujicolor Pro 160NS). Fujifilm introduced Fujicolor NPS 160 sometime in the 1990’s."
   },
   {
     "id": "fujicolor-100-gold",
@@ -9518,7 +9578,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "A few days went by, and by chance I stumbled upon some photographs captured with Fujicolor 100 film, and they looked pretty similar to this new recipe. I didn’t model this recipe after Fujicolor 100, but it does seem at times to resemble it surprisingly closely."
   },
   {
     "id": "magenta-negative",
@@ -9652,7 +9713,8 @@
     "tags": [
       "Film Look",
       "Street"
-    ]
+    ],
+    "description": "Instead of using a magenta filter, you can simply shoot with this Film Simulation Recipe. While Magenta Negative is a little different than his, it is intended to produce similar results, just without the need of a Color Correction Filter, which his Recipe requires."
   },
   {
     "id": "fujicolor-c200",
@@ -9779,7 +9841,8 @@
       "Film Look",
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "I’ve been asked at least a dozen times—probably more—to create a Fujicolor C200 film simulation recipe. George has a lot of experience shooting actual Fujicolor C200 film, and he experimented using X RAW Studio until he got the recipe right."
   },
   {
     "id": "fujicolor-c200-v2",
@@ -9930,7 +9993,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "In this case, a Fuji X Weekly reader wanted a Recipe that more closely matched his particular Fujicolor C200 scans. Fujifilm introduced Fujicolor C200 in 1990 as a low-budget, consumer-grade color negative film."
   },
   {
     "id": "fujicolor-pro-400h",
@@ -10230,7 +10294,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Fujifilm introduced Fujicolor Pro 400H in 2004 and it’s been a popular color negative film ever since. Now, I’ve finally made a Fujicolor Pro 400H recipe that I’m quite pleased with."
   },
   {
     "id": "fujicolor-nph",
@@ -10333,7 +10398,8 @@
     "extraSettings": {},
     "tags": [
       "Film Look"
-    ]
+    ],
+    "description": "This film simulation recipe is called “Fujicolor NPH” because it is inspired by that film. I had a couple already: Fujicolor Pro 400H for X-Trans III and Fujicolor Pro 400H Overexposed for X-Trans IV ."
   },
   {
     "id": "fujicolor-negative",
@@ -10438,7 +10504,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "Fuji X Weekly Patrons have had early access to this Fujicolor Negative film simulation recipe since the launch of the Fuji X Weekly app , but now it is available to all! It does have a vintage Fujicolor vibe thanks to the Classic Negative film simulation that it uses as its base."
   },
   {
     "id": "fujicolor-analog",
@@ -10557,7 +10624,8 @@
     "tags": [
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "I do believe this “Fujicolor Analog” recipe mimics the aesthetic of a Fujifilm color negative film, but which exact film, and how handled, is uncertain. It turns out that this person shoots a lot of film, including (but not limited to) Fujicolor C200 and various Superia emulsions, as well as digital (but not Fujifilm, as far as I can tell), using RNI and perhaps some other filters or presets."
   },
   {
     "id": "fujicolor-super-hg",
@@ -10672,7 +10740,8 @@
       "Film Look",
       "Indoor",
       "Street"
-    ]
+    ],
+    "description": "This recipe wasn’t intended to resemble Fujicolor Super HG film, but fortunately it does! After digging a little deeper, and after a chance encounter with a box of prints from 1992, it was determined that Fujicolor Super HG, which is a predecessor to the Superia line, was a surprisingly close match."
   },
   {
     "id": "fujicolor-super-hg-v2",
@@ -10776,7 +10845,8 @@
     "tags": [
       "Film Look",
       "Street"
-    ]
+    ],
+    "description": "When Thomas Schwab sent me his settings that would later be called Fujicolor Super HG , he asked me if there were any changes that I would make. Thomas Schwab’s Fujicolor Super HG recipe and this Fujicolor Super HG v2 recipe are more similar to Super HG 100 or Super HG 200 film."
   },
   {
     "id": "super-hg-astia",
@@ -10879,7 +10949,8 @@
     "extraSettings": {},
     "tags": [
       "Indoor"
-    ]
+    ],
+    "description": "When Thomas Schwab shared with me his Fujicolor Super HG film simulation recipe , he also sent me an alternative recipe that uses Astia instead of Classic Negative. This “Super HG Astia” recipe wasn’t intended to mimic any particular film; however, it does have some resemblance to Fujichrome Provia 100F."
   },
   {
     "id": "standard-provia",
@@ -10982,7 +11053,8 @@
     "extraSettings": {},
     "tags": [
       "Outdoor"
-    ]
+    ],
+    "description": "This first recipe, which I’ve titled simply Standard Provia , is my optimization of the Provia film simulation. I think Fujifilm just wanted to use the brandname for their “standard” colors, but there’s quite a divergence between the film simulation and the film."
   },
   {
     "id": "fujichrome-provia-100f",
@@ -11107,7 +11179,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "This Film Simulation Recipe is called “Fujichrome Provia 100F” after the film that it is intended to mimic. Fujifilm introduced Provia 100, a color reversal film, in 1994, and replaced it with the much improved Provia 100F in 2001."
   },
   {
     "id": "color-negative-400",
@@ -11223,7 +11296,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Initially I was going to name this recipe “Fujicolor Negative” because it has a Fujicolor Superia-like look, but then I stumbled across some Kodak ColorPlus 400 photographs, and they looked quite similar to these pictures. Even though the resemblance to ColorPlus 400 is completely accidental, I thought that calling it “Color Negative 400” was more appropriate because it is in the general ballpark of a film that’s not Fujicolor."
   },
   {
     "id": "pro-negative-160c",
@@ -11372,7 +11446,8 @@
     "tags": [
       "Muted",
       "Vibrant"
-    ]
+    ],
+    "description": "After discovering that the new Reala Ace film simulation is a version of PRO Neg. Std , I decided that I wanted to replicate as closely as possible my first Reala Ace-based Film Simulation Recipe— PRO Negative 160C —for those camera that don’t have the new film simulation."
   },
   {
     "id": "agfachrome-rs-100",
@@ -11543,7 +11618,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "I was asked to create a film simulation recipe for AgfaChrome RS 100 color transparency film. I never used AgfaChrome RS 100, so I have zero experience with the film."
   },
   {
     "id": "agfa-ultra-100",
@@ -11659,7 +11735,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Agfa Ultra 100 was a short lived film—introduced in 2003 and discontinued in 2005, although it was still available for a few years after—and was Agfa’s most vibrant color negative film. I’ve been attempting to mimic this film for a little while now (ever since I published the AgfaChrome RS 100 recipe last summer), but I couldn’t get it right."
   },
   {
     "id": "agfa-vista-100",
@@ -11794,7 +11871,8 @@
       "Film Look",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "In the film era, Agfa was not as big as Fujifilm or especially Kodak, but they were popular nonetheless, particularly in Europe. Vista 100 was a general purpose color negative film made by Agfa between 2001 and 2005."
   },
   {
     "id": "classic-negative",
@@ -11908,7 +11986,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Classic Negative is supposed to resemble Fujicolor Superia, most likely Superia 200, although Fujifilm doesn’t say. Whichever version of the film it’s intended to be, Classic Negative does a great job of mimicking it, because it definitely looks like Superia."
   },
   {
     "id": "amanda-s-classic-negative",
@@ -12012,7 +12091,8 @@
     "tags": [
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Amanda pretty much runs the video side of Fuji X Weekly , as that’s something she’s good at, but she also does some occasional portrait and product photography. She told me she just picked some that she thought might look nice, and went with that."
   },
   {
     "id": "retro-gold",
@@ -12143,7 +12223,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "This film simulation recipe began as an attempt to mimc the aesthetic of the Retro Effect on Ricoh GR cameras . Because of its retro-golden look, I’ve named this recipe “Retro Gold.” It’s outstanding in evening light, and pretty good at other times, too."
   },
   {
     "id": "retro-gold-low-contrast",
@@ -12244,7 +12325,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Two days ago I published my new Retro Gold film simulation recipe , which is great for “golden hour” photography. Thomas Schwab suggested that I should create a low-contrast version that’s better suited for high-contrast situations—that’s how this recipe, which I call Retro Gold Low Contrast , came to be."
   },
   {
     "id": "santacolor",
@@ -12373,7 +12455,8 @@
     "tags": [
       "Cinematic",
       "Vibrant"
-    ]
+    ],
+    "description": "There’s a brand-new color negative film stock called SantaColor 100, which is actually repurposed Kodak AeroColor 125, an emulsion intended for areal photography. I don’t believe that AeroColor is still produced (although it can still be found if you look hard enough); SantaColor 100 could be an old batch that’s been stored for awhile and is now surplus."
   },
   {
     "id": "creamy-color",
@@ -12504,7 +12587,8 @@
       "Muted",
       "Night",
       "Street"
-    ]
+    ],
+    "description": "There are some film simulation recipes that just have a special look—the “it factor”—and this “Creamy Color” recipe is definitely one of those! The results from this Creamy Color film simulation recipe can be fantastic!"
   },
   {
     "id": "nature-neon",
@@ -12620,7 +12704,8 @@
       "Night",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Immanuel calls this recipe Captn Look Nature Neon. It’s called “Nature Neon” in part because it uses the Fluorescent 1 white balance, which is also called Daylight Fluorescent or Neon Light."
   },
   {
     "id": "grizzly-ride",
@@ -12755,7 +12840,8 @@
       "Cinematic",
       "Film Look",
       "Muted"
-    ]
+    ],
+    "description": "I’m not exactly sure why he named it Grizzly Ride, but, when you look at the pictures captured with this recipe, it makes perfect sense. That’s this film simulation recipe, which is appropriately called Grizzly Ride ."
   },
   {
     "id": "analog-gold",
@@ -12872,7 +12958,8 @@
       "Outdoor",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "This Film Simulation Recipe is called Analog Gold because it has a vintage film-like aesthetic with a golden color cast. While it’s not modeled after any specific film or process, it does convey an analog quality that’s easy to appreciate."
   },
   {
     "id": "indoor-angouleme",
@@ -13241,7 +13328,8 @@
     "tags": [
       "Cinematic",
       "Vibrant"
-    ]
+    ],
+    "description": "While attempting to mimic Asteroid City , I was inspired by another Wes Anderson film: The French Dispatch , specifically, the indoor scenes of the newspaper office, so I made Film Simulation Recipes for that, too—one for X-Trans V a The movie has an orange and teal look, and I’ve tried unsuccessfully for years to achieve that on Fujifilm."
   },
   {
     "id": "gaf-500",
@@ -13431,7 +13519,8 @@
       "Cinematic",
       "Film Look",
       "Night"
-    ]
+    ],
+    "description": "Hold onto your hats, because, for this Film Simulation Recipe , we’re going to dive deep into the obscure and practically forgotten history of a unique film called GAF 500. We’re going to explore the intriguing history of GAF, discover what made this film unique, and discuss how this new GAF 500 Film Simulation Recipe came to be."
   },
   {
     "id": "low-key",
@@ -13551,7 +13640,8 @@
       "Outdoor",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Fujifilm cameras have a feature in Advanced Filter Settings called “Low Key” that I recently discovered is based on the Provia film simulation , and can be mimicked. This “Low Key” Film Simulation Recipe and the Low Key feature in the Advanced Filter Settings work similarly, and produce nice results when used in the correct situations."
   },
   {
     "id": "the-rockwell",
@@ -13860,7 +13950,8 @@
     "extraSettings": {},
     "tags": [
       "Vibrant"
-    ]
+    ],
+    "description": "Ken mentions that the Velvia film simulation isn’t like real Velvia, and he means Velvia 50. My X-T30 Velvia recipe is intended to get the film simulation closer to actual Velvia 50 film."
   },
   {
     "id": "vibrant-velvia",
@@ -13964,7 +14055,8 @@
     "tags": [
       "Outdoor",
       "Vibrant"
-    ]
+    ],
+    "description": "The “Vibrant Velvia” recipe is compatible with the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4, and X-T30 II cameras. This new “Vibrant Velvia” recipe is for when you want colors to pop."
   },
   {
     "id": "bleach-bypass",
@@ -14116,7 +14208,8 @@
       "Muted",
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Rose on a Table – Farmington, UT – Fujifilm X100V – “Bleach Bypass” The Fujifilm X-T4 has a new film simulation called Bleach Bypass. Back in February I created a “Bleach Bypass” film simulation recipe for the X-T30 and X-T3 utilizing the double-exposure feature of the camera."
   },
   {
     "id": "eterna-bleach-bypass",
@@ -14241,7 +14334,8 @@
       "Cinematic",
       "Muted",
       "Outdoor"
-    ]
+    ],
+    "description": "This Film Simulation Recipe uses Eterna Bleach Bypass, and it does, in fact, produce a bleach-bypass look. Because it uses the Eterna Bleach Bypass film simulation, it is only compatible with those X-Trans IV cameras that have it, which are the Fujifilm X-T4, X-S10, X-E4, and X-T30 II."
   },
   {
     "id": "muted-color",
@@ -14385,7 +14479,8 @@
     "tags": [
       "Cinematic",
       "Muted"
-    ]
+    ],
+    "description": "It has strong contrast and very muted colors—almost monochrome. A Fuji X Weekly reader asked me to mimic the look of some photographs that he shared with me."
   },
   {
     "id": "ferrania-solaris-fg-400",
@@ -14519,7 +14614,8 @@
     "tags": [
       "Cinematic",
       "Film Look"
-    ]
+    ],
+    "description": "Ferrania is an Italian film manufacturer that’s been making photographic film since the 1920’s. One Ferrania brand line was called Solaris, a color negative emulsion available in ISO 100, 200, and 400 varieties."
   },
   {
     "id": "lomochrome-metropolis",
@@ -14635,7 +14731,8 @@
       "Cinematic",
       "Film Look",
       "Muted"
-    ]
+    ],
+    "description": "I’ve had many requests to create a LomoChrome Metropolis recipe, but it was impossible until Fujifilm created the new Eterna Bleach Bypass film simulation and new Auto White Priority white balance. LomoChrome Metropolis film, which is a Lomography product, has only been around for a couple of years."
   },
   {
     "id": "silver-summer",
@@ -14740,7 +14837,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "This film simulation recipe, called Silver Summer , was a Patron early-access recipe on the Fuji X Weekly App , and Patrons have had access to it since July. It uses the Eterna Bleach Bypass film simulation, and produces a silvery look similarly to film that’s had the bleach skipped."
   },
   {
     "id": "kodachrome-blue",
@@ -14945,7 +15043,8 @@
       "Cinematic",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Professional labs will have a profile to color correct Kodachrome scans, but even that’s not usually a 100% match. Once you know what to look for, it’s easy to spot these incorrectly color corrected Kodachrome images, and they’re prevalent."
   },
   {
     "id": "ektachrome-320t",
@@ -15060,7 +15159,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "I’m not completely sure when Kodak discontinued Ektachrome 320T, but I believe it was sometime in the early to mid 2000’s—all Ektachrome films were discontinued by 2013. This recipe’s similarities to Ektachrome 320T film is coincidental, as I didn’t set out to recreate it, but it does, in fact, resemble the film fairly well."
   },
   {
     "id": "expired-ecn-2-100t",
@@ -15250,7 +15350,8 @@
       "Cinematic",
       "Film Look",
       "Vintage"
-    ]
+    ],
+    "description": "This Film Simulation Recipe is intended to mimic the aesthetic of this film stock that’s long-expired and developed in C41 chemistry after having the Remjet layer removed. In other words, this recipe isn’t intended to look like the film as it’s seen in the movies, but expired film that’s been developed in C41 chemistry instead of the ECN-2 process."
   },
   {
     "id": "faded-negative",
@@ -15381,7 +15482,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "This one, called Faded Negative , won’t make the app, either (perhaps there will be a way to include them on a future update). I know that this Faded Negative film simulation recipe will be greatly appreciated by some of you."
   },
   {
     "id": "cinestill-50d",
@@ -15490,7 +15592,8 @@
     "tags": [
       "Muted",
       "Night"
-    ]
+    ],
+    "description": "CineStill 50D is Kodak Vision3 50D (a low-ISO daylight color negative motion picture film) with the remjet layer removed so that it can be developed via the C-41 process. I’ve been asked many times to recreate the look of this film for Fujifilm X cameras."
   },
   {
     "id": "kodak-portra-do-sol",
@@ -15650,7 +15753,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "“It started with your Bright Kodak Recipe , which I loved for its energy and vibrancy. That’s how Kodak Portra do Sol came to life: my go-to point-and-shoot simulation for capturing a little warmth wherever I am.” “As a Brazilian living in London,” Gilson told me, “the long, grey winters can be tough—and this past winter hit particularly hard."
   },
   {
     "id": "bright-kodak",
@@ -15782,7 +15886,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Specifically, I wanted a generic overexposed Kodak color negative film aesthetic, perhaps Portra-like (or at least Portra-inspired), which is why I call this recipe Bright Kodak . The key to using this Bright Kodak recipe is to increase the exposure⁠—almost overexpose⁠—to make the pictures nice and bright."
   },
   {
     "id": "bright-summer",
@@ -15926,7 +16031,8 @@
     "tags": [
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "They are bright, low-contrast (but typically of high-contrast scenes), and vibrant with a warm yellow-ish cast. I’m reminded of a bright summer day, which is why I call this recipe “Bright Summer.” I found with this recipe that sometimes Color should be set to +3 instead of +4 to better match Preet’s look, but oftentimes +4 is better, and occasionally +5 would be most correct if such a setting existed."
   },
   {
     "id": "expired-velvia",
@@ -16066,7 +16172,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "This Film Simulation Recipe, called Expired Velvia, came about after a Fuji X Weekly reader shared with me some photographs that he had captured on long-expired Velvia 50 color reversal film. There are even some photographers who purposefully seek out film that is well-expired and/or stored incorrectly, just for the unpredictable and unusual results that one might get—there is a bit of serendipity to the style, which can be desirable."
   },
   {
     "id": "expired-slide",
@@ -16221,7 +16328,8 @@
       "Film Look",
       "Muted",
       "Vintage"
-    ]
+    ],
+    "description": "Perhaps expired is the wrong term, because the aesthetic that I was after is more like mishandled slide film—not stored correctly or developed promptly. The film simulation recipe called Expired Slide was actually the second one, as I created (what I now call) Expired Slide v2 first."
   },
   {
     "id": "redscale",
@@ -16401,7 +16509,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Redscale is an analog film technique where you load a roll of color film into the camera backwards. Results can very from film-to-film, and also how the film is exposed and developed/scanned; however, a redscale photo is unmistakable—you know it when you see it."
   },
   {
     "id": "xpro-62",
@@ -16556,7 +16665,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "The reason why I named this recipe “Xpro ’62” is because Xpro is a common abbreviation for “cross-process” and 1962 is the year that American Graffiti takes place. Promotional posters for the movie often included the question, “Where were you in ’62?” I thought that “Xpro ’62” would be a logical fit."
   },
   {
     "id": "bewaremyvelvia",
@@ -16789,7 +16899,8 @@
     "extraSettings": {},
     "tags": [
       "Vibrant"
-    ]
+    ],
+    "description": "This Recipe, which I’ve named BewareMyVelvia in honor of Tom’s social media handle, was created for and is intended for multiple-exposure photos; however, it works well for regular pictures, too. In the time since, we’ve been a part of a few other Fujifilm events, including leading a photowalk together in San Diego."
   },
   {
     "id": "cine-teal",
@@ -16986,7 +17097,8 @@
       "Cinematic",
       "Film Look",
       "Muted"
-    ]
+    ],
+    "description": "I call this new film simulation recipe “Cine Teal” because it looks a bit cinematic thanks to the Eterna film simulation, and has a teal, green or yellow cast, depending on the light. Sunlit Tree Leaves – Farmington, UT – Fujifilm X100V – “Cine Teal” Because this film simulation recipe requires the use of Clarity , it will slow your camera down considerably."
   },
   {
     "id": "cinestill-800t",
@@ -17149,7 +17261,8 @@
       "Indoor",
       "Night",
       "Vibrant"
-    ]
+    ],
+    "description": "I created my original CineStill 800T film simulation recipe about two-and-a-half years ago. I’ve been trying to achieve either an accurate CineStill 800T or Kodak Vision3 500T look straight-out-of-camera."
   },
   {
     "id": "pushed-cinestill-800t",
@@ -17275,7 +17388,8 @@
       "Film Look",
       "Night",
       "Vibrant"
-    ]
+    ],
+    "description": "This “Pushed CineStill 800T” Film Simulation Recipe came about after I stumbled across an amazing picture that was captured on CineStill 800T film during daytime with an overcast sky. This recipe doesn’t replicate pushed CineStill 800T film under all circumstances, but in certain conditions it’s a good facsimile."
   },
   {
     "id": "pushed-cinestill-800t-x100v-x-pro3",
@@ -17376,7 +17490,8 @@
       "Film Look",
       "Muted",
       "Night"
-    ]
+    ],
+    "description": "This “Pushed CineStill 800T” Film Simulation Recipe came about after I stumbled across an amazing picture that was captured on CineStill 800T film during daytime with an overcast sky. This recipe doesn’t replicate pushed CineStill 800T film under all circumstances, but in certain conditions it’s a good facsimile."
   },
   {
     "id": "serr-s-500t",
@@ -17476,7 +17591,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "Back in May of 2021, a really cool video by Serr ( Instagram , YouTube ) appeared on YouTube called Fujifilm Film Simulation Recipes That Will Make You Stop Shooting RAW . It features three Film Simulation Recipes : two by me— LomoChrome Metropolis and Xpro ’62 —and the third was my Bright Summer recipe slightly modified."
   },
   {
     "id": "kodak-plus-x-125",
@@ -17599,7 +17715,8 @@
       "Film Look",
       "Outdoor",
       "Vintage"
-    ]
+    ],
+    "description": "This new Kodak Plus-X 125 Film Simulation Recipes comes to us curtesy of Dylan Van Matre . “The short story is that I’ve been a film shooter for a long time,” Dylan told me, “and one of my favorite films during that time has been Kodak Plus-X 125."
   },
   {
     "id": "kodak-tri-x-400",
@@ -17834,7 +17951,8 @@
       "Night",
       "Outdoor",
       "Vintage"
-    ]
+    ],
+    "description": "Kodak re-engineered Tri-X 400 in 2007 with finer grain and lower contrast, but it’s still nearly identical to the old stock. Leaves in the Forest – Farmington, UT – Fujifilm X100V – ISO 3200 – “Kodak Tri-X 400” The number one black-and-white film simulation recipe that I’ve been asked to create is Kodak Tri-X 400, but I’ve never been satisfied with my own attempts."
   },
   {
     "id": "kodak-t-max-p3200",
@@ -18112,7 +18230,8 @@
       "Film Look",
       "Night",
       "Vintage"
-    ]
+    ],
+    "description": "Anders also created the Kodak Gold v2 Recipe, seven Fujicolor Pro 160NS Recipes , seven Fujicolor Pro 400H Recipes , and made an important D-Range Priority discovery . A grainy high-contrast B&W Film Simulation Recipe for the Fujifilm X-Pro3, X100V, X-T4, X-S10, X-E4, X-T30 II, X-H2, X-H2s, X-T5, and X-S20."
   },
   {
     "id": "kodak-t-max-400",
@@ -18235,7 +18354,8 @@
       "Film Look",
       "Outdoor",
       "Vintage"
-    ]
+    ],
+    "description": "Kodak updated the film in 2007 to be sharper and have finer grain; it’s the old version that I have personal experience with. This Kodak T-Max 400 film simulation recipe is intended for the Fujifilm X100V, X-Pro3 and X-T4 cameras; however, with a couple small modifications, it can be used on any X-Trans III or IV camera."
   },
   {
     "id": "b-w-superia",
@@ -18316,7 +18436,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "While there might be some similarities to Superia film developed as B&W and this recipe, they’re completely coincidental, as these settings aren’t intended to mimic anything specific. Even though this B&W Superia recipe isn’t intended to look like any particular film, it nonetheless produces very nice results."
   },
   {
     "id": "classic-monochrome",
@@ -18431,7 +18552,8 @@
     },
     "tags": [
       "B&W"
-    ]
+    ],
+    "description": "This new “Classic Monochrome” recipe was made by Thomas Schwab ( B&W Instagram ), who has created several of the film simulation recipes on this website and collaborated on several others. It’s called “Classic Monochrome” because it has a great old-school B&W print feel."
   },
   {
     "id": "monochrome-negative",
@@ -18536,7 +18658,8 @@
       "B&W",
       "Film Look",
       "Outdoor"
-    ]
+    ],
+    "description": "Another factor is that the differences between monochrome recipes are often much more subtle than color. It’s not modeled after any specific film, so I named it Monochrome Negative, as it does have a nice film-like quality to it."
   },
   {
     "id": "kentmere-pan-400",
@@ -18678,7 +18801,8 @@
       "B&W",
       "Film Look",
       "Night"
-    ]
+    ],
+    "description": "Even though Kentmere Pan 400 is a fairly new film, the history of it is a bit grey (pun intended). Kentmere Pan 400 is a low-budget black-and-white negative film marketed towards photography students."
   },
   {
     "id": "ilford-hp5-plus-400",
@@ -18808,7 +18932,8 @@
       "B&W",
       "Film Look",
       "Outdoor"
-    ]
+    ],
+    "description": "Anders is the one who created the Kodak Tri-X 400 recipe , Ilford Pan F Plus 50 recipe , Kodak Gold v2 , seven Fujicolor Pro 160NS recipes , seven Fujicolor Pro 400H recipes , and made an important D-Range Priority discovery . “I checked the spectrum sensitivity chart and looked for any significant bumps in the wavelengths,” he wrote."
   },
   {
     "id": "ilford-pan-f-plus-50",
@@ -18923,7 +19048,8 @@
       "B&W",
       "Film Look",
       "Outdoor"
-    ]
+    ],
+    "description": "Anders Lindborg ( Instagram ) sent me a black-and-white film simulation recipe to try, which he modeled after Ilford Pan F Plus 50 film. Ilford Pan F 50 Plus is a low-ISO, contrasty, sharp, detailed, fine-grain, black-and-white negative film."
   },
   {
     "id": "ilford-ortho-plus-80",
@@ -19034,7 +19160,8 @@
     },
     "tags": [
       "B&W"
-    ]
+    ],
+    "description": "Ilford Ortho Plus 80 film is different, as it’s orthochromatic, which means it’s sensitive to blue and green light but not red, making it possible to transfer the film from the cassette to the canister under a safelight. It required removing the film from the cassette, winding it around a developing reel, and placing the reel into a developing canister—all in complete darkness!"
   },
   {
     "id": "moody-monochrome",
@@ -19150,7 +19277,8 @@
       "Film Look",
       "Indoor",
       "Night"
-    ]
+    ],
+    "description": "I wanted something with an overall darker curve, so that it would produce a moody look. This isn’t exactly the same as that, but not too dissimilar, either, so that’s why I call this recipe Moody Monochrome ."
   },
   {
     "id": "black-white-infrared",
@@ -19324,7 +19452,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "Stop Here on Infrared – Yellowstone NP, WY – Fujifilm X100V – “Black & White Infrared” Infrared photographing is capturing light beyond the visible spectrum. A characteristic of both infrared and full-spectrum in black-and-white is deep contrast, with dark skies and white foliage."
   },
   {
     "id": "sepia",
@@ -19427,7 +19556,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "No Credit Tires – Bountiful, UT – Fujifilm X-T30 & Fujinon 35mm f/2 – Sepia Sepia is Fujifilm’s forgotten film simulation. Some photographers mock the Sepia film simulation, calling it gimmicky or amateurish."
   },
   {
     "id": "kodachrome-64",
@@ -19653,7 +19783,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Kodachrome Slides – South Weber, UT – Fujifilm X-T30 – “Kodachrome 64” Kodachrome 64 is probably the most requested film that people have asked me to create a recipe for. Kodachrome has a long history, with the first successful version debuting in 1935 ( film simulation recipe here )."
   },
   {
     "id": "kodak-gold-200",
@@ -19924,7 +20055,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Crown Burger – Layton, UT – Fujifilm X-T30 “Kodak Gold 200” I’ve been asked countless times to create a Kodak Gold film simulation recipe. When I read the description I realized that the picture was captured with actual Kodak Gold 200 film!"
   },
   {
     "id": "kodak-portra-400",
@@ -20050,7 +20182,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Around The Bend – Layton, UT – Fujifilm X-T30 “Kodak Portra 400” Portra 400, which is a color negative film, was introduced by Kodak in 1998. Blue Sky Day – Syracuse, UT – Fujifilm X-T30 “Kodak Portra 400” A Fuji X Weekly reader suggested to me that if I use my Kodak Portra 160 recipe , except increase Shadow, Highlight and Color by one, that should be pretty close to Portra 400."
   },
   {
     "id": "kodak-portra-400-v2-1",
@@ -20161,7 +20294,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "This film simulation recipe is a slight variation of my Kodak Portra 400 recipe . Portra 400, which is a color negative film, was introduced by Kodak in 1998."
   },
   {
     "id": "kodak-porta-160",
@@ -20328,7 +20462,8 @@
       "Outdoor",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Summer Waves Hello – Farmington, UT – Fujifilm X-T30 “Kodak Portra 160” This is the film simulation recipe that you’ve been waiting for! In 2011 Kodak redesigned Portra, and they did away with the Neutral and Vivid versions, making instead only one option in each ISO."
   },
   {
     "id": "kodak-vision3-250d-1",
@@ -20504,7 +20639,8 @@
       "Outdoor",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "Ice Cream Trailer – Farmington, UT – Fujifilm X-T30 “Kodak Vision3 250D” A Fuji X Weekly reader asked me to create a film simulation recipe that mimics Kodak Vision3 250D motion picture film. Flowers on a Tree Branch – Farmington, UT – Fujifilm X-T30 “Kodak Vision3 250D” Since Kodak Vision3 250D is a motion picture film, I had fun using this film simulation recipe in the 16:9 aspect ratio from time-to-time because it is a more cinematic shape."
   },
   {
     "id": "eterna",
@@ -20713,7 +20849,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "Fujifilm’s most recent film simulation, Eterna, has a lot of potential for creating lovely color negative film aesthetics. [Update: if your camera doesn’t have Eterna, you can use this alternative (click here) ] I wasn’t trying to mimic the look of any particular film when I invented this recipe."
   },
   {
     "id": "expired-eterna",
@@ -21000,7 +21137,8 @@
       "Cinematic",
       "Film Look",
       "Vintage"
-    ]
+    ],
+    "description": "Red Tricycle – South Weber, UT – Fujifilm X-T30 – “Expired Eterna” I used to shoot film. Using expired film is always an interesting endeavor because you don’t know exactly what you’ll get."
   },
   {
     "id": "eterna-low-contrast",
@@ -21167,7 +21305,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "Gap of Light – South Weber, UT – Fujifilm X-T30 – “Eterna Low-Contrast” After choosing my Eterna film simulation recipe for the Film Simulation Challenge , I thought it might be interesting to attempt a low-contrast Eterna recipe. Even though Eterna is supposed to look cinematic, I’ve found it to be a great starting point for color negative aesthetics, and in the case of this recipe, it sometimes roughly resembles Fujifilm C200 and it sometimes (oftentimes?) doesn’t."
   },
   {
     "id": "eterna-v3",
@@ -21277,7 +21416,8 @@
       "Cinematic",
       "Film Look",
       "Vibrant"
-    ]
+    ],
+    "description": "There are some similarities to Eterna 250D developed using the ECN-2 process, but it’s not an exact match. The original Eterna recipe can be found here and the Eterna v2 recipe can be found here ."
   },
   {
     "id": "cinematic-negative",
@@ -21482,7 +21622,8 @@
       "Cinematic",
       "Indoor",
       "Vibrant"
-    ]
+    ],
+    "description": "You might notice when watching a movie that the colors and color cast change from scene-to-scene. The colors, among other things, trigger certain responses from the viewers, and cinematographers use this extensively, and often brilliantly."
   },
   {
     "id": "polaroid",
@@ -21727,7 +21868,8 @@
       "Cinematic",
       "Film Look",
       "Muted"
-    ]
+    ],
+    "description": "Red Benches & Post Office – Park City, UT – Fujifilm X-T30 “Polaroid” I get asked frequently to create film simulation recipes for all sorts of different looks. There were a couple of films that I thought, “Well, you can make an argument, but it’s a stretch.” I decided that it most reminds me of Polaroid peal-apart film, perhaps 669."
   },
   {
     "id": "polaroid-ii",
@@ -21859,7 +22001,8 @@
       "Film Look",
       "Muted",
       "Outdoor"
-    ]
+    ],
+    "description": "I set out to recreate that look in-camera, and that’s how this “Polaroid II” recipe came to be. Pear Blossom – Farmington, UT – Fujifilm X-T30 “Polaroid II” I was recently viewing vintage Polaroid pictures online while conducting research for my “original” Polaroid film simulation recipe , and I stumbled across one picture in particular that caught my attention."
   },
   {
     "id": "analog-color",
@@ -22002,7 +22145,8 @@
       "Film Look",
       "Muted",
       "Outdoor"
-    ]
+    ],
+    "description": "Pentax – Farmington, UT – Fujifilm X-T30 “Analog Color” Sometimes accidents are happy, such as with this film simulation recipe, which I call Analog Color. Route Running – Farmington, UT – Fujifilm X-T30 “Analog Color” I like Color set to -1, but feel free to play around with that."
   },
   {
     "id": "jeff-davenport-night",
@@ -22222,7 +22366,8 @@
     "tags": [
       "Muted",
       "Night"
-    ]
+    ],
+    "description": "Reflected Red – Salt Lake City, UT – Fujifilm X-T30 “Jeff Davenport Night” I was asked to create a film simulation recipe that mimics the aesthetics of photographer Jeff Davenport . This recipe, which I call Jeff Davenport Night , isn’t an exact match to Jeff’s look, but it’s pretty close."
   },
   {
     "id": "faded-color",
@@ -22437,7 +22582,8 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Fading Memories – Ogden, UT – Fujifilm X-T30 – “Faded Color” This recipe is a failure. What it does look like are faded color photographs from perhaps the 1950’s through 1970’s."
   },
   {
     "id": "vintage-color-fade",
@@ -22545,7 +22691,8 @@
     "tags": [
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "This recipe definitely has a vintage analog aesthetic to it, with some very interesting results. My Vintage Color Fade film simulation recipe requires the use of the double exposure feature of your camera."
   },
   {
     "id": "elite-chrome-color-fade",
@@ -22684,7 +22831,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "I wondered if I could create a film simulation recipe that mimics the look of fading Elite Chrome 200. DGNO Locomotive – Dallas, TX – Canon AE-1 & Kodak Elite Chrome 200 35mm film One addition to this film simulation recipe that you’ve never seen in any of my other recipes is Image Quality."
   },
   {
     "id": "negative-print",
@@ -22794,7 +22942,8 @@
       "Cinematic",
       "Indoor",
       "Vibrant"
-    ]
+    ],
+    "description": "My suspicion is that the printing process played a significant part in the aesthetic, and that’s why I call this recipe Negative Print. This film simulation recipe was inspired by various pictures I found while browsing old issues of Arizona Highways magazine."
   },
   {
     "id": "color-negative-1",
@@ -22889,7 +23038,8 @@
       "Indoor",
       "Muted",
       "Outdoor"
-    ]
+    ],
+    "description": "Evening Light On A Clearing Mountain – Riverdale, UT – Fujifilm X-T30 – “Color Negative” Silly Putty was invented by accident. This “Color Negative” film simulation recipe has a similar story to Silly Putty (minus the war and rubber)."
   },
   {
     "id": "pro-neg",
@@ -23027,7 +23177,8 @@
     "extraSettings": {},
     "tags": [
       "Muted"
-    ]
+    ],
+    "description": "The idea was to create a generic Kodak-ish color negative film aesthetic, perhaps something similar to ColorPlus 200 or Pro Image 100. I do think it does a good job at producing a generic color negative film aesthetic that is by-and-large Kodak-esque, with occasional similarities to both ColorPlus 200 and Pro Image 100."
   },
   {
     "id": "fujichrome-sensia-100",
@@ -23132,7 +23283,8 @@
     "extraSettings": {},
     "tags": [
       "Indoor"
-    ]
+    ],
+    "description": "This Provia recipe reminds me of Fujifilm Fujichrome Sensia 100, although that is strictly coincidental, as I wasn’t attempting any specific film look, just a general analog aesthetic. Fujichrome Sensia 100 was a general-purpose slide film that was discontinued about 10 years ago."
   },
   {
     "id": "fujicolor-pro-160ns",
@@ -23371,7 +23523,8 @@
     "tags": [
       "Outdoor",
       "Vibrant"
-    ]
+    ],
+    "description": "Anders created the Kodak Tri-X 400 film simulation recipe , which is my personal favorite for black-and-white photography. Since getting a Fujifilm X-T3 (and later an X-Pro3), I’ve come to rely totally on the straight-out-of-camera JPEGs."
   },
   {
     "id": "fujicolor-pro-400h-1",
@@ -23605,7 +23758,8 @@
     "tags": [
       "Outdoor",
       "Vibrant"
-    ]
+    ],
+    "description": "In my last post, entitled A Different Approach , I shared Anders Lindborg ‘s new take on film simulation recipes , which included seven different Fujicolor Pro 160NS recipes that he invented. These seven Fujicolor Pro 400H recipes are compatible with the Fujifilm X-T3 and X-T30 cameras."
   },
   {
     "id": "fujicolor-pro-400h-overexposed",
@@ -23750,7 +23904,8 @@
     "iso": "Auto up to ISO 6400",
     "exposureCompensation": "+1 2/3 to +2 1/3 (typically)",
     "extraSettings": {},
-    "tags": []
+    "tags": [],
+    "description": "I Will Always Love You – Farmington, UT – Fujifilm X-T30 “Fujicolor Pro 400H Overexposed” Fujifilm introduced Fujicolor Pro 400H in 2004 and it’s been a popular film ever since. A few adjustments here and there, and this Fujicolor Pro 400H Overexposed film simulation recipe was born, and I spent the afternoon shooting a bunch of exposures with it."
   },
   {
     "id": "warm-contrast",
@@ -23881,7 +24036,8 @@
       "Film Look",
       "Muted",
       "Vibrant"
-    ]
+    ],
+    "description": "Flower Pots – Salt Lake City, UT – Fujifilm X-T30 – “Warm Contrast” Fuji X Weekly reader Manuel Sechi recently contacted me regarding some camera settings that he was working on. While I call this film simulation recipe “Warm Contrast” due to its intended replication, it’s not particularly warm nor especially high in contrast."
   },
   {
     "id": "bleach-bypass-1",
@@ -23988,7 +24144,8 @@
     },
     "tags": [
       "Film Look"
-    ]
+    ],
+    "description": "Instamatic Morning – Farmington, UT – Fujifilm X-T30 “Bleach Bypass” The upcoming Fujifilm X-T4 will have a new film simulation : Bleach Bypass. This rekindled my interest, and with inspiration drawn from James, I made this “Bleach Bypass” film simulation recipe."
   },
   {
     "id": "kodacolor",
@@ -24383,7 +24540,8 @@
       "Film Look",
       "Muted",
       "Street"
-    ]
+    ],
+    "description": "Summit Merc – Coalville, UT – Fujifilm X-T30 – Kodacolor This is the film simulation recipe that you’ve been waiting for! The reason that I named this recipe Kodacolor and not Portra is that, to me, it looks more like Kodacolor VR than Portra, although the aesthetics of these two films are quite similar."
   },
   {
     "id": "kodacolor-ii-126",
@@ -24542,7 +24700,8 @@
       "Muted",
       "Night",
       "Street"
-    ]
+    ],
+    "description": "Blooming Pink – Farmington, UT – Fujifilm X-T30 “Kodacolor II 126” A Fuji X Weekly reader asked me to recreate the look of some old family prints from the 1970’s that he found. It’s unknown what film was used on the pictures in question, but most likely it was Kodacolor II, which was by far the most popular color 126 film during the time that these pictures were captured."
   },
   {
     "id": "classic-kodak",
@@ -24670,7 +24829,8 @@
       "Street",
       "Vibrant",
       "Vintage"
-    ]
+    ],
+    "description": "I wanted it to have a classic Kodak aesthetic—perhaps a bit nostalgic, like from the 1970’s or 1980’s, maybe somewhat similar to Kodacolor—but not modeled after any specific film. This “Classic Kodak” Film Simulation Recipe is compatible with the X-T3 and X-T30 cameras, and, because it doesn’t use Color Chrome Effect , it’s also compatible with X-Trans III models."
   },
   {
     "id": "classic-slide",
@@ -24776,7 +24936,8 @@
     "tags": [
       "Outdoor",
       "Street"
-    ]
+    ],
+    "description": "Winter Reeds – Farmington, UT – Fujifilm X-T30 “Classic Slide” A lot of my film simulation recipes lean towards a warm cast. I call this film simulation recipe “Classic Slide” because it has a slide-film aesthetic, in my opinion."
   },
   {
     "id": "urban-vintage-chrome",
@@ -24896,7 +25057,8 @@
       "Muted",
       "Street",
       "Vintage"
-    ]
+    ],
+    "description": "Refine – North Salt Lake, UT – Fujifilm X-T30 & Fujinon 90mm f/2 – “Urban Vintage Chrome” Fuji X Weekly reader Thomas Schwab recently shared with me a film simulation recipe that he created. He calls it “Urban Vintage Chrome” because it has a classic analog aesthetic, it’s based on the Classic Chrome film simulation, and it pairs especially well with urban scenes."
   },
   {
     "id": "fujicolor-100-industrial",
@@ -25049,7 +25211,8 @@
     "extraSettings": {},
     "tags": [
       "Muted"
-    ]
+    ],
+    "description": "Urban Binding – SLC, UT – Fujifilm X-T30 – “Fujicolor 100 Industrial” I get asked frequently to create different film simulation recipes , and I always put some consideration into those requests. I have to be honest, when I was asked to create a recipe to mimic the look of Fujicolor 100 Industrial film, I had never heard of it and knew absolutely nothing about it."
   },
   {
     "id": "lomography-color-100",
@@ -25168,7 +25331,8 @@
       "Muted",
       "Outdoor",
       "Vibrant"
-    ]
+    ],
+    "description": "Misty Mountain Sunset – Layton, UT – Fujifilm X-T30 – “Color 100” Several different Fuji X Weekly readers have asked me to create a film simulation recipe based on Lomography Color 100 film. Lomography is essentially low-fi film photography, and it’s also the name of a company that sells cameras and film."
   },
   {
     "id": "velvia",
@@ -25273,7 +25437,8 @@
     "extraSettings": {},
     "tags": [
       "Vibrant"
-    ]
+    ],
+    "description": "Mesa Trail – Castle Valley, UT – Fujifilm X-T30 – Velvia I already have a Velvia film simulation recipe . With the Fujifilm X-T30, which has the new sensor and processor, including the new Color Chrome Effect , I decided to revisit Velvia."
   },
   {
     "id": "velvia-v2",
@@ -25382,7 +25547,8 @@
     "extraSettings": {},
     "tags": [
       "Vibrant"
-    ]
+    ],
+    "description": "This recipe is actually a little closer to my original Velvia recipe , but with even less contrast yet with more saturation. This Velvia v2 recipe doesn’t closely mimic any specific version of Velvia film, yet it still retains an overall Velvia-like aesthetic."
   },
   {
     "id": "redscale-1",
@@ -25644,7 +25810,8 @@
     "tags": [
       "Film Look",
       "Muted"
-    ]
+    ],
+    "description": "Red Hill – South Weber, UT – Fujifilm X-T30 – “Redscale” Redscale is a photographic technique where you shoot film backwards. What’s interesting about Redscale photography is that the results can vary greatly, depending on the film, exposure and development."
   },
   {
     "id": "cross-process",
@@ -25750,7 +25917,8 @@
     "tags": [
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "Pot in the Sky – Farmington, UT – Fujifilm X-T30 “Cross Process” My last film simulation recipe was modeled after a look by photographer Jeff Davenport. I’ve already created a cross process film simulation recipe , but that recipe and this one produce somewhat different looks, despite both emulating cross processed film."
   },
   {
     "id": "xpro-1",
@@ -25884,7 +26052,8 @@
     "tags": [
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "This Xpro Film Simulation Recipe came about after some experiments with white balance and shifts . Cross processing film (also called Xpro) is developing it in chemistry that it wasn’t intended to be developed in, most commonly color slide film (E6) in color negative film (C41) chemistry."
   },
   {
     "id": "agfa-apx-400",
@@ -26022,7 +26191,8 @@
     "tags": [
       "B&W",
       "Vintage"
-    ]
+    ],
+    "description": "The closest might be Agfa APX 400 (the newer version), but it’s not an exact match for that film. Cloud Over The White Ridge – South Weber, UT – Fujifilm X-T30 – Acros I made a new Acros recipe!"
   },
   {
     "id": "monochrome-kodachrome",
@@ -26167,7 +26337,8 @@
       "B&W",
       "Film Look",
       "Vintage"
-    ]
+    ],
+    "description": "Light on the Wall – Farmington, UT – Fujifilm X-T30 “Monochrome Kodachrome” Kodachrome was a black-and-white film. He took my Vintage Kodachrome recipe and replaced the Classic Chrome film simulation with Acros, Monochrome and Sepia, and the results were quite interesting!"
   },
   {
     "id": "ilford-hp5-push-process",
@@ -26348,7 +26519,8 @@
       "B&W",
       "Film Look",
       "Night"
-    ]
+    ],
+    "description": "Memorials – South Ogden, UT – Fujifilm X-T30 – ISO 51200 Little Flags – South Ogden, UT – Fujifilm X-T30 – ISO 51200 When I reviewed the images that I had captured, I was reminded of some photographs I made four years ago when I pushed a roll of Ilford HP5 Plus 400 film by one stop. Push-processing is a technique where you underexpose film and increase the development time to make up for it."
   },
   {
     "id": "ilford-delta-push-process",
@@ -26516,7 +26688,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "Boy in a Chair with a Phone – Farmington, UT – Fujifilm X-T30 “Ilford Delta Push-Process” When I shot film, Ilford Delta was my go-to for black-and-white photography. Sure, I used other films, but Ilford Delta was what I most often loaded into my camera."
   },
   {
     "id": "dramatic-monochrome",
@@ -26636,7 +26809,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "The Obscurity of Light – Farmington, UT – Fujifilm X-T30 – “Dramatic Monochrome” A couple of weeks ago when I was discussing the possibility of Fujifilm creating a black-and-white only camera , something that I came to learn by accident is that the Monochrome film simulation is pretty darn good. These settings, which I call Dramatic Monochrome , are what resulted from that."
   },
   {
     "id": "noir",
@@ -26752,7 +26926,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "Photographer Omar Gonzales made a video about turning your Fujifilm X camera into the Fujifilm Noir, a dedicated black-and-white camera. My Fujifilm Noir is an X-T30 with an Asahi Super-Takumar 55mm f/2 attached to the front."
   },
   {
     "id": "faded-monochrome",
@@ -27076,7 +27251,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "All Aboard Boy – Ogden, UT – Fujifilm X-T30 – “Faded Monochrome” I love the results of my Faded Color recipe , so creating a Faded Monochrome recipe was a natural next step. While “faded” is in the title of this recipe, the look isn’t so much faded as it is low-contrast with “milky” blacks."
   },
   {
     "id": "split-toned-b-w",
@@ -27163,7 +27339,8 @@
     "extraSettings": {
       "Tone": "+6 (warm)"
     },
-    "tags": []
+    "tags": [],
+    "description": "This Split-Toned B&W recipe loosely mimics the aesthetic of ferrocyanide toning (blue) with diluted sepia (reddish-brown). Vintage Bolsey Camera – Farmington, UT – Fujifilm X-T30 “Split-Toned B&W” While creating my “Bleach Bypass” film simulation recipe , which requires double exposures, I also discovered how to split-tone black-and-white pictures in-camera using double exposures."
   },
   {
     "id": "cyanotype",
@@ -27289,7 +27466,8 @@
     "tags": [
       "B&W",
       "Film Look"
-    ]
+    ],
+    "description": "Ball Flowers – Farmington, UT – Fujifilm X-T30 “Cyanotype” Cyanotype is an early photographic process that produces blue prints. I thought it would be fun to make a film simulation recipe to mimic cyanotype prints."
   },
   {
     "id": "verano-tostado",
@@ -27404,6 +27582,7 @@
       "Film Look",
       "Street",
       "Vibrant"
-    ]
+    ],
+    "description": "He called it “Tostado” and when I asked him why, Ricardo answered, “Toasted like summer—when you sleep after lunch at the beach, you wake up looking at funny colors.” Yes, that’s exactly what it looks like— verano tostado! Even the name, Verano Tostado (“Toasted Summer”), and the story behind it, is fun."
   }
 ]

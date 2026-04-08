@@ -141,13 +141,8 @@ export function RecipeDetailPage() {
 					</div>
 
 					<p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8 max-w-lg">
-						A bespoke {recipe.filmSimulation} profile calibrated for the{" "}
-						{recipe.sensor} sensor. Tuned with {recipe.dynamicRange} dynamic
-						range and{" "}
-						{recipe.grainEffect && recipe.grainEffect !== "Off"
-							? `${recipe.grainEffect.toLowerCase()} grain`
-							: "no grain"}{" "}
-						for an organic analog texture.
+						{recipe.description ??
+							`A ${recipe.filmSimulation} profile for the ${recipe.sensor} sensor with ${recipe.dynamicRange} dynamic range.`}
 					</p>
 
 					{/* Action Buttons */}
