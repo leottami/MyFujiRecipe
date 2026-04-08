@@ -8,16 +8,7 @@ interface RecipeCardProps {
 	recipe: Recipe;
 }
 
-function generateCode(name: string): string {
-	const words = name.toUpperCase().split(/\s+/);
-	const base = words[0] ?? "RCP";
-	const suffix =
-		words.length > 1 ? `.${String(words.length).padStart(2, "0")}` : "";
-	return `${base.slice(0, 6)}${suffix}`;
-}
-
 export function RecipeCard({ recipe }: RecipeCardProps) {
-	const code = generateCode(recipe.name);
 	const author = extractAuthor(recipe.url);
 	const { isFavorite, toggleFavorite } = useFavorites();
 	const favorited = isFavorite(recipe.id);
@@ -31,10 +22,14 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 				<HeroImage
 					src={getHeroPhoto(recipe)}
 					alt={`Photo taken with ${recipe.name} recipe`}
-					className="w-full group-hover:scale-[1.02] transition-transform duration-500"
+					className="w-full group-hover:scale-[1.03] transition-transform duration-700 ease-out"
 					aspectRatio="3/2"
 				/>
-				{/* Favorite heart */}
+
+				{/* Gradient overlay on hover */}
+				<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+				{/* Favorite heart — bottom left, only visible on hover unless favorited */}
 				<button
 					type="button"
 					onClick={(e) => {
@@ -42,47 +37,47 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 						e.stopPropagation();
 						toggleFavorite(recipe.id);
 					}}
-					className="absolute top-2.5 left-2.5 w-7 h-7 flex items-center justify-center rounded-sm bg-inverse-surface/50 backdrop-blur-sm hover:bg-inverse-surface/70 transition-colors"
+					className={`absolute bottom-3 left-3 transition-all duration-300 ${
+						favorited
+							? "opacity-100"
+							: "opacity-0 group-hover:opacity-100"
+					}`}
 				>
 					<svg
-						width="14"
-						height="14"
+						width="16"
+						height="16"
 						viewBox="0 0 24 24"
 						fill={favorited ? "#b91e25" : "none"}
 						stroke={favorited ? "#b91e25" : "#ffffff"}
 						strokeWidth="2"
+						className="drop-shadow-sm"
 						aria-hidden="true"
 					>
 						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
 					</svg>
 				</button>
 
-				<span className="absolute bottom-3 right-3 bg-inverse-surface/70 backdrop-blur-sm text-inverse-on-surface font-label text-[9px] uppercase tracking-[0.15em] px-2.5 py-1 rounded-sm">
-					{code}
+				{/* Film simulation badge */}
+				<span className="absolute bottom-3 right-3 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+					{recipe.filmSimulation}
 				</span>
 			</div>
 
 			<div className="pt-3 pb-1">
-				<h3 className="font-headline font-semibold text-base text-on-surface group-hover:text-primary transition-colors leading-tight mb-1">
+				<h3 className="font-headline font-semibold text-[15px] text-on-surface group-hover:text-primary transition-colors duration-300 leading-tight mb-1">
 					{recipe.name}
 				</h3>
-				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-2.5">
-					By{" "}
+				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/50 mb-2">
 					<Link
 						to={`/photographer/${extractAuthorId(recipe.url)}`}
 						onClick={(e) => e.stopPropagation()}
-						className="hover:text-primary transition-colors"
+						className="hover:text-on-surface transition-colors"
 					>
 						{author}
 					</Link>
-				</p>
-				<div className="flex items-center gap-3 font-label text-[10px] uppercase tracking-[0.1em] text-on-surface-variant">
-					<span>{(recipe.iso ?? "").replace("Auto, up to ", "") || "Auto"}</span>
-					<span className="w-px h-2.5 bg-outline-variant/30" />
+					<span className="mx-2 text-outline-variant/30">/</span>
 					<span>{recipe.dynamicRange ?? "DR Auto"}</span>
-					<span className="w-px h-2.5 bg-outline-variant/30" />
-					<span className="truncate">{recipe.filmSimulation}</span>
-				</div>
+				</p>
 			</div>
 		</Link>
 	);

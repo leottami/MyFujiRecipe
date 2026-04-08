@@ -43,15 +43,25 @@ export function FeedGrid({ recipes, batchSize = 20 }: FeedGridProps) {
 		<>
 			{/* Mobile: masonry columns */}
 			<div className="columns-1 md:columns-2 gap-4 lg:hidden">
-				{visible.map((recipe) => (
-					<RecipeCard key={recipe.id} recipe={recipe} />
+				{visible.map((recipe, i) => (
+					<div
+						key={recipe.id}
+						className="animate-fade-in-up"
+						style={{ animationDelay: `${Math.min(i * 60, 600)}ms` }}
+					>
+						<RecipeCard recipe={recipe} />
+					</div>
 				))}
 			</div>
 
 			{/* Desktop: editorial grid with asymmetric offset */}
 			<div className="hidden lg:grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-x-10 gap-y-6">
 				{visible.map((recipe, i) => (
-					<div key={recipe.id} className={i % 2 === 1 ? "mt-16" : ""}>
+					<div
+						key={recipe.id}
+						className={`animate-fade-in-up ${i % 2 === 1 ? "mt-16" : ""}`}
+						style={{ animationDelay: `${Math.min(i * 80, 800)}ms` }}
+					>
 						<RecipeCard recipe={recipe} />
 					</div>
 				))}
