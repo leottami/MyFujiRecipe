@@ -126,12 +126,7 @@ export function useFilters(recipes: Recipe[]) {
 		// Search (across multiple fields)
 		if (filters.search) {
 			const q = filters.search.toLowerCase();
-			result = result.filter(
-				(r) =>
-					r.name.toLowerCase().includes(q) ||
-					(r.filmSimulation ?? "").toLowerCase().includes(q) ||
-					(r.tags ?? []).some((t) => t.toLowerCase().includes(q)),
-			);
+			result = result.filter((r) => r.name.toLowerCase().includes(q));
 		}
 
 		return result;
