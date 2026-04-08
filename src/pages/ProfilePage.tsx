@@ -24,69 +24,119 @@ export function ProfilePage() {
 		return slots.map((id) => recipeMap.get(id));
 	}, [recipes, slots]);
 
+	// Stats
+	const topSim = useMemo(() => {
+		const counts: Record<string, number> = {};
+		for (const r of favoriteRecipes) {
+			if (r.filmSimulation)
+				counts[r.filmSimulation] = (counts[r.filmSimulation] ?? 0) + 1;
+		}
+		const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+		return sorted[0];
+	}, [favoriteRecipes]);
+
 	function handleLogout() {
 		setAuthenticated(false);
 		window.location.reload();
 	}
 
 	return (
-		<div className="max-w-[1100px] mx-auto px-4 lg:px-10 animate-page-enter">
-			{/* Header */}
-			<div className="py-8">
-				<h1 className="font-headline font-extrabold text-3xl lg:text-4xl uppercase tracking-[0.1em] text-on-surface leading-tight mb-2">
-					My Archive
-				</h1>
-				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60">
-					{favorites.length} saved &middot; {slots.length}/6 on camera
+		<div className="max-w-[1100px] mx-auto px-4 lg:px-10">
+			{/* Hero header — dark, cinematic */}
+			<div className="relative -mx-4 lg:-mx-10 px-4 lg:px-10 py-12 lg:py-16 mb-10 bg-inverse-surface overflow-hidden">
+				{/* Subtle gradient */}
+				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(185,30,37,0.08),transparent_60%)]" />
+
+				<div className="relative">
+					<div className="flex items-center gap-3 mb-6">
+						<div className="w-px h-8 bg-tertiary/40" />
+						<p className="font-label text-[9px] uppercase tracking-[0.3em] text-inverse-on-surface/40">
+							Custom Settings
+						</p>
+					</div>
+
+					<h1 className="font-headline font-extrabold text-4xl lg:text-5xl uppercase tracking-[0.08em] text-inverse-on-surface/90 leading-none mb-4">
+						My Camera
+					</h1>
+
+					<div className="flex items-center gap-6 font-label text-[10px] uppercase tracking-[0.15em] text-inverse-on-surface/40">
+						<span>
+							{slots.length}
+							<span className="text-inverse-on-surface/20">
+								/6
+							</span>{" "}
+							loaded
+						</span>
+						<span className="w-px h-3 bg-inverse-on-surface/15" />
+						<span>
+							{favorites.length} in collection
+						</span>
+						{topSim && (
+							<>
+								<span className="w-px h-3 bg-inverse-on-surface/15" />
+								<span>
+									Top: {topSim[0]}
+								</span>
+							</>
+						)}
+					</div>
+				</div>
+			</div>
+
+			{/* Camera Slots — 3x2 grid with tonal background */}
+			<div className="mb-14">
+				<div className="bg-surface-container-lowest rounded-sm p-4 lg:p-6">
+					<div className="grid grid-cols-3 gap-3 lg:gap-5">
+						{Array.from({ length: 6 }, (_, i) => (
+							<div
+								key={slots[i] ?? `empty-${i}`}
+								className="animate-fade-in-up"
+								style={{ animationDelay: `${i * 80}ms` }}
+							>
+								<CameraSlotCard
+									recipe={slotRecipes[i]}
+									slotNumber={i + 1}
+									onRemove={
+										slotRecipes[i]
+											? () => removeFromCamera(slots[i]!)
+											: undefined
+									}
+									onDrop={
+										!slotRecipes[i]
+											? (recipeId: string) =>
+													addToCamera(recipeId)
+											: undefined
+									}
+								/>
+							</div>
+						))}
+					</div>
+				</div>
+				<p className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/25 mt-3 text-center">
+					Drag from collection &middot; Click to view &middot; Hover
+					to remove
 				</p>
 			</div>
 
-			{/* Camera Slots */}
-			<div className="mb-12">
-				<h2 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-4">
-					My Camera
-					<span className="text-on-surface-variant/40 ml-2">
-						{slots.length}/6
-					</span>
-				</h2>
-				<div className="grid grid-cols-3 gap-3 lg:gap-4">
-					{Array.from({ length: 6 }, (_, i) => (
-						<CameraSlotCard
-							key={slots[i] ?? `empty-${i}`}
-							recipe={slotRecipes[i]}
-							slotNumber={i + 1}
-							onRemove={
-								slotRecipes[i]
-									? () => removeFromCamera(slots[i]!)
-									: undefined
-							}
-							onDrop={
-								!slotRecipes[i]
-									? (recipeId: string) => addToCamera(recipeId)
-									: undefined
-							}
-						/>
-					))}
-				</div>
-				<p className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/30 mt-2">
-					Drag recipes from your collection below into empty slots
-				</p>
+			{/* Divider */}
+			<div className="flex items-center gap-4 mb-8">
+				<div className="flex-1 h-px bg-surface-variant/30" />
+				<span className="font-label text-[9px] uppercase tracking-[0.3em] text-on-surface-variant/30">
+					Collection
+				</span>
+				<div className="flex-1 h-px bg-surface-variant/30" />
 			</div>
 
 			{/* Collection — draggable cards */}
 			{favoriteRecipes.length > 0 && (
 				<div className="mb-12">
-					<h2 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-4">
-						My Collection
-						<span className="text-on-surface-variant/40 ml-2">
-							{favoriteRecipes.length}
-						</span>
-					</h2>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
-						{favoriteRecipes.map((recipe) => (
+						{favoriteRecipes.map((recipe, i) => (
 							<div
 								key={recipe.id}
-								draggable={!isOnCamera(recipe.id) && !isCameraFull}
+								draggable={
+									!isOnCamera(recipe.id) && !isCameraFull
+								}
 								onDragStart={(e) => {
 									e.dataTransfer.setData(
 										"text/recipe-id",
@@ -99,6 +149,9 @@ export function ProfilePage() {
 										? "cursor-grab active:cursor-grabbing"
 										: ""
 								}`}
+								style={{
+									animationDelay: `${Math.min(i * 60, 400)}ms`,
+								}}
 							>
 								<Link
 									to={`/recipe/${recipe.id}`}
@@ -111,18 +164,26 @@ export function ProfilePage() {
 											className="w-full group-hover:scale-[1.03] transition-transform duration-500"
 											aspectRatio="3/2"
 										/>
+										{/* Hover gradient */}
+										<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
 										{isOnCamera(recipe.id) && (
-											<span className="absolute top-1.5 left-1.5 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-1.5 py-0.5 rounded-sm">
-												On Camera
+											<span className="absolute top-1.5 left-1.5 bg-inverse-surface/70 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-1.5 py-0.5 rounded-sm">
+												C
+												{slots.indexOf(recipe.id) + 1}
 											</span>
 										)}
 									</div>
 									<div className="pt-2">
-										<p className="font-headline font-semibold text-xs text-on-surface leading-tight truncate">
+										<p className="font-headline font-semibold text-xs text-on-surface group-hover:text-primary leading-tight truncate transition-colors duration-200">
 											{recipe.name}
 										</p>
-										<p className="font-label text-[9px] uppercase tracking-widest text-on-surface-variant/50">
-											{extractAuthor(recipe.url)}
+										<p className="font-label text-[9px] uppercase tracking-widest text-on-surface-variant/40">
+											{extractAuthor(recipe.url)}{" "}
+											<span className="text-on-surface-variant/20">
+												/
+											</span>{" "}
+											{recipe.filmSimulation}
 										</p>
 									</div>
 								</Link>
@@ -133,19 +194,30 @@ export function ProfilePage() {
 			)}
 
 			{favoriteRecipes.length === 0 && (
-				<div className="flex items-center justify-center min-h-[30vh]">
-					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/50">
-						No favorites yet — tap the heart on any recipe to start your collection
+				<div className="flex flex-col items-center justify-center min-h-[30vh] gap-4">
+					<div className="w-px h-12 bg-on-surface-variant/10" />
+					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/40 text-center max-w-xs">
+						Your collection is empty. Browse the archive and tap the
+						heart on recipes you love.
 					</p>
+					<Link
+						to="/"
+						className="font-label text-[10px] uppercase tracking-[0.15em] text-tertiary hover:text-on-surface transition-colors"
+					>
+						Browse Archive
+					</Link>
 				</div>
 			)}
 
-			{/* Logout */}
-			<div className="py-8 border-t border-surface-variant/20">
+			{/* Footer */}
+			<div className="py-10 flex items-center justify-between">
+				<p className="font-label text-[8px] uppercase tracking-[0.3em] text-on-surface-variant/20">
+					Fuji X-Trans IV &middot; {recipes.length} recipes
+				</p>
 				<button
 					type="button"
 					onClick={handleLogout}
-					className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/50 hover:text-error transition-colors"
+					className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/30 hover:text-error transition-colors"
 				>
 					Sign Out
 				</button>

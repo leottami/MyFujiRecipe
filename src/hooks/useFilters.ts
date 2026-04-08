@@ -130,9 +130,6 @@ export function useFilters(recipes: Recipe[]) {
 				(r) =>
 					r.name.toLowerCase().includes(q) ||
 					(r.filmSimulation ?? "").toLowerCase().includes(q) ||
-					(r.whiteBalance ?? "").toLowerCase().includes(q) ||
-					(r.grainEffect ?? "").toLowerCase().includes(q) ||
-					(r.description ?? "").toLowerCase().includes(q) ||
 					(r.tags ?? []).some((t) => t.toLowerCase().includes(q)),
 			);
 		}

@@ -55,10 +55,10 @@ function EmptySlot({ slotNumber, onDrop }: EmptySlotProps) {
 
 	return (
 		<div
-			className={`flex flex-col items-center justify-center aspect-[3/2] border-2 border-dashed rounded-sm transition-colors ${
+			className={`flex flex-col items-center justify-center aspect-[3/2] rounded-sm transition-all duration-200 ${
 				dragOver
-					? "border-tertiary/60 bg-tertiary/5"
-					: "border-surface-variant/40"
+					? "bg-tertiary/5 ring-2 ring-tertiary/30 ring-inset"
+					: "bg-surface-container/50"
 			}`}
 			onDragOver={(e) => {
 				if (!onDrop) return;
@@ -73,17 +73,14 @@ function EmptySlot({ slotNumber, onDrop }: EmptySlotProps) {
 				if (recipeId && onDrop) onDrop(recipeId);
 			}}
 		>
-			<span className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/30 mb-1">
+			<span className={`font-headline font-bold text-lg transition-colors ${
+				dragOver ? "text-tertiary/40" : "text-on-surface-variant/15"
+			}`}>
 				C{slotNumber}
 			</span>
-			<span
-				className={`text-lg transition-colors ${dragOver ? "text-tertiary/40" : "text-on-surface-variant/20"}`}
-			>
-				{dragOver ? "\u2193" : "+"}
-			</span>
 			{dragOver && (
-				<span className="font-label text-[8px] uppercase tracking-[0.1em] text-tertiary/50 mt-1">
-					Drop here
+				<span className="font-label text-[8px] uppercase tracking-widest text-tertiary/50 mt-1">
+					Drop
 				</span>
 			)}
 		</div>
