@@ -138,7 +138,7 @@ export function FeedPage() {
 					activeFilterCount={activeFilterCount}
 				/>
 
-				<HeroSection />
+				<HeroSection recipeCount={filtered.length} />
 
 				{/* Favorites toggle + active filter chips */}
 				<div className="flex flex-wrap items-center gap-2 mb-4">
