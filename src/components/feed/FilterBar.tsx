@@ -32,7 +32,7 @@ function PillToggle({
 	variant?: "default" | "tag";
 }) {
 	const baseClass =
-		"shrink-0 px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors rounded-sm";
+		"shrink-0 px-3 py-2.5 font-label text-[10px] uppercase tracking-[0.15em] transition-colors rounded-sm";
 	const activeClass =
 		variant === "tag"
 			? "bg-tertiary/10 text-tertiary"
@@ -103,7 +103,7 @@ export function FilterBar({
 			<button
 				type="button"
 				onClick={() => setExpanded(!expanded)}
-				className="flex items-center gap-2 font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant hover:text-on-surface transition-colors py-2"
+				className="flex items-center gap-2 font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant hover:text-on-surface transition-colors py-2 min-h-11"
 			>
 				<span>Filters</span>
 				{technicalFilterCount > 0 && (

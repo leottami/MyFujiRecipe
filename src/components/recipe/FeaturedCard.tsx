@@ -66,7 +66,7 @@ export function FeaturedCard({ recipe }: FeaturedCardProps) {
 						toggleFavorite(recipe.id);
 					}}
 					aria-label={favorited ? "Remove from favorites" : "Add to favorites"}
-					className="absolute top-4 right-4 p-2"
+					className="absolute top-4 right-4 p-3 min-w-11 min-h-11 flex items-center justify-center"
 				>
 					<svg
 						width="20"

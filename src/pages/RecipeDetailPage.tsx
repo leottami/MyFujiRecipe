@@ -139,7 +139,7 @@ export function RecipeDetailPage() {
 					</p>
 
 					{/* Action Buttons — inline on hero */}
-					<div className="flex flex-wrap items-center gap-2">
+					<div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center">
 						<Link
 							to={`/recipe/${recipe.id}/edit`}
 							className="bg-white/15 backdrop-blur-sm text-white font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm hover:bg-white/25 transition-colors"
@@ -150,7 +150,7 @@ export function RecipeDetailPage() {
 							type="button"
 							onClick={handleFavoriteToggle}
 							aria-label={isFavorite(recipe.id) ? "Remove from favorites" : "Add to favorites"}
-							className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm transition-colors ${
+						className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2.5 min-h-11 flex items-center justify-center rounded-sm transition-colors ${
 								isFavorite(recipe.id)
 									? "bg-tertiary/80 text-white"
 									: "bg-white/15 text-white hover:bg-white/25"
@@ -170,7 +170,7 @@ export function RecipeDetailPage() {
 								}
 							}}
 							disabled={!isOnCamera(recipe.id) && isCameraFull}
-							className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm transition-colors ${
+						className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2.5 min-h-11 flex items-center justify-center rounded-sm transition-colors ${
 								isOnCamera(recipe.id)
 									? "bg-white/25 text-white"
 									: isCameraFull
@@ -188,7 +188,7 @@ export function RecipeDetailPage() {
 							href={recipe.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="font-label text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white transition-colors ml-1"
+							className="font-label text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white transition-colors sm:ml-1 min-h-11 flex items-center justify-center sm:justify-start"
 						>
 							Source &rarr;
 						</a>

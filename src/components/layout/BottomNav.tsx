@@ -76,7 +76,7 @@ export function BottomNav() {
 				<Link
 					key={item.label}
 					to={item.to}
-					className={`flex flex-col items-center gap-0.5 px-3 py-1 transition-colors ${
+					className={`flex flex-col items-center gap-0.5 px-3 py-2 transition-colors ${
 						item.active ? "text-on-surface" : "text-on-surface-variant/60"
 					}`}
 				>

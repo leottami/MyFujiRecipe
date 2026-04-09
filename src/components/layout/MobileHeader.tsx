@@ -44,7 +44,7 @@ export function MobileHeader() {
 					<button
 						type="button"
 						onClick={closeSearch}
-						className="p-2 -ml-2 text-on-surface-variant shrink-0"
+						className="min-w-11 min-h-11 flex items-center justify-center text-on-surface-variant shrink-0 -ml-2"
 						aria-label="Close search"
 					>
 						<svg
@@ -84,7 +84,7 @@ export function MobileHeader() {
 						<button
 							type="button"
 							onClick={openSearch}
-							className="p-2 -mr-2 text-on-surface-variant"
+							className="min-w-11 min-h-11 flex items-center justify-center -mr-2 text-on-surface-variant"
 							aria-label="Search"
 						>
 							<svg

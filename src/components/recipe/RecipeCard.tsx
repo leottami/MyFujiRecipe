@@ -29,8 +29,8 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 					aspectRatio="3/2"
 				/>
 
-				{/* Gradient overlay on hover */}
-				<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+				{/* Gradient overlay — always on mobile for icon contrast */}
+				<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent touch-visible transition-opacity duration-500" />
 
 				{/* Favorite heart — bottom left, only visible on hover unless favorited */}
 				<button
@@ -41,15 +41,15 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 						toggleFavorite(recipe.id);
 					}}
 					aria-label={favorited ? "Remove from favorites" : "Add to favorites"}
-					className={`absolute bottom-3 left-3 p-1 transition-all duration-300 ${
+					className={`absolute bottom-3 left-3 p-2.5 min-w-11 min-h-11 flex items-center justify-center transition-all duration-300 ${
 						favorited
 							? "opacity-100"
-							: "opacity-0 group-hover:opacity-100"
+							: "touch-visible"
 					}`}
 				>
 					<svg
-						width="16"
-						height="16"
+						width="20"
+						height="20"
 						viewBox="0 0 24 24"
 						fill={favorited ? "#b91e25" : "none"}
 						stroke={favorited ? "#b91e25" : "#ffffff"}
@@ -70,11 +70,11 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 							e.stopPropagation();
 							addToCamera(recipe.id);
 						}}
-						className="absolute bottom-3 left-10 opacity-0 group-hover:opacity-100 transition-all duration-300"
+						className="absolute bottom-3 left-14 p-2.5 min-w-11 min-h-11 flex items-center justify-center touch-visible transition-all duration-300"
 					>
 						<svg
-							width="16"
-							height="16"
+							width="20"
+							height="20"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="#ffffff"
@@ -88,13 +88,13 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 					</button>
 				)}
 				{onCamera && (
-					<span className="absolute bottom-3 left-10 text-[8px] font-label uppercase tracking-[0.15em] text-inverse-on-surface bg-inverse-surface/60 backdrop-blur-sm px-1.5 py-0.5 rounded-sm">
+					<span className="absolute bottom-3 left-14 text-[8px] font-label uppercase tracking-[0.15em] text-inverse-on-surface bg-inverse-surface/60 backdrop-blur-sm px-1.5 py-0.5 rounded-sm">
 						On Camera
 					</span>
 				)}
 
 				{/* Film simulation badge */}
-				<span className="absolute bottom-3 right-3 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+				<span className="absolute bottom-3 right-3 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-2 py-0.5 rounded-sm touch-visible transition-opacity duration-300">
 					{recipe.filmSimulation}
 				</span>
 			</div>

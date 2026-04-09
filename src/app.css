@@ -110,6 +110,19 @@ body::after {
 	background-size: 256px 256px;
 }
 
+/* Show on touch, hover-reveal on pointer devices */
+.touch-visible {
+	opacity: 1;
+}
+@media (hover: hover) {
+	.touch-visible {
+		opacity: 0;
+	}
+	.group:hover .touch-visible {
+		opacity: 1;
+	}
+}
+
 /* Hide scrollbar for filter bars */
 .scrollbar-none {
 	-ms-overflow-style: none;

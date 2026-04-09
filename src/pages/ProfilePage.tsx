@@ -86,7 +86,7 @@ export function ProfilePage() {
 			{/* Camera Slots — 3x2 grid with tonal background */}
 			<div className="mb-14">
 				<div className="bg-surface-container-lowest rounded-sm p-4 lg:p-6">
-					<div className="grid grid-cols-3 gap-3 lg:gap-5">
+					<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:gap-5">
 						{Array.from({ length: 6 }, (_, i) => (
 							<div
 								key={slots[i] ?? `empty-${i}`}
@@ -113,8 +113,8 @@ export function ProfilePage() {
 					</div>
 				</div>
 				<p className="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface-variant/25 mt-3 text-center">
-					Drag from collection &middot; Click to view &middot; Hover
-					to remove
+					<span className="hidden sm:inline">Drag from collection &middot; Click to view &middot; Hover to remove</span>
+					<span className="sm:hidden">Tap recipe below to load &middot; Tap slot to view</span>
 				</p>
 			</div>
 
@@ -172,6 +172,23 @@ export function ProfilePage() {
 												C
 												{slots.indexOf(recipe.id) + 1}
 											</span>
+										)}
+										{!isOnCamera(recipe.id) && !isCameraFull && (
+											<button
+												type="button"
+												onClick={(e) => {
+													e.preventDefault();
+													e.stopPropagation();
+													addToCamera(recipe.id);
+												}}
+												className="absolute top-1.5 right-1.5 touch-visible bg-inverse-surface/70 backdrop-blur-sm text-inverse-on-surface p-1.5 rounded-sm min-w-8 min-h-8 flex items-center justify-center transition-opacity"
+												aria-label={`Load ${recipe.name} to camera`}
+											>
+												<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+													<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+													<circle cx="12" cy="13" r="4" />
+												</svg>
+											</button>
 										)}
 									</div>
 									<div className="pt-2">
