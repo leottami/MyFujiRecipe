@@ -13,11 +13,11 @@ function SettingRow({ label, value }: SettingRowProps) {
 	if (!value || value === "N/A" || value === "n/a") return null;
 
 	return (
-		<div className="flex justify-between items-baseline py-3">
-			<span className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant">
+		<div className="flex justify-between items-baseline py-3 border-b border-surface-variant/10 last:border-b-0">
+			<span className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60">
 				{label}
 			</span>
-			<span className="font-body text-sm font-medium text-on-surface text-right">
+			<span className="font-headline text-base font-semibold text-on-surface text-right">
 				{value}
 			</span>
 		</div>
@@ -32,7 +32,7 @@ interface SectionProps {
 function Section({ title, children }: SectionProps) {
 	return (
 		<div className="mb-6 last:mb-0">
-			<h3 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2">
+			<h3 className="accent-border-left font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-accent-warm mb-3">
 				{title}
 			</h3>
 			<div className="bg-surface-container-lowest rounded-sm p-4">
@@ -44,7 +44,7 @@ function Section({ title, children }: SectionProps) {
 
 export function RecipeMetadata({ recipe }: RecipeMetadataProps) {
 	return (
-		<div>
+		<div className="animate-slide-in-left" style={{ animationDelay: "150ms" }}>
 			<h2 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-6">
 				Technical Specifications
 			</h2>

@@ -43,37 +43,37 @@ export function ProfilePage() {
 	return (
 		<div className="max-w-[1100px] mx-auto px-4 lg:px-10">
 			{/* Hero header — dark, cinematic */}
-			<div className="relative -mx-4 lg:-mx-10 px-4 lg:px-10 py-12 lg:py-16 mb-10 bg-inverse-surface overflow-hidden">
+			<div className="relative -mx-4 lg:-mx-10 px-4 lg:px-10 py-12 lg:py-16 mb-10 bg-editorial-dark overflow-hidden animate-hero-reveal">
 				{/* Subtle gradient */}
-				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(185,30,37,0.08),transparent_60%)]" />
+				<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(196,149,106,0.08),transparent_60%)]" />
 
 				<div className="relative">
 					<div className="flex items-center gap-3 mb-6">
-						<div className="w-px h-8 bg-tertiary/40" />
-						<p className="font-label text-[9px] uppercase tracking-[0.3em] text-inverse-on-surface/40">
+						<div className="w-px h-8 bg-accent-warm/40" />
+						<p className="font-label text-[9px] uppercase tracking-[0.3em] text-editorial-dark-text/40">
 							Custom Settings
 						</p>
 					</div>
 
-					<h1 className="font-headline font-extrabold text-4xl lg:text-5xl uppercase tracking-[0.08em] text-inverse-on-surface/90 leading-none mb-4">
+					<h1 className="font-headline font-extrabold text-5xl lg:text-7xl uppercase tracking-[-0.02em] text-editorial-dark-text/90 leading-none mb-4">
 						My Camera
 					</h1>
 
-					<div className="flex items-center gap-6 font-label text-[10px] uppercase tracking-[0.15em] text-inverse-on-surface/40">
+					<div className="flex items-center gap-6 font-label text-[10px] uppercase tracking-[0.15em] text-editorial-dark-text/40">
 						<span>
 							{slots.length}
-							<span className="text-inverse-on-surface/20">
+							<span className="text-editorial-dark-text/20">
 								/6
 							</span>{" "}
 							loaded
 						</span>
-						<span className="w-px h-3 bg-inverse-on-surface/15" />
+						<span className="w-px h-3 bg-editorial-dark-text/15" />
 						<span>
 							{favorites.length} in collection
 						</span>
 						{topSim && (
 							<>
-								<span className="w-px h-3 bg-inverse-on-surface/15" />
+								<span className="w-px h-3 bg-editorial-dark-text/15" />
 								<span>
 									Top: {topSim[0]}
 								</span>
@@ -130,7 +130,7 @@ export function ProfilePage() {
 			{/* Collection — draggable cards */}
 			{favoriteRecipes.length > 0 && (
 				<div className="mb-12">
-					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
+				<div className="columns-2 md:columns-3 lg:columns-4 gap-3 lg:gap-4">
 						{favoriteRecipes.map((recipe, i) => (
 							<div
 								key={recipe.id}
@@ -144,7 +144,7 @@ export function ProfilePage() {
 									);
 									e.dataTransfer.effectAllowed = "copy";
 								}}
-								className={`animate-fade-in-up ${
+								className={`animate-fade-in-up break-inside-avoid mb-3 ${
 									!isOnCamera(recipe.id) && !isCameraFull
 										? "cursor-grab active:cursor-grabbing"
 										: ""
@@ -155,7 +155,7 @@ export function ProfilePage() {
 							>
 								<Link
 									to={`/recipe/${recipe.id}`}
-									className="group block"
+									className="group block hover:rotate-[0.5deg] transition-transform duration-300"
 								>
 									<div className="relative overflow-hidden rounded-sm">
 										<HeroImage
@@ -178,9 +178,9 @@ export function ProfilePage() {
 										<p className="font-headline font-semibold text-xs text-on-surface group-hover:text-primary leading-tight truncate transition-colors duration-200">
 											{recipe.name}
 										</p>
-										<p className="font-label text-[9px] uppercase tracking-widest text-on-surface-variant/40">
+										<p className="font-label text-[9px] uppercase tracking-widest text-on-surface-variant/60">
 											{extractAuthor(recipe.url)}{" "}
-											<span className="text-on-surface-variant/20">
+											<span className="text-on-surface-variant/30">
 												/
 											</span>{" "}
 											{recipe.filmSimulation}

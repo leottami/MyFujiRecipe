@@ -102,64 +102,58 @@ export function RecipeDetailPage() {
 
 	return (
 		<div className="max-w-[1100px] mx-auto px-4 lg:px-10">
-			{/* Hero Image */}
-			<div className="rounded-sm overflow-hidden -mx-4 lg:mx-0 mb-8">
-				<HeroImage
-					src={heroUrl}
-					alt={`Photo taken with ${recipe.name} recipe`}
-					className="w-full"
-					aspectRatio="21/9"
-				/>
-			</div>
+			{/* Immersive Hero Image */}
+			<div className="relative rounded-sm overflow-hidden -mx-4 lg:mx-0 mb-8">
+				<div className="relative h-[65vh] lg:h-[60vh] min-h-80 max-h-[600px]">
+					<HeroImage
+						src={heroUrl}
+						alt={`Photo taken with ${recipe.name} recipe`}
+						className="w-full h-full object-cover"
+						aspectRatio=""
+					/>
+					{/* Gradient overlay */}
+					<div className="absolute inset-0 bg-gradient-to-t from-editorial-dark/80 via-editorial-dark/30 to-transparent" />
+				</div>
 
-			{/* Title Section */}
-			<div className="lg:grid lg:grid-cols-[1.4fr_1fr] lg:gap-16">
-				<div>
+				{/* Overlay content */}
+				<div className="absolute bottom-0 left-0 right-0 p-4 lg:p-8">
 					<Link
 						to="/"
-						className="inline-block font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors mb-6"
+						className="inline-block font-label text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white transition-colors mb-4"
 					>
 						&larr; Back to Archive
 					</Link>
 
-					<h1 className="font-headline font-extrabold text-3xl lg:text-5xl text-on-surface leading-[1.05] tracking-tight mb-3">
+					<h1 className="font-headline font-extrabold text-4xl lg:text-6xl text-white leading-[1.02] tracking-[-0.03em] mb-2">
 						{recipe.name}
 					</h1>
 
-					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-4">
+					<p className="font-label text-[10px] uppercase tracking-[0.15em] text-white/50 mb-4">
 						Created by{" "}
 						<Link
 							to={`/photographer/${extractAuthorId(recipe.url)}`}
-							className="hover:text-primary transition-colors"
+							className="text-white/70 hover:text-white transition-colors"
 						>
 							{author}
 						</Link>
 					</p>
 
-					<div className="mb-6">
-						<TagEditor tags={tags} onChange={handleTagsChange} />
-					</div>
-
-					<p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8 max-w-lg">
-						{recipe.description ??
-							`A ${recipe.filmSimulation} profile for the ${recipe.sensor} sensor with ${recipe.dynamicRange} dynamic range.`}
-					</p>
-
-					{/* Action Buttons */}
-					<div className="flex items-center gap-3 mb-10">
+					{/* Action Buttons — inline on hero */}
+					<div className="flex flex-wrap items-center gap-2">
 						<Link
 							to={`/recipe/${recipe.id}/edit`}
-							className="bg-inverse-surface text-inverse-on-surface font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm hover:opacity-90 transition-opacity"
+							className="bg-white/15 backdrop-blur-sm text-white font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm hover:bg-white/25 transition-colors"
 						>
 							Edit Recipe
 						</Link>
 						<button
 							type="button"
 							onClick={handleFavoriteToggle}
-							className={`font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm transition-colors ${
+							aria-label={isFavorite(recipe.id) ? "Remove from favorites" : "Add to favorites"}
+							className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm transition-colors ${
 								isFavorite(recipe.id)
-									? "bg-tertiary/10 text-tertiary"
-									: "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+									? "bg-tertiary/80 text-white"
+									: "bg-white/15 text-white hover:bg-white/25"
 							}`}
 						>
 							{isFavorite(recipe.id) ? "\u2665 Favorited" : "\u2661 Favorite"}
@@ -176,12 +170,12 @@ export function RecipeDetailPage() {
 								}
 							}}
 							disabled={!isOnCamera(recipe.id) && isCameraFull}
-							className={`font-label text-[10px] uppercase tracking-[0.15em] px-5 py-2.5 rounded-sm transition-colors ${
+							className={`backdrop-blur-sm font-label text-[10px] uppercase tracking-[0.15em] px-4 py-2 rounded-sm transition-colors ${
 								isOnCamera(recipe.id)
-									? "bg-inverse-surface text-inverse-on-surface"
+									? "bg-white/25 text-white"
 									: isCameraFull
-										? "bg-surface-container text-on-surface-variant/30 cursor-not-allowed"
-										: "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+										? "bg-white/5 text-white/30 cursor-not-allowed"
+										: "bg-white/15 text-white hover:bg-white/25"
 							}`}
 						>
 							{isOnCamera(recipe.id)
@@ -194,11 +188,25 @@ export function RecipeDetailPage() {
 							href={recipe.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="font-label text-[10px] uppercase tracking-[0.15em] text-tertiary hover:underline ml-2"
+							className="font-label text-[10px] uppercase tracking-[0.15em] text-white/50 hover:text-white transition-colors ml-1"
 						>
-							View Source
+							Source &rarr;
 						</a>
 					</div>
+				</div>
+			</div>
+
+			{/* Content Section */}
+			<div className="lg:grid lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+				<div className="animate-slide-in-left">
+					<div className="mb-6">
+						<TagEditor tags={tags} onChange={handleTagsChange} />
+					</div>
+
+					<p className="font-body text-on-surface-variant text-sm leading-[1.7] mb-8 max-w-lg italic">
+						{recipe.description ??
+							`A ${recipe.filmSimulation} profile for the ${recipe.sensor} sensor with ${recipe.dynamicRange} dynamic range.`}
+					</p>
 				</div>
 
 				{/* Technical Specifications */}

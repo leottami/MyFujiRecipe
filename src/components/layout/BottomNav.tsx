@@ -71,7 +71,7 @@ export function BottomNav() {
 	];
 
 	return (
-		<nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] flex items-center justify-around px-2 py-2">
+		<nav className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-container-low/80 backdrop-blur-[20px] flex items-center justify-around px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
 			{items.map((item) => (
 				<Link
 					key={item.label}

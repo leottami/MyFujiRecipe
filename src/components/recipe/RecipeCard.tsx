@@ -19,7 +19,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 	return (
 		<Link
 			to={`/recipe/${recipe.id}`}
-			className="group block break-inside-avoid mb-5 lg:mb-0"
+			className="group block break-inside-avoid mb-6 lg:mb-0"
 		>
 			<div className="relative overflow-hidden rounded-sm">
 				<HeroImage
@@ -40,7 +40,8 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 						e.stopPropagation();
 						toggleFavorite(recipe.id);
 					}}
-					className={`absolute bottom-3 left-3 transition-all duration-300 ${
+					aria-label={favorited ? "Remove from favorites" : "Add to favorites"}
+					className={`absolute bottom-3 left-3 p-1 transition-all duration-300 ${
 						favorited
 							? "opacity-100"
 							: "opacity-0 group-hover:opacity-100"
@@ -53,7 +54,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 						fill={favorited ? "#b91e25" : "none"}
 						stroke={favorited ? "#b91e25" : "#ffffff"}
 						strokeWidth="2"
-						className="drop-shadow-sm"
+						className={`drop-shadow-sm ${favorited ? "animate-heart-spring" : ""}`}
 						aria-hidden="true"
 					>
 						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -98,11 +99,11 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
 				</span>
 			</div>
 
-			<div className="pt-3 pb-1">
-				<h3 className="font-headline font-semibold text-[15px] text-on-surface group-hover:text-primary transition-colors duration-300 leading-tight mb-1">
+			<div className="pt-3 pb-2">
+				<h3 className="font-headline font-semibold text-base lg:text-lg text-on-surface group-hover:text-primary transition-colors duration-300 leading-tight mb-1.5">
 					{recipe.name}
 				</h3>
-				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/50 mb-2">
+				<p className="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant/60 mb-2">
 					<Link
 						to={`/photographer/${extractAuthorId(recipe.url)}`}
 						onClick={(e) => e.stopPropagation()}

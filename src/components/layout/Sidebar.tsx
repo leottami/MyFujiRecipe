@@ -27,7 +27,7 @@ function SidebarSection({
 }) {
 	return (
 		<div className="mb-6">
-			<h3 className="font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 px-3">
+			<h3 className="accent-border-left font-headline font-bold text-[10px] uppercase tracking-[0.2em] text-accent-warm mb-2 px-3">
 				{title}
 			</h3>
 			{children}
@@ -50,6 +50,7 @@ function SidebarPill({
 		<button
 			type="button"
 			onClick={onClick}
+			aria-pressed={active}
 			className={`px-2.5 py-1 font-label text-[10px] uppercase tracking-[0.1em] transition-colors rounded-sm ${
 				active
 					? "bg-inverse-surface text-inverse-on-surface"

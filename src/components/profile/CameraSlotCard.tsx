@@ -12,7 +12,7 @@ interface FilledSlotProps {
 
 function FilledSlot({ recipe, slotNumber, onRemove }: FilledSlotProps) {
 	return (
-		<div className="group relative">
+		<div className="group relative -translate-y-0.5 shadow-card hover:shadow-lift transition-all duration-300">
 			<Link to={`/recipe/${recipe.id}`} className="block">
 				<div className="relative overflow-hidden rounded-sm">
 					<HeroImage
@@ -21,7 +21,7 @@ function FilledSlot({ recipe, slotNumber, onRemove }: FilledSlotProps) {
 						className="w-full group-hover:scale-[1.03] transition-transform duration-500"
 						aspectRatio="3/2"
 					/>
-					<span className="absolute top-1.5 left-1.5 bg-inverse-surface/60 backdrop-blur-sm text-inverse-on-surface font-label text-[8px] uppercase tracking-[0.15em] px-1.5 py-0.5 rounded-sm">
+					<span className="absolute top-1.5 left-1.5 bg-accent-warm/80 backdrop-blur-sm text-white font-label text-[8px] uppercase tracking-[0.15em] px-1.5 py-0.5 rounded-sm">
 						C{slotNumber}
 					</span>
 				</div>
@@ -29,7 +29,7 @@ function FilledSlot({ recipe, slotNumber, onRemove }: FilledSlotProps) {
 					<p className="font-headline font-semibold text-xs text-on-surface leading-tight truncate">
 						{recipe.name}
 					</p>
-					<p className="font-label text-[9px] uppercase tracking-[0.1em] text-on-surface-variant/50 truncate">
+					<p className="font-label text-[9px] uppercase tracking-[0.1em] text-on-surface-variant/60 truncate">
 						{recipe.filmSimulation}
 					</p>
 				</div>
@@ -55,10 +55,10 @@ function EmptySlot({ slotNumber, onDrop }: EmptySlotProps) {
 
 	return (
 		<div
-			className={`flex flex-col items-center justify-center aspect-[3/2] rounded-sm transition-all duration-200 ${
+			className={`flex flex-col items-center justify-center aspect-[3/2] rounded-sm border-2 border-dashed transition-all duration-200 ${
 				dragOver
-					? "bg-tertiary/5 ring-2 ring-tertiary/30 ring-inset"
-					: "bg-surface-container/50"
+					? "border-accent-warm/40 bg-accent-warm/5"
+					: "border-outline-variant/20 bg-surface-container/30"
 			}`}
 			onDragOver={(e) => {
 				if (!onDrop) return;
@@ -74,12 +74,12 @@ function EmptySlot({ slotNumber, onDrop }: EmptySlotProps) {
 			}}
 		>
 			<span className={`font-headline font-bold text-lg transition-colors ${
-				dragOver ? "text-tertiary/40" : "text-on-surface-variant/15"
+				dragOver ? "text-accent-warm/50" : "text-on-surface-variant/15"
 			}`}>
 				C{slotNumber}
 			</span>
 			{dragOver && (
-				<span className="font-label text-[8px] uppercase tracking-widest text-tertiary/50 mt-1">
+				<span className="font-label text-[8px] uppercase tracking-widest text-accent-warm/60 mt-1">
 					Drop
 				</span>
 			)}
