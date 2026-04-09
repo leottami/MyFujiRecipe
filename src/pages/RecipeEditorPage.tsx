@@ -2,10 +2,14 @@ import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { FormField, FormSelect } from "../components/editor/FormField";
 import { FormSection } from "../components/editor/FormSection";
+import { PhotoPreviewGrid } from "../components/editor/PhotoPreviewGrid";
+import { PhotoUploadZone } from "../components/editor/PhotoUploadZone";
 import { PhotoUrlField } from "../components/editor/PhotoUrlField";
+import { WizardLayout } from "../components/editor/wizard/WizardLayout";
 import { HeroImage } from "../components/recipe/HeroImage";
 import { TagEditor } from "../components/recipe/TagEditor";
 import { getHeroPhoto } from "../data/utils";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import { useRecipeForm } from "../hooks/useRecipeForm";
 import { useRecipeMutations } from "../hooks/useRecipeMutations";
 import { useRecipe } from "../hooks/useRecipes";
@@ -105,10 +109,18 @@ function RecipeEditorForm({ existingRecipe }: { existingRecipe?: NonNullable<Ret
 
 			{/* Photos */}
 			<FormSection title="Photos">
-				<PhotoUrlField
+				<PhotoUploadZone
 					photos={fields.photos}
 					onChange={(photos) => setField("photos", photos)}
 				/>
+				{fields.photos.length > 0 && (
+					<div className="mt-4">
+						<PhotoPreviewGrid
+							photos={fields.photos}
+							onChange={(photos) => setField("photos", photos)}
+						/>
+					</div>
+				)}
 			</FormSection>
 
 			{/* Basic Info */}
@@ -262,6 +274,7 @@ function RecipeEditorForm({ existingRecipe }: { existingRecipe?: NonNullable<Ret
 export function RecipeEditorPage() {
 	const { id } = useParams<{ id: string }>();
 	const { recipe, loading, error } = useRecipe(id);
+	const isMobile = useMediaQuery("(max-width: 1023px)");
 
 	if (id && loading) {
 		return (
@@ -287,6 +300,10 @@ export function RecipeEditorPage() {
 				</Link>
 			</div>
 		);
+	}
+
+	if (isMobile) {
+		return <WizardLayout existingRecipe={recipe ?? undefined} />;
 	}
 
 	return <RecipeEditorForm existingRecipe={recipe ?? undefined} />;

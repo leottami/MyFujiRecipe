@@ -172,3 +172,41 @@ a:focus-visible {
 	outline: 2px solid var(--color-tertiary);
 	outline-offset: 2px;
 }
+
+/* Wizard step transitions */
+@keyframes wizardSlideInRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes wizardSlideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.wizard-enter-next {
+	animation: wizardSlideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.wizard-enter-prev {
+	animation: wizardSlideInLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wizard-enter-next,
+	.wizard-enter-prev {
+		animation: none;
+	}
+}

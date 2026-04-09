@@ -1,12 +1,17 @@
 import { useRef, useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 export function MobileHeader() {
+	const location = useLocation();
 	const [searchOpen, setSearchOpen] = useState(false);
 	const [searchParams] = useSearchParams();
 	const navigate = useNavigate();
 	const inputRef = useRef<HTMLInputElement>(null);
 	const searchValue = searchParams.get("q") ?? "";
+
+	// Hide on editor routes — WizardLayout renders its own header
+	const isEditor = /^\/recipe\/(new|[^/]+\/edit)$/.test(location.pathname);
+	if (isEditor) return null;
 
 	function openSearch() {
 		setSearchOpen(true);

@@ -4,6 +4,10 @@ export function BottomNav() {
 	const location = useLocation();
 	const isHome = location.pathname === "/";
 
+	// Hide on editor routes — WizardNavBar replaces this
+	const isEditor = /^\/recipe\/(new|[^/]+\/edit)$/.test(location.pathname);
+	if (isEditor) return null;
+
 	const items = [
 		{
 			to: "/",
