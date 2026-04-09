@@ -16,7 +16,7 @@ export class ImageTooLargeError extends Error {
 }
 
 export class CompressionError extends Error {
-	constructor(cause?: unknown) {
+	constructor(_cause?: unknown) {
 		super("Failed to process image");
 		this.name = "CompressionError";
 	}

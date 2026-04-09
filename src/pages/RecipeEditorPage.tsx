@@ -4,7 +4,6 @@ import { FormField, FormSelect } from "../components/editor/FormField";
 import { FormSection } from "../components/editor/FormSection";
 import { PhotoPreviewGrid } from "../components/editor/PhotoPreviewGrid";
 import { PhotoUploadZone } from "../components/editor/PhotoUploadZone";
-import { PhotoUrlField } from "../components/editor/PhotoUrlField";
 import { WizardLayout } from "../components/editor/wizard/WizardLayout";
 import { HeroImage } from "../components/recipe/HeroImage";
 import { TagEditor } from "../components/recipe/TagEditor";
